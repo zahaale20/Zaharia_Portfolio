@@ -69,6 +69,7 @@ const BlackLayer = styled.div`
 `;
 
 function App() {
+
   return (
     <BrowserRouter>
       <Navbar />
