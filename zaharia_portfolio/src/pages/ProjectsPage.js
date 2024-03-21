@@ -1,23 +1,30 @@
 import React, { useEffect, useRef, useState } from 'react';
-import styled from 'styled-components';
 import GlobalStyle from '../styles/GlobalStyle';
 
 import {
+  MainButton,
   FrameLayout,
+  VertNavBar,
+  ProjectNavItem,
   OverviewContainer,
   ExperienceContainer,
-  DescriptionText,
-  DescriptionHeaderText,
-  NavBar,
-  ProjectNavItem,
-  KeyWordsContent,
-  KeyWordsText,
   ExperienceHeaderContainer,
   ExperienceImage,
+  ProjectImage,
   ExperienceInfo,
-  ExperienceTitle,
-  ExperienceDescription,
+  ProjectDescImage,
+  DescriptionText,
+  KeyWordsText,
+  KeyWordsContent,
   ExperienceDescriptionContainer,
+  ProjectDescription,
+  ProjectTitle,
+  DescriptionHeaderText,
+  ProjectImagesHeaderText,
+  ProjectImagesContainer,
+  ProjectLinksContainer,
+  MoreProjectsNavItem,
+  MoreProjectsText
 } from '../styles/PageStyle'; 
 
 import haggle from '../assets/haggle.jpg';
@@ -45,69 +52,8 @@ import thug11 from '../assets/7.png';
 import thug12 from '../assets/8.png';
 import thug13 from '../assets/9.png';
 
-import theme from '../styles/Theme';
 
-const DescImage = styled(ExperienceImage)`
-  border-radius: 0px;
-  width: 40%;
-  margin: 0px;
-`;
 
-const ProjectImagesContainer = styled.div`
-  display: flex;
-  overflow-x: auto;
-  align-self: stretch;
-  margin: 0px;
-  margin-bottom: 20px;
-`;
-
-const ImagesHeaderText = styled(DescriptionHeaderText)`
-  font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 8px;
-`;
-
-const LinksContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-bottom: 20px;
-  gap: 0px;
-`;
-
-const ProjectImage = styled.img`
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-
-`;
-
-const ProjectTitle = styled(ExperienceTitle)`
-  font-size: 24px;
-  margin-bottom: -5px;
-
-  @media (min-width: 768px) {
-    font-size: 30px;
-  }
-
-  @media (min-width: 1024px) {
-      font-size: 40px;
-  }
-`;
-
-const ProjectDescription = styled.div`
-  color: ${theme.colors.lightGunGray};
-  font-size: 12px;
-
-  @media (min-width: 768px) {
-    font-size: 16px;
-  }
-
-  @media (min-width: 1024px) {
-      font-size: 16px;
-  }
-`;
 
 const projects = [
   {
@@ -234,60 +180,6 @@ const renderLinkButtons = (project) => {
   ));
 };
 
-const MoreProjectsNavItem = styled(ProjectNavItem)`
-  display: flex;
-  justify-content: center;
-  width: 50px;
-  height: 70px;
-  margin-bottom: 10px;
-  align-items: center;
-  background-color: rgba(255,255,255, 0.05);
-  border-radius: 10px;
-`;
-
-const MoreProjectsText = styled.span`
-  font-size: 40px;
-  color: rgba(255,255,255, 0.6);
-  margin-bottom: 20px;
-`;
-const MainButton = styled.button`
-    color: ${theme.colors.nearlyWhite};
-    background: transparent;
-    border: 1px solid ${theme.colors.nearlyWhite};
-    border-radius: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 10px;
-    font-family: 'Futura', sans-serif;
-    cursor: pointer;
-    margin-right: 2vw;
-    transition: transform 0.3s ease-in-out;
-    
-    &:hover {
-        transform: scale(1.04);
-        background-color: ${theme.colors.nearlyWhite};
-        color: ${theme.colors.deepSpace};
-    }
-
-    @media (min-width: 768px) {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 25px;
-        padding-right: 25px;
-        font-size: 12px;
-    }
-
-    @media (min-width: 1024px) { 
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 40px;
-        padding-right: 40px;
-        font-size: 14px;
-    }
-`;
-
 
 function ProjectsPage() {
   const [selectedProjectId, setSelectedProjectId] = useState(projects[0].id);
@@ -310,7 +202,7 @@ function ProjectsPage() {
     <>
       <GlobalStyle />
         <FrameLayout>
-          <NavBar>
+          <VertNavBar>
             {projects.map((project, index) => (
               <ProjectNavItem
                 key={project.id}
@@ -323,7 +215,7 @@ function ProjectsPage() {
             <MoreProjectsNavItem onClick={handleGitHubClick} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <MoreProjectsText style={{ fontSize: '24px', color: 'rgba(255, 255, 255, 0.6)' }}>...</MoreProjectsText>
             </MoreProjectsNavItem>
-          </NavBar>
+          </VertNavBar>
   
           <OverviewContainer>
             {projects.map((project, index) => (
@@ -350,18 +242,18 @@ function ProjectsPage() {
   
                     {project.imageUrls && project.imageUrls.length > 0 && (
                       <>
-                        <ImagesHeaderText>Images</ImagesHeaderText>
+                        <ProjectImagesHeaderText>Images</ProjectImagesHeaderText>
                         <ProjectImagesContainer>
                           {project.imageUrls.map((url, index) => (
-                            <DescImage key={index} src={url} alt={`Project Image ${index + 1}`} />
+                            <ProjectDescImage key={index} src={url} alt={`Project Image ${index + 1}`} />
                           ))}
                         </ProjectImagesContainer>
                       </>
                     )}
   
-                    <LinksContainer>
+                    <ProjectLinksContainer>
                       {renderLinkButtons(project)}
-                    </LinksContainer>
+                    </ProjectLinksContainer>
                   </ExperienceDescriptionContainer>
                 </ExperienceContainer>
               </div>

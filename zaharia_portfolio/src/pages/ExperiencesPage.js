@@ -6,7 +6,7 @@ import {
   ExperienceContainer,
   DescriptionText,
   DescriptionHeaderText,
-  NavBar,
+  VertNavBar,
   ExperienceNavItem,
   KeyWordsContent,
   KeyWordsText,
@@ -244,7 +244,7 @@ function ExperiencesPage() {
     <>
       <GlobalStyle />
         <FrameLayout>
-          <NavBar>
+          <VertNavBar>
             <ExperienceNavItem
               onClick={() => setActiveCategory('education')}
               active={activeCategory === 'education'}>
@@ -265,7 +265,7 @@ function ExperiencesPage() {
               active={activeCategory === 'achievements'}>
               <img src={achievements} alt="Achievements" style={{width: '35px', height: '35px'}} />
             </ExperienceNavItem>
-          </NavBar>
+          </VertNavBar>
           <OverviewContainer>
             {renderExperiences()}
           </OverviewContainer>
