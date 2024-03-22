@@ -60,7 +60,7 @@ const projects = [
   {
     id: 1,
     title: 'Database Modeling',
-    dateRange: 'February 2024 - Present',
+    dateRange: 'Feb 2024 - Present',
     location: 'San Luis Obispo, CA',
     keywords: ['Backend','UML','E/R', 'SQL', 'JPA', 'JSON', 'JSONPath'],
     description: 'Outlined Jamba Juice\'s business rules and information needs, designed an Entity/Relationship UML model, and transformed it into SQL DDL for database schema creation. Improved schema integrity by refining to eliminate anomalies and redundancies, conducted lossless decomposition (including chase test) to prevent information loss, and ensured preservation of constraints based on functional dependencies. Implemented object-relational mapping in Java using Java Persistence API (JPA) to connect to a MySQL database, and developed queries for previously defined information needs. Added a document schema using JSON Schema, populated it, and wrote JSONPath queries to address the same information needs.',
@@ -71,7 +71,7 @@ const projects = [
   {
     id: 2,
     title: 'haggle',
-    dateRange: 'January 2023 - Present',
+    dateRange: 'Jan 2023 - Present',
     location: 'San Luis Obispo, CA',
     keywords: ['Full Stack', 'React','Javascript', 'HTML/CSS', 'MySQL', 'PostgreSQL', 'Supabase', 'Git'],
     description: 'A digital marketplace, haggle helps Cal Poly students buy, sell, and trade within the San Luis Obispo community. This app not only showcases local listings across a variety of categories, but also facilitates a seamless communication stream between users, allowing them to send and receive offers directly within the platform.  Moreover, users enjoy complete control over their listings, with easy-to-use tools for managing and updating offers. Whether you are decluttering your dorm, searching for textbooks, or finding unique local treasures, Haggle will help you get it done.',
@@ -81,7 +81,7 @@ const projects = [
   {
     id: 3,
     title: 'GridIron GPT',
-    dateRange: 'September 2023 - Present',
+    dateRange: 'Sept 2023 - Present',
     location: 'San Luis Obispo, CA',
     keywords: ['Full Stack', 'Swift', 'Python', 'OpenAI', 'SQL', 'Firebase', 'Xcode','Adobe Illustrator'],
     description: 'A hub for NFL and Fantasy Football insights, GridIron GPT features a dynamic search engine utilizing the OpenAI API to transform user input such as "Who are the top 10 wide receivers of 2023 by receiving yards?" into SQL queries within an extensive player database. It not only uses prompt engineering and caching to help generate search recommendations, but also integrates with ESPN Fantasy Football to provide personalized lineup optimizations, trade advice, league insights, and accurate projections. This seamless blend of technology and sports analytics offers users an unparalleled strategy tool for the season. ',
@@ -91,7 +91,7 @@ const projects = [
   {
     id: 4,
     title: 'Differential Privacy',
-    dateRange: 'June 2023 - August 2023',
+    dateRange: 'Jun 2023 - Aug 2023',
     location: 'San Luis Obispo, CA',
     keywords: ['Backend', 'OpenDP', 'Python', 'Pandas'],
     description: 'In this project, I used a Forbes Billionaires dataset from Kaggle to implement and evaluate various privacy perservation methodologies (PPM) including k-Anonymity, l-Diversity, and differential privacy (DP) using OpenDP\'s Laplace Mechanism, focusing on the delicate balance between preserving individual privacy and maintaining the utility of sensitive data. By adjusting the Laplace mechanism\'s scale parameter, I analyzed, illustrated, and explained the trade-offs involved in increasing and decreasing noise of data.',
@@ -101,7 +101,7 @@ const projects = [
   {
     id: 5,
     title: 'NFL QB Analysis',
-    dateRange: 'June 2023 - August 2023',
+    dateRange: 'Jun 2023 - Aug 2023',
     location: 'San Luis Obispo, CA',
     keywords: ['Backend', 'Apache Spark', 'Dataframes', 'SQL', 'Python', 'ETL', 'Data Pipelines'],
     description: 'Developed ETL processes using Apache Spark (specifically PySpark), Dataframes, and SQL to analyze over 114,000 lines of weekly NFL player data from 1990 to 2022. Implemented data pipelines to evaluate quarterbacks fantasy football production, individual performance considering team dynamics, and to categorize quarterbacks in a tier list in order to gain insights for the 2023 fantasy football season.',
@@ -111,7 +111,7 @@ const projects = [
   {
     id: 6,
     title: 'Edit Distance',
-    dateRange: 'January 2023',
+    dateRange: 'Jan 2023',
     location: 'San Luis Obispo, CA',
     keywords: ['Backend', 'Levenshtein distance', 'Python', 'Matrix'],
     description: 'Implemented the Levenshtein distance algorithm, a crucial metric in the field of computational linguistics and computer science for measuring the similarity between two strings. By computing the minimum number of single-character edits required to change one word into another—permitting insertions, deletions, and substitutions—this script demonstrates a fundamental approach to understanding textual data. The core of the project involves constructing a dynamic programming matrix to iteratively calculate distances, offering insights into the optimization of string comparison processes. ',
@@ -121,7 +121,7 @@ const projects = [
   {
     id: 7,
     title: 'Strongly Connected Components',
-    dateRange: 'January 2023',
+    dateRange: 'Jan 2023',
     location: 'San Luis Obispo, CA',
     keywords: ['Backend', 'Python', 'Graph Theory', 'Depth-First Search (DFS)', 'Time Complexity'],
     description: 'Identified and delineated strongly connected components within a directed graph. Using Python, I implemented a solution that reads a directed graph from a text file, with each vertex and its directed edges represented as pairs of integers. Using an algorithm that employs depth-first search (DFS) techniques to explore the graph, I marked pre-visit and post-visit times to help identify cycles and, subsequently, strongly connected components. The algorithm effectively organizes vertices into distinct components based on their connectivity, ensuring that each set of vertices within a component can reach every other vertex in the same component. The output is a sorted list of lists, with each sublist representing a strongly connected component containing vertices sorted in ascending order.',
@@ -131,7 +131,7 @@ const projects = [
   {
     id: 8,
     title: 'Divide and Conquer',
-    dateRange: 'January 2023',
+    dateRange: 'Jan 2023',
     location: 'San Luis Obispo, CA',
     keywords: ['Backend', 'Divide and Conquer', 'Python', 'Time Complexity'],
     description: 'In this project, I designed and implemented a divide-and-conquer algorithm in Python to solve a specific problem: identifying the unique, singleton element in a sorted sequence of integers, where all elements except one are duplicated. My program efficiently manages this task by dividing the problem space into smaller sub-problems, then combining their solutions to find the singleton element. The algorithm performs this by checking the middle element of the sequence and its neighbors; depending on whether these elements are duplicates and the position (odd or even) of the middle element, the search space is halved accordingly. This method ensures a highly efficient search, minimizing the number of comparisons needed to find the singleton. The program reads integers from a file, where each line contains a single integer from the sequence, and outputs the singleton element to stdout.',
@@ -141,7 +141,7 @@ const projects = [
   {
     id: 9,
     title: 'Secret Society of Pixel Thugs',
-    dateRange: 'April 2021 - August 2021',
+    dateRange: 'Apr 2021 - Aug 2021',
     location: 'San Luis Obispo, CA',
     keywords: ['Frontend', 'Cardano NFT', 'Javascript', 'Adobe Illustrator', 'Haskell'],
     description: 'The Secret Society of Pixel Thugz (SSPT) is my solo endeavor into the NFT world on the Cardano blockchain, showcasing a blend of digital artistry and technical skill. I designed its visual identity, created 302 unique traits, and used JavaScript to generate 5,000 unique NFTs. While I delved into tokenomics, worked on developing a smart contract with Haskell, and was working to finish the remaining tasks to prepare for deployment, I discovered that the startup cost and time it would take to launch and keep the project afloat were too high. Thus I decided against launching the project on the blockchain.',
@@ -152,7 +152,7 @@ const projects = [
   {
     id: 10,
     title: 'HODLRocket',
-    dateRange: 'April 2020 - August 2020',
+    dateRange: 'Apr 2020 - Aug 2020',
     location: 'San Luis Obispo, CA',
     keywords: ['Web 3.0', 'Binance Smart Chain', 'Adobe Illustrator', 'Solidity'],
     description: 'Helped orchestrate the successful launch of a BEP-20 token on Binance Smart Chain. Worked and grew with a team of six members in a fast-paced work environment, fostering a culture of engineering excellence by persisting through various challenges and failures. Wrote code in Solidity to develop HODLRockets smart contract. Designed engaging logos, advertisements, social media posts, and a website.',

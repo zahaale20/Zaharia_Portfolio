@@ -169,12 +169,12 @@ export const HomeTextContainer = styled.div`
     justify-content: center;
     gap: 20px;
     width: 248px;
-    padding: 10px;
 
     @media (min-width: 768px) {
         align-items: flex-start;
         padding: 20px;
         width: 300px;
+        margin-top: 50px;
     }
 
     @media (min-width: 1024px) {
@@ -232,15 +232,17 @@ export const HomeDescriptionText = styled.p`
 `;
 
 export const HomeButtonXStack = styled.div`
+    display: flex;
     flex-direction: row;
+    margin-top: 10px;
 `;
 
 export const SocialMediaContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 15px;
     gap: 20px;
+    margin-top: 10px;
 
     @media (min-width: 768px) {
         gap: 2px;
@@ -320,7 +322,7 @@ export const DescriptionHeaderText = styled.p`
 `;
 
 export const ExperienceTitle = styled.h1`
-    font-size: 12px;
+    font-size: 3.0vw;
     color: ${theme.colors.vanillaMist};
     margin: 0;
     margin-top: -1vh;
@@ -335,9 +337,9 @@ export const ExperienceTitle = styled.h1`
 `;
 
 export const ExperienceSubtitle = styled(ExperienceTitle)`
-    font-size: 10px;
+    font-size: 2.6vw;
     font-weight: normal;
-    margin-bottom: -5px;
+    margin-bottom: -6px;
 
     @media (min-width: 768px) {
         font-size: 24px;
@@ -350,8 +352,7 @@ export const ExperienceSubtitle = styled(ExperienceTitle)`
 
 export const ExperienceDescription = styled.div`
   color: ${theme.colors.lightGunGray};
-  font-size: 8px;
-
+  font-size: 2.2vw;
   @media (min-width: 768px) {
     font-size: 16px;
     }
@@ -404,7 +405,7 @@ export const ProjectImage = styled.img`
 `;
 
 export const ProjectTitle = styled(ExperienceTitle)`
-    font-size: 12px;
+    font-size: 3.4vw;
     margin-bottom: -5px;
 
     @media (min-width: 768px) {
@@ -418,7 +419,7 @@ export const ProjectTitle = styled(ExperienceTitle)`
 
 export const ProjectDescription = styled.div`
     color: ${theme.colors.lightGunGray};
-    font-size: 9px;
+    font-size: 2.4vw;
 
     @media (min-width: 768px) {
         font-size: 16px;
