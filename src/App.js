@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import styled from 'styled-components';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 import ProjectsPage from './pages/ProjectsPage';
@@ -71,7 +71,7 @@ const BlackLayer = styled.div`
 function App() {
 
   return (
-    <>
+    <HashRouter base="/">
       <Navbar />
       <PageContainer>
         <AnimatedMeshGradient />
@@ -85,7 +85,7 @@ function App() {
           </Routes>
         </div>
       </PageContainer>
-    </>
+    </HashRouter>
   );
 }
 
