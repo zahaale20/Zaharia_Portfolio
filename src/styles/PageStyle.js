@@ -556,7 +556,6 @@ export const KeyWordsContent = styled.div`
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: flex-start;
-    margin-top: -10px;
     gap: 0px 5px;
     margin-bottom: 10px;
 
