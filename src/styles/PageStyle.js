@@ -447,7 +447,7 @@ export const ProjectNavItem = styled.div`
     transform: scale(0.8);
 
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.01);
     }
 
     &::after {
