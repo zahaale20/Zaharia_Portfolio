@@ -25,8 +25,7 @@ import {
   ProjectImagesContainer,
   ProjectLinksContainer,
   MoreProjectsNavItem,
-  MoreProjectsText,
-  Signature
+  MoreProjectsText
 } from '../styles/PageStyle'; 
 
 import haggle from '../assets/haggle.jpg';
@@ -264,7 +263,6 @@ function ProjectsPage() {
             ))}
           </OverviewContainer>
         </FrameLayout>
-        <Signature>Made by Alex Zaharia.</Signature>
     </>
   );
 }

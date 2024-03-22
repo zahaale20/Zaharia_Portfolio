@@ -117,10 +117,6 @@ export const MainButton = styled.button`
     }
 `;
 
-export const Signature = styled.p`
-  font-size: 10px;
-`;
-
 //Home Components
 
 
@@ -156,13 +152,16 @@ export const HomeProfileImage = styled.img`
     border-radius: 15px;
     object-fit: cover;
     margin: 20px;
+    margin-top: 0px;
 
     @media (min-width: 768px) { 
         width: 250px;
+        margin: 20px;
     }
 
     @media (min-width: 1200px) { 
         width: 280px;
+        margin: 20px;
     }
 `;
 
