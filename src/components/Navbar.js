@@ -3,9 +3,6 @@ import styled from 'styled-components';
 import { Link, useNavigate } from 'react-router-dom';
 import theme from '../styles/Theme';
 import logoImage from '../assets/zaharia_logo.png';
-import linkedinIcon from '../assets/linkedin.png';
-import githubIcon from '../assets/github.png';
-import instagramIcon from '../assets/instagram.png';
 
 const Nav = styled.nav`
   background: rgba(0, 0, 0, 0.6);
@@ -117,10 +114,6 @@ function Navbar() {
 
     const handleNavigation = (path) => {
       navigate(path);
-    };
-
-    const handleEmailOpen = () => {
-        window.location.href = `mailto:${emailAddress}`;
     };
     
 

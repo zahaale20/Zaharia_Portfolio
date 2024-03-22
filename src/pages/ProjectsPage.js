@@ -5,6 +5,7 @@ import {
   MainButton,
   FrameLayout,
   VertNavBar,
+  VertScroll,
   ProjectNavItem,
   OverviewContainer,
   ExperienceContainer,
@@ -174,7 +175,7 @@ const renderLinkButtons = (project) => {
   const availableLinks = linkTypes.filter(linkType => project[linkType.key]);
 
   return availableLinks.map(linkType => (
-    <a key={linkType.key} href={project[linkType.key]} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', margin: '10px' }}>
+    <a key={linkType.key} href={project[linkType.key]} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', margin: '0px' }}>
       <MainButton>{linkType.text}</MainButton>
     </a>
   ));
@@ -203,18 +204,20 @@ function ProjectsPage() {
       <GlobalStyle />
         <FrameLayout>
           <VertNavBar>
-            {projects.map((project, index) => (
-              <ProjectNavItem
-                key={project.id}
-                onClick={() => setSelectedProjectId(project.id)}
-                isSelected={selectedProjectId === project.id}
-              >
-                <ProjectImage src={project.imageUrl} alt={project.title} style={{ width: '50px', height: '50px', objectFit: 'cover' }} />
-              </ProjectNavItem>
-            ))}
-            <MoreProjectsNavItem onClick={handleGitHubClick} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <MoreProjectsText style={{ fontSize: '24px', color: 'rgba(255, 255, 255, 0.6)' }}>...</MoreProjectsText>
-            </MoreProjectsNavItem>
+            <VertScroll>
+              {projects.map((project, index) => (
+                <ProjectNavItem
+                  key={project.id}
+                  onClick={() => setSelectedProjectId(project.id)}
+                  isSelected={selectedProjectId === project.id}
+                >
+                  <ProjectImage src={project.imageUrl} alt={project.title} style={{ width: '50px', height: '50px', objectFit: 'cover' }} />
+                </ProjectNavItem>
+              ))}
+              <MoreProjectsNavItem onClick={handleGitHubClick} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <MoreProjectsText style={{ fontSize: '24px', color: 'rgba(255, 255, 255, 0.6)' }}>...</MoreProjectsText>
+              </MoreProjectsNavItem>
+            </VertScroll>
           </VertNavBar>
   
           <OverviewContainer>

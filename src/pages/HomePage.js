@@ -11,7 +11,13 @@ import {
     HomeDescriptionText,
     HomeButtonXStack,
     MainButton,
-  } from '../styles/PageStyle'; 
+    SocialMediaContainer,
+    SocialMediaIcon
+} from '../styles/PageStyle'; 
+
+import linkedinIcon from '../assets/linkedin.png';
+import githubIcon from '../assets/github.png';
+import instagramIcon from '../assets/instagram.png';
 
 function HomePage() {
     const navigate = useNavigate();
@@ -41,6 +47,17 @@ function HomePage() {
                                     <MainButton onClick={handleEmailOpen}>
                                         Contact Me
                                     </MainButton>
+                                    <SocialMediaContainer>
+                                        <SocialMediaIcon href="https://github.com/zahaale20" target="_blank">
+                                            <img src={githubIcon} alt="GitHub" />
+                                        </SocialMediaIcon>
+                                        <SocialMediaIcon href="https://linkedin.com/in/alexczaharia" target="_blank">
+                                            <img src={linkedinIcon} alt="LinkedIn" />
+                                        </SocialMediaIcon>
+                                        <SocialMediaIcon href="https://instagram.com/alex.z4777" target="_blank">
+                                            <img src={instagramIcon} alt="Instagram" />
+                                        </SocialMediaIcon>
+                                    </SocialMediaContainer>
                                 </HomeButtonXStack>
                             </HomeTextContainer>
                         </HomeProfileDisplayContainer>

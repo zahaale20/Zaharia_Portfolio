@@ -32,28 +32,29 @@ export const FrameLayout = styled.div`
     }
 `;
 
+export const VertScroll = styled.div`
+    overflow-y: auto;
+`;
+
 export const VertNavBar = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     background-color: rgba(255, 255, 255, 0.05);
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 15px;
-    width: 70px;
-    overflow: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    width: 50px;
     height: 565px;
 
     @media (min-width: 768px) {
-        padding-left: 10px;
-        padding-right: 10px;
+        width: 50px;
         height: 615px;
     }
 
     @media (min-width: 1024px) {
-        padding-left: 10px;
-        padding-right: 10px;
+        width: 50px;
         height: 615px;
     }
 `;
@@ -62,7 +63,7 @@ export const OverviewContainer = styled.div`
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 900px;
+    width: 85%;
     overflow: auto;
     height: 565px;
     gap: 20px;
@@ -83,11 +84,11 @@ export const MainButton = styled.button`
     background: transparent;
     border: 1px solid ${theme.colors.nearlyWhite};
     border-radius: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 10px;
+    font-size: 8px;
     font-family: 'Futura', sans-serif;
     cursor: pointer;
     margin-right: 2vw;
@@ -122,8 +123,8 @@ export const MainButton = styled.button`
 export const HomeProfileDisplayContainer = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     width: 80%;
     max-width: 1200px;
     margin: auto;
@@ -232,17 +233,19 @@ export const HomeDescriptionText = styled.p`
 
 export const HomeButtonXStack = styled.div`
     flex-direction: row;
-    margin-top: 10px;
 `;
 
-const SocialMediaContainer = styled.div`
+export const SocialMediaContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2px;
+    margin-top: 15px;
+    gap: 20px;
 
     @media (min-width: 768px) {
         gap: 2px;
+        align-items: center;
+        justify-content: flex-start;
     }
 
     @media (min-width: 1024px) {
@@ -251,7 +254,7 @@ const SocialMediaContainer = styled.div`
 `;
 
 
-const SocialMediaIcon = styled.a`
+export const SocialMediaIcon = styled.a`
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -285,7 +288,7 @@ const SocialMediaIcon = styled.a`
 
 //ExperiencesPage Components
 export const ExperienceImage = styled.img`
-    width: 100px;
+    width: 15vw;
     height: auto;
     border-radius: 2vw;
     margin-right: 2vw;
@@ -302,7 +305,7 @@ export const ExperienceImage = styled.img`
 export const DescriptionHeaderText = styled.p`
     font-weight: bold;
     color: ${theme.colors.vanillaMist};
-    font-size: 16px;
+    font-size: 11px;
     margin: 0px;
 
     @media (min-width: 768px) {
@@ -317,7 +320,7 @@ export const DescriptionHeaderText = styled.p`
 `;
 
 export const ExperienceTitle = styled.h1`
-    font-size: 20px;
+    font-size: 12px;
     color: ${theme.colors.vanillaMist};
     margin: 0;
     margin-top: -1vh;
@@ -328,6 +331,33 @@ export const ExperienceTitle = styled.h1`
 
     @media (min-width: 1024px) {
         font-size: 30px;
+    }
+`;
+
+export const ExperienceSubtitle = styled(ExperienceTitle)`
+    font-size: 10px;
+    font-weight: normal;
+    margin-bottom: -5px;
+
+    @media (min-width: 768px) {
+        font-size: 24px;
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 24px;
+    }
+`;
+
+export const ExperienceDescription = styled.div`
+  color: ${theme.colors.lightGunGray};
+  font-size: 8px;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 16px;
     }
 `;
 
@@ -349,8 +379,12 @@ export const ProjectImagesContainer = styled.div`
 
 export const ProjectImagesHeaderText = styled(DescriptionHeaderText)`
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 8px;
+
+    @media (min-width: 768px) {
+        margin-top: 20px;
+    }
 `;
 
 export const ProjectLinksContainer = styled.div`
@@ -370,7 +404,7 @@ export const ProjectImage = styled.img`
 `;
 
 export const ProjectTitle = styled(ExperienceTitle)`
-    font-size: 24px;
+    font-size: 12px;
     margin-bottom: -5px;
 
     @media (min-width: 768px) {
@@ -384,7 +418,7 @@ export const ProjectTitle = styled(ExperienceTitle)`
 
 export const ProjectDescription = styled.div`
     color: ${theme.colors.lightGunGray};
-    font-size: 12px;
+    font-size: 9px;
 
     @media (min-width: 768px) {
         font-size: 16px;
@@ -402,10 +436,11 @@ export const ProjectNavItem = styled.div`
     justify-content: center;
     background-color: transparent;
     border-radius: 8px;
-    margin-top: 10px;
+    margin-top: 1px;
     transition: transform 0.2s;
     cursor: pointer;
     position: relative;
+    transform: scale(0.8);
 
     &:hover {
         transform: scale(1.1);
@@ -419,13 +454,18 @@ export const ProjectNavItem = styled.div`
         right: 0;
         bottom: 0;
     }
+
+    @media (min-width: 768px) {
+        transform: scale(1);
+        margin-top: 10px;
+    }
 `;
 
 export const MoreProjectsNavItem = styled(ProjectNavItem)`
     display: flex;
     justify-content: center;
     width: 50px;
-    height: 70px;
+    height: 45px;
     margin-bottom: 10px;
     align-items: center;
     background-color: rgba(255,255,255, 0.05);
@@ -450,10 +490,16 @@ export const ExperienceNavItem = styled.div`
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease-in-out;
-    margin-top: 10px;
+    margin-top: 1px;
+    transform: scale(0.8);
     
     &:hover {
         background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    @media (min-width: 768px) {
+        transform: scale(1);
+        margin-top: 10px;
     }
 `;
 
@@ -468,9 +514,16 @@ export const ExperienceContainer = styled.div`
 export const ExperienceHeaderContainer = styled.div`
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: flex-start;
+    align-items: center;
     padding: 20px;
+    margin-left: -10px;
+    margin-top: -10px;
+
+    @media (min-width: 768px) {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
 `;
 
 export const ExperienceInfo = styled.div`
@@ -479,36 +532,10 @@ export const ExperienceInfo = styled.div`
     gap: 10px;
 `;
 
-export const ExperienceSubtitle = styled(ExperienceTitle)`
-    font-size: 16px;
-    font-weight: normal;
-
-    @media (min-width: 768px) {
-        font-size: 24px;
-    }
-
-    @media (min-width: 1024px) {
-        font-size: 24px;
-    }
-`;
-
-export const ExperienceDescription = styled.div`
-  color: ${theme.colors.lightGunGray};
-  font-size: 12px;
-
-  @media (min-width: 768px) {
-    font-size: 16px;
-    }
-
-    @media (min-width: 1024px) {
-        font-size: 16px;
-    }
-`;
-
 export const DescriptionText = styled.p`
     margin-top: 5px;
     color: ${theme.colors.lightGunGray};
-    font-size: 14px;
+    font-size: 10px;
 
     @media (min-width: 768px) {
         font-size: 16px;
@@ -526,26 +553,35 @@ export const KeyWordsContent = styled.div`
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: flex-start;
-    margin-top: 0px;
-    gap: 0px 10px;
+    margin-top: -10px;
+    gap: 0px 5px;
+    margin-bottom: 10px;
+
+    @media (min-width: 768px) {
+        gap: 0px 10px;
+    }
 `;
 
 export const KeyWordsText = styled(DescriptionText)`
     font-weight: bold;
-    font-size: 10px;
+    font-size: 7px;
     color: ${theme.colors.deepSpace};
     background: rgba(255, 255, 255, 0.6);
     border-radius: 8px;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
 
     @media (min-width: 768px) {
         font-size: 12px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     @media (min-width: 1024px) {
         font-size: 12px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 `;
 
