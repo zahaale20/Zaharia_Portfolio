@@ -2,15 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import resumeURL from "../assets/Alex_Zaharia_Resume.pdf";
 import GlobalStyle from '../styles/GlobalStyle';
-
-const MainContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  width: 100vw;
-  height: calc(100vh - 145px);
-  position: relative;
-`;
+import { FrameLayout } from '../styles/PageStyle'; 
 
 const ResumeContainer = styled.div`
   display: flex;
@@ -38,11 +30,9 @@ export default function ResumePage() {
     return (
         <>
         <GlobalStyle />
-        <MainContainer>
-            <ResumeContainer>
+        <FrameLayout>
             <PDFContainer src={resumeURL} />
-            </ResumeContainer>
-        </MainContainer>
+        </FrameLayout>
         </>
     );
     }

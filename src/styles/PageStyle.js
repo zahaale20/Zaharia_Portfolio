@@ -10,12 +10,13 @@ export const FrameLayout = styled.div`
     justify-content: flex-start;
     align-items: flex-start;
     position: fixed;
-    top: 160px;
+    top: 140px;
     padding: 15px;
     left: 50%;
     transform: translate(-50%, 0);
     width: 85vw;
     height: 565px;
+    box-shadow: 0 8px 10px -2px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 15px;
     gap: 20px;
@@ -77,71 +78,86 @@ export const OverviewContainer = styled.div`
     }
 `;
 
-//Home Components
-
-export const HomeFrameLayout = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 160px; // Use vh for a more dynamic positioning
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 85vw;
-    height: 565px;
-    background-color: rgba(0, 0, 0, 0.6);
-    box-shadow: 0 8px 10px -2px rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
-    gap: 2vw;
-    padding: 15px;
+export const MainButton = styled.button`
+    color: ${theme.colors.nearlyWhite};
+    background: transparent;
+    border: 1px solid ${theme.colors.nearlyWhite};
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 10px;
+    font-family: 'Futura', sans-serif;
+    cursor: pointer;
+    margin-right: 2vw;
+    transition: transform 0.3s ease-in-out;
+    
+    &:hover {
+        transform: scale(1.04);
+        background-color: ${theme.colors.nearlyWhite};
+        color: ${theme.colors.deepSpace};
+    }
 
     @media (min-width: 768px) {
-        top: 14vh;
-        height: 615px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 12px;
+    }
+
+    @media (min-width: 1024px) { 
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 14px;
     }
 `;
+
+//Home Components
 
 
 export const HomeProfileDisplayContainer = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around; // Ensures even spacing
-    width: 80%; // Responsive width
-    max-width: 1200px; // Prevents the container from becoming too wide on large screens
-    margin: auto; // Centers the container
-    height: auto; // Allows the container to grow with its content
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    height: auto;
     border-radius: 15px;
-    padding: 20px; // Adds some padding inside the container
-    transition: all 0.3s ease; // Smooth transition for resizing
+    padding: 15px;
+    transition: all 0.3s ease;
 
     @media (min-width: 768px) { 
         width: 100%;
-        flex-direction: row; // Switch to row layout for wider screens
-        justify-content: center; // Adjusts content alignment
-        padding: 40px; // Increased padding for larger views
+        flex-direction: row;
+        justify-content: center;
+        padding: 40px;
     }
 
     @media (min-width: 1024px) { 
-        width: 80%; // Adjust the width for very large screens
+        width: 80%;
         gap: 20px;
     }
 `;
 
 export const HomeProfileImage = styled.img`
-    width: 250px; // Makes the image more responsive
+    width: 250px;
     height: auto;
     border-radius: 15px;
-    object-fit: cover; // Ensures the image covers the area
+    object-fit: cover;
     margin: 20px;
 
     @media (min-width: 768px) { 
-        width: 250px; // Adjusts the width on larger screens
+        width: 250px;
     }
 
     @media (min-width: 1200px) { 
-        width: 280px; // Adjusts the width on larger screens
+        width: 280px;
     }
 `;
 
@@ -150,19 +166,19 @@ export const HomeTextContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px; // Adds space between text elements
-    width: 248px; // Ensures the container uses available space
-    padding: 10px; // Adds padding for text readability
+    gap: 20px;
+    width: 248px;
+    padding: 10px;
 
     @media (min-width: 768px) {
-        align-items: flex-start; // Aligns text to the start for wider screens
-        padding: 20px; // More padding for larger screens
+        align-items: flex-start;
+        padding: 20px;
         width: 300px;
     }
 
     @media (min-width: 1024px) {
-        align-items: flex-start; // Aligns text to the start for wider screens
-        padding: 20px; // More padding for larger screens
+        align-items: flex-start;
+        padding: 20px;
         width: 400px;
     }
 `;
@@ -219,41 +235,51 @@ export const HomeButtonXStack = styled.div`
     margin-top: 10px;
 `;
 
-export const MainButton = styled.button`
-    color: ${theme.colors.nearlyWhite};
-    background: transparent;
-    border: 1px solid ${theme.colors.nearlyWhite};
-    border-radius: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 10px;
-    font-family: 'Futura', sans-serif;
+const SocialMediaContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+
+    @media (min-width: 768px) {
+        gap: 2px;
+    }
+
+    @media (min-width: 1024px) {
+        gap: 5px;
+    }
+`;
+
+
+const SocialMediaIcon = styled.a`
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
     cursor: pointer;
-    margin-right: 2vw;
-    transition: transform 0.3s ease-in-out;
-    
+    transition: transform 0.3s ease;
+
     &:hover {
-        transform: scale(1.04);
-        background-color: ${theme.colors.nearlyWhite};
-        color: ${theme.colors.deepSpace};
+        transform: scale(1.075);
+    }
+
+    img {
+        width: 25px;
+        height: auto;
     }
 
     @media (min-width: 768px) {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 25px;
-        padding-right: 25px;
-        font-size: 12px;
+        img {
+        width: 25px;
+        height: auto;
+        }
     }
 
-    @media (min-width: 1024px) { 
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 40px;
-        padding-right: 40px;
-        font-size: 14px;
+    @media (min-width: 1024px) {
+        img {
+        width: 30px;
+        height: auto;
+        }
     }
 `;
 
@@ -308,65 +334,65 @@ export const ExperienceTitle = styled.h1`
 
 // ProjectsPage Components
 export const ProjectDescImage = styled(ExperienceImage)`
-  border-radius: 0px;
-  width: 40%;
-  margin: 0px;
+    border-radius: 0px;
+    width: 40%;
+    margin: 0px;
 `;
 
 export const ProjectImagesContainer = styled.div`
-  display: flex;
-  overflow-x: auto;
-  align-self: stretch;
-  margin: 0px;
-  margin-bottom: 20px;
+    display: flex;
+    overflow-x: auto;
+    align-self: stretch;
+    margin: 0px;
+    margin-bottom: 20px;
 `;
 
 export const ProjectImagesHeaderText = styled(DescriptionHeaderText)`
-  font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 8px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 8px;
 `;
 
 export const ProjectLinksContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-bottom: 20px;
-  gap: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    gap: 0px;
 `;
 
 export const ProjectImage = styled.img`
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 
 `;
 
 export const ProjectTitle = styled(ExperienceTitle)`
-  font-size: 24px;
-  margin-bottom: -5px;
+    font-size: 24px;
+    margin-bottom: -5px;
 
-  @media (min-width: 768px) {
-    font-size: 30px;
-  }
+    @media (min-width: 768px) {
+        font-size: 30px;
+    }
 
-  @media (min-width: 1024px) {
-      font-size: 40px;
-  }
+    @media (min-width: 1024px) {
+        font-size: 40px;
+    }
 `;
 
 export const ProjectDescription = styled.div`
-  color: ${theme.colors.lightGunGray};
-  font-size: 12px;
+    color: ${theme.colors.lightGunGray};
+    font-size: 12px;
 
-  @media (min-width: 768px) {
-    font-size: 16px;
-  }
+    @media (min-width: 768px) {
+        font-size: 16px;
+    }
 
-  @media (min-width: 1024px) {
-      font-size: 16px;
-  }
+    @media (min-width: 1024px) {
+        font-size: 16px;
+    }
 `;
 
 export const ProjectNavItem = styled.div`
@@ -396,20 +422,20 @@ export const ProjectNavItem = styled.div`
 `;
 
 export const MoreProjectsNavItem = styled(ProjectNavItem)`
-  display: flex;
-  justify-content: center;
-  width: 50px;
-  height: 70px;
-  margin-bottom: 10px;
-  align-items: center;
-  background-color: rgba(255,255,255, 0.05);
-  border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 70px;
+    margin-bottom: 10px;
+    align-items: center;
+    background-color: rgba(255,255,255, 0.05);
+    border-radius: 10px;
 `;
 
 export const MoreProjectsText = styled.span`
-  font-size: 40px;
-  color: rgba(255,255,255, 0.6);
-  margin-bottom: 20px;
+    font-size: 40px;
+    color: rgba(255,255,255, 0.6);
+    margin-bottom: 20px;
 `;
 
 // Unsorted Components

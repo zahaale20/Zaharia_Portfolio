@@ -163,7 +163,7 @@ const projects = [
 
 const renderLinkButtons = (project) => {
   const linkTypes = [
-    { key: 'DesignUrl', text: 'Design Docs' },
+    { key: 'DesignUrl', text: 'Files' },
     { key: 'ImplementationUrl', text: 'Implementation' },
     { key: 'githubUrl', text: 'GitHub Repo' },
     { key: 'socialmediaURL', text: 'Social Media' },

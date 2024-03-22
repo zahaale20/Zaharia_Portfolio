@@ -24,7 +24,7 @@ const Nav = styled.nav`
   transform: translateX(-50%);
   z-index: 1000;
 
-  @media (min-width: 768px) { /* Adjust for tablets */
+  @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 15px;
@@ -110,54 +110,6 @@ const LogoImage = styled.img`
   }
 `;
 
-const SocialMediaContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2px;
-
-  @media (min-width: 768px) {
-    gap: 2px;
-  }
-
-  @media (min-width: 1024px) {
-    gap: 5px;
-  }
-
-`;
-
-const SocialMediaIcon = styled.a`
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  cursor: pointer;
-  transition: transform 0.3s ease;
-
-  &:hover {
-    transform: scale(1.075);
-  }
-
-  img {
-    width: 20px;
-    height: auto;
-  }
-
-  @media (min-width: 768px) {
-    img {
-      width: 25px;
-      height: auto;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    img {
-      width: 30px;
-      height: auto;
-    }
-  }
-`;
-
 
 function Navbar() {
     const navigate = useNavigate();
@@ -188,24 +140,8 @@ function Navbar() {
               <Separator>|</Separator>
               
               <Dropbtn onClick={() => handleNavigation('/resume')}>RESUME</Dropbtn>
-              <Separator></Separator>
-
-              <SocialMediaContainer>
-                <SocialMediaIcon href="https://github.com/zahaale20" target="_blank">
-                    <img src={githubIcon} alt="GitHub" />
-                </SocialMediaIcon>
-                <SocialMediaIcon href="https://linkedin.com/in/alexczaharia" target="_blank">
-                    <img src={linkedinIcon} alt="LinkedIn" />
-                </SocialMediaIcon>
-                <SocialMediaIcon href="https://instagram.com/alex.z4777" target="_blank">
-                    <img src={instagramIcon} alt="Instagram" />
-                </SocialMediaIcon>
-              </SocialMediaContainer>
-
-              <ContactMeButton onClick={handleEmailOpen}>
-                  CONTACT ME
-              </ContactMeButton>
             </SectionsContainer>
+            
         </Nav>
     );
 }

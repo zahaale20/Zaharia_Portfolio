@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import GlobalStyle from '../styles/GlobalStyle';
 import profilepicURL  from '../assets/Profile-pic.png';
 import {
-    HomeFrameLayout,
+    FrameLayout,
     HomeProfileDisplayContainer,
     HomeProfileImage,
     HomeTextContainer,
@@ -28,7 +28,7 @@ function HomePage() {
     return (
         <>
             <GlobalStyle />
-                <HomeFrameLayout>
+                <FrameLayout>
                         <HomeProfileDisplayContainer>
                             <HomeProfileImage src={profilepicURL} alt="Profile Picture"/>
                             <HomeTextContainer>
@@ -44,7 +44,7 @@ function HomePage() {
                                 </HomeButtonXStack>
                             </HomeTextContainer>
                         </HomeProfileDisplayContainer>
-                </HomeFrameLayout>
+                </FrameLayout>
         </>
     );
 }

@@ -8,7 +8,7 @@ import ExperiencesPage from './pages/ExperiencesPage';
 import ResumePage from './pages/ResumePage';
 
 const PageContainer = styled.div`
-    height: 100vh;
+    height: 1000vh;
     width: 100%;
     display: flex;
     flex-direction: column;
