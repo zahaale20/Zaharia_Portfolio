@@ -518,12 +518,14 @@ export const ExperienceHeaderContainer = styled.div`
     justify-content: flex-start;
     align-items: center;
     padding: 20px;
+    padding-bottom: 10px;
     margin-left: -10px;
     margin-top: -10px;
 
     @media (min-width: 768px) {
         margin-left: 0px;
         margin-top: 0px;
+        padding: 20px;
     }
 `;
 
