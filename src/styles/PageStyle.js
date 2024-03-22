@@ -117,6 +117,10 @@ export const MainButton = styled.button`
     }
 `;
 
+export const Signature = styled.p`
+  font-size: 10px;
+`;
+
 //Home Components
 
 
@@ -269,13 +273,13 @@ export const SocialMediaIcon = styled.a`
     }
 
     img {
-        width: 25px;
+        width: 30px;
         height: auto;
     }
 
     @media (min-width: 768px) {
         img {
-        width: 25px;
+        width: 30px;
         height: auto;
         }
     }
