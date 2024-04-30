@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.6848c159.js",
+    "main.js": "/static/js/main.836f8cd1.js",
     "static/js/453.2577e14c.chunk.js": "/static/js/453.2577e14c.chunk.js",
     "static/media/Profile-pic.png": "/static/media/Profile-pic.256546d09eb8d1001b01.png",
     "static/media/Don1.jpg": "/static/media/Don1.b2283ef543f10de1e5bd.jpg",
@@ -38,25 +38,25 @@
     "static/media/education.png": "/static/media/education.3ba82f95c981619ce303.png",
     "static/media/volunteering.png": "/static/media/volunteering.0548738f8911b20ecadb.png",
     "static/media/5.png": "/static/media/5.8b1f0849865276096223.png",
-    "static/media/python.png": "/static/media/python.55c72a1bc79c7ed5c3a9.png",
     "static/media/panera.png": "/static/media/panera.905e04a12ae38679501c.png",
+    "static/media/python2.png": "/static/media/python2.4dbdd1e33456338dd9f0.png",
     "static/media/work.png": "/static/media/work.69add970469f6278de86.png",
     "static/media/uc3m.png": "/static/media/uc3m.e37a3d915b7411478df0.png",
+    "static/media/Alex_Zaharia_Resume.pdf": "/static/media/Alex_Zaharia_Resume.92a0f780ca320d8890cd.pdf",
     "static/media/gradepotential.png": "/static/media/gradepotential.b3fc856a257d02f324bf.png",
     "static/media/zaharia_logo.png": "/static/media/zaharia_logo.bd732d33aed8155185f0.png",
     "static/media/divideconquer.png": "/static/media/divideconquer.ac5396033623c318d69b.png",
-    "static/media/Alex_Zaharia_Resume.pdf": "/static/media/Alex_Zaharia_Resume.424ec09e2325b6764e52.pdf",
     "static/media/forgottenfaces.jpeg": "/static/media/forgottenfaces.854309503e7ad9e4a597.jpeg",
     "static/media/summit.jpeg": "/static/media/summit.cdbda28b8d196fe0bd18.jpeg",
     "static/media/dormcuts.jpg": "/static/media/dormcuts.a82731fbaa36bbd8e626.jpg",
     "static/media/spotify.png": "/static/media/spotify.6361b2edf05c7cdadfa0.png",
     "index.html": "/index.html",
     "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.6848c159.js.map": "/static/js/main.6848c159.js.map",
+    "main.836f8cd1.js.map": "/static/js/main.836f8cd1.js.map",
     "453.2577e14c.chunk.js.map": "/static/js/453.2577e14c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.6848c159.js"
+    "static/js/main.836f8cd1.js"
   ]
 }
