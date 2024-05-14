@@ -18,6 +18,7 @@ import {
 import linkedinIcon from '../assets/linkedin.png';
 import githubIcon from '../assets/github.png';
 import instagramIcon from '../assets/instagram.png';
+import spotifyIcon from '../assets/spotify.png';
 
 function HomePage() {
     const navigate = useNavigate();
@@ -57,6 +58,9 @@ function HomePage() {
                                     </SocialMediaIcon>
                                     <SocialMediaIcon href="https://instagram.com/alex.z4777" target="_blank">
                                         <img src={instagramIcon} alt="Instagram" />
+                                    </SocialMediaIcon>
+                                    <SocialMediaIcon href="https://open.spotify.com/user/12186288217?si=a7221db5abc54913" target="_blank">
+                                        <img src={spotifyIcon} alt="Spotify" />
                                     </SocialMediaIcon>
                                 </SocialMediaContainer>
                             </HomeTextContainer>

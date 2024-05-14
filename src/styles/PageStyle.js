@@ -84,14 +84,14 @@ export const MainButton = styled.button`
     background: transparent;
     border: 1px solid ${theme.colors.nearlyWhite};
     border-radius: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 8px;
+    font-size: 12px;
     font-family: 'Futura', sans-serif;
     cursor: pointer;
-    margin-right: 2vw;
+    margin-right: 1vw;
     transition: transform 0.3s ease-in-out;
     
     &:hover {
@@ -101,11 +101,9 @@ export const MainButton = styled.button`
     }
 
     @media (min-width: 768px) {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 25px;
-        padding-right: 25px;
         font-size: 12px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     @media (min-width: 1024px) { 
@@ -124,25 +122,26 @@ export const HomeProfileDisplayContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 80%;
-    max-width: 1200px;
+    justify-content: flex-start;
+    background-color: rgba(255, 255, 255, 0.05);
+    max-width: 800px;
     margin: auto;
-    height: auto;
+    height: 530px;
     border-radius: 15px;
     padding: 15px;
     transition: all 0.3s ease;
 
     @media (min-width: 768px) { 
-        width: 100%;
+        width: 700px;
         flex-direction: row;
         justify-content: center;
-        padding: 40px;
+        height: 280px;
     }
 
     @media (min-width: 1024px) { 
         width: 80%;
         gap: 20px;
+        height: 330px;
     }
 `;
 
@@ -152,7 +151,6 @@ export const HomeProfileImage = styled.img`
     border-radius: 15px;
     object-fit: cover;
     margin: 20px;
-    margin-top: 0px;
 
     @media (min-width: 768px) { 
         width: 250px;
@@ -160,7 +158,7 @@ export const HomeProfileImage = styled.img`
     }
 
     @media (min-width: 1200px) { 
-        width: 280px;
+        width: 300px;
         margin: 20px;
     }
 `;
@@ -170,14 +168,13 @@ export const HomeTextContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     width: 248px;
 
     @media (min-width: 768px) {
         align-items: flex-start;
         padding: 20px;
         width: 300px;
-        margin-top: 50px;
     }
 
     @media (min-width: 1024px) {
@@ -212,25 +209,22 @@ export const HomeDescriptionText = styled.p`
     font-size: 14px;
     font-family: sans-serif;
     line-height: 20px;
+    text-align: start;
     color: ${theme.colors.lightGunGray};
     margin: 0px;
 
     @media (min-width: 768px) {
         font-size: 14px;
         line-height: 20px;
-        text-align: start;
     }
 
     @media (min-width: 1024px) {
         font-size: 16px;
         line-height: 25px;
-        text-align: start;
     }
 
     @media (min-width: 1200px) {
-        font-size: 20px;
-        line-height: 25px;
-        text-align: start;
+        font-size: 18px;
     }
 `;
 
@@ -238,6 +232,7 @@ export const HomeButtonXStack = styled.div`
     display: flex;
     flex-direction: row;
     margin-top: 10px;
+    gap: 1vw;
 `;
 
 export const SocialMediaContainer = styled.div`
@@ -245,7 +240,6 @@ export const SocialMediaContainer = styled.div`
     align-items: center;
     justify-content: center;
     gap: 20px;
-    margin-top: 10px;
 
     @media (min-width: 768px) {
         gap: 2px;
