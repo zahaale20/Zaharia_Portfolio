@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.2b5d6b60.js",
+    "main.js": "/static/js/main.5703e4be.js",
     "static/js/453.2577e14c.chunk.js": "/static/js/453.2577e14c.chunk.js",
     "static/media/Profile-pic.png": "/static/media/Profile-pic.256546d09eb8d1001b01.png",
     "static/media/Don1.jpg": "/static/media/Don1.b2283ef543f10de1e5bd.jpg",
@@ -12,10 +12,13 @@
     "static/media/haggle.jpg": "/static/media/haggle.a128314f8dbe5233a272.jpg",
     "static/media/calpoly.png": "/static/media/calpoly.547a1363b8b0a1b24249.png",
     "static/media/ib.png": "/static/media/ib.a0d8f58b1e862a68d6e8.png",
+    "static/media/ad1.png": "/static/media/ad1.54e6487e19450156a5c2.png",
     "static/media/3.png": "/static/media/3.b41954bfc1a904a50d1a.png",
     "static/media/9.png": "/static/media/9.952eed54a2eef7ff83b3.png",
+    "static/media/ad2.png": "/static/media/ad2.42ef813e6de34b9ba00e.png",
     "static/media/7.png": "/static/media/7.e5baf7c50bca9838f4f6.png",
     "static/media/pixelthugz.jpg": "/static/media/pixelthugz.bc963ede1a682740abbb.jpg",
+    "static/media/ad3.png": "/static/media/ad3.05ac34f9f7fc113ab8cb.png",
     "static/media/editdistance.png": "/static/media/editdistance.31898e5b30df9b6e5311.png",
     "static/media/issaquah.png": "/static/media/issaquah.d33fe7fa4ded40c23ed9.png",
     "static/media/2.png": "/static/media/2.15322b415b493360952b.png",
@@ -56,11 +59,11 @@
     "static/media/spotify.png": "/static/media/spotify.6361b2edf05c7cdadfa0.png",
     "index.html": "/index.html",
     "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.2b5d6b60.js.map": "/static/js/main.2b5d6b60.js.map",
+    "main.5703e4be.js.map": "/static/js/main.5703e4be.js.map",
     "453.2577e14c.chunk.js.map": "/static/js/453.2577e14c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.2b5d6b60.js"
+    "static/js/main.5703e4be.js"
   ]
 }
