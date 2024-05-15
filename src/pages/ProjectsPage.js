@@ -39,6 +39,10 @@ import openDP from '../assets/opendp.png';
 import components from '../assets/components.png';
 import editdistance from '../assets/editdistance.png';
 import python from '../assets/python2.png';
+import information_retrieval from '../assets/information-retrieval.png';
+import memory from '../assets/memory.png';
+import lwp from '../assets/lwp.png';
+import eda from '../assets/eda.png';
 
 import thug1 from '../assets/Don1.jpg';
 import thug2 from '../assets/Don2.jpg';
@@ -62,10 +66,10 @@ const projects = [
     title: 'Memory Simulator',
     dateRange: 'May 2024',
     location: 'San Luis Obispo, CA',
-    keywords: ['Memory Management', 'Python', 'TLB', 'Page Table', 'Backing Store', 'Physical Memory', 'Frames', 'Reference Sequences', 'PRAs'],
+    keywords: ['Memory Management', 'Python', 'TLB', 'Page Table', 'Backing Store', 'Physical Memory', 'PRAs'],
     description: 'This memory simulator project implements a software-based memory management unit (MMU) using Python, showcasing various page replacement algorithms including FIFO, LRU, and Optimal. The program simulates the process of translating logical to physical addresses and handles page faults with a simulated physical memory and TLB (Translation Lookaside Buffer). Users can specify the reference sequence file, the number of frames, and the page replacement algorithm via command line, allowing for dynamic testing of different memory scenarios. The project includes functionality to read a binary backing store, mimic real-world memory operations, and calculate and display memory access statistics such as page faults and TLB hits.',
     githubUrl: 'https://github.com/zahaale20/MemorySimulator',
-    imageUrl: python,
+    imageUrl: memory,
   },
   {
     id: 2,
@@ -75,7 +79,7 @@ const projects = [
     keywords: ['Python', 'EDA','Pandas', 'Numpy', 'Matplotlib'],
     description: 'This project involves a detailed exploratory data analysis on an insurance company dataset to determine key attributes for policy classification. Using Python and tools like pandas, matplotlib, and seaborn, the analysis includes data preprocessing, visualization of numerical distributions, and relationship assessments between policy types and demographic variables. Statistical methods like correlation matrices and chi-square tests identify age and motor value as significant predictors. Insights derived from these analyses inform targeted marketing strategies, demonstrating the importance of tailored data analysis in policyholder segmentation.',
     jupyterNotebookUrl: 'https://colab.research.google.com/drive/1QqOQNr1A41ghGneQpvu_3BWcypmLV-II?usp=sharing',
-    imageUrl: python,
+    imageUrl: eda,
   },
   {
     id: 3,
@@ -84,8 +88,8 @@ const projects = [
     location: 'San Luis Obispo, CA',
     keywords: ['LWP', 'Thread Management', 'Round Robin Scheduling', 'Memory Allocation', 'Context Switching', 'Stack Configuration'],
     description: 'This library provides a C API for creating and managing threads using a round-robin scheduler. This scheduling method employs a queue to determine the sequence in which threads are executed. The development of this threading library involved two main stages. Initially, memory was allocated for each threads stack, which involved setting aside and configuring a designated memory area for each threads operations. The second stage was managing the transition of control between threads, which required maintaining an accurate record of each threads state, including their registers and stack pointers.',
-    githubUrl: 'https://github.com/zahaale20/MemorySimulator',
-    imageUrl: python,
+    githubUrl: 'https://github.com/zahaale20/Lightweight_Processes',
+    imageUrl: lwp,
   },
   {
     id: 4,
@@ -95,7 +99,7 @@ const projects = [
     keywords: ['Backend', 'Python', 'Text Preprocessing','TF-IDF', 'Cosine Similarity', 'Document Ranking', 'Normalization'],
     description: 'This Python program implements a document retrieval system using the TF-IDF algorithm and cosine similarity to process and retrieve highly relevant documents for specific queries. It efficiently handles text data preprocessing, including tokenization, removal of punctuation and stopwords, and normalization, to enhance the accuracy of document retrieval. The system calculates TF-IDF scores to quantify the importance of words within the document collection relative to their frequency across all documents, enabling effective information retrieval. By evaluating for cosine similarity, the program assesses the relevance of documents to a given query, ranking them to identify the most relevant documents to each query.',
     jupyterNotebookUrl: 'https://colab.research.google.com/drive/1F9_drF88K16Ld4sI3TIZ0kHf_LhE4UZz?usp=sharing',
-    imageUrl: python,
+    imageUrl: information_retrieval,
   },
   {
     id: 5,
