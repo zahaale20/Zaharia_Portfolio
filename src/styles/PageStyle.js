@@ -59,23 +59,36 @@ export const VertNavBar = styled.div`
     }
 `;
 
-export const OverviewContainer = styled.div`
+export const MainContainer = styled.div`
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 85%;
+    flex: 3;  // Allocate more space to main content
     overflow: auto;
     height: 565px;
     gap: 20px;
 
     @media (min-width: 768px) {
-        width: 900px;
         height: 615px;
     }
 
     @media (min-width: 1024px) {
-        width: 900px;
         height: 615px;
+    }
+`;
+
+export const AdContainer = styled.div`
+    display: none; /* Set default display to none */
+
+    @media (min-width: 1024px) {
+        display: flex; /* Only display on screens wider than 1024px */
+        flex-direction: column;
+        flex: 1;
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 15px;
+        padding: 20px;
+        overflow-y: auto;
+        height: 575px;
     }
 `;
 
@@ -239,6 +252,7 @@ export const SocialMediaContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 10px;
     gap: 20px;
 
     @media (min-width: 768px) {

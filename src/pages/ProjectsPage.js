@@ -7,7 +7,7 @@ import {
   VertNavBar,
   VertScroll,
   ProjectNavItem,
-  OverviewContainer,
+  MainContainer,
   ExperienceContainer,
   ExperienceHeaderContainer,
   ExperienceImage,
@@ -25,7 +25,8 @@ import {
   ProjectImagesContainer,
   ProjectLinksContainer,
   MoreProjectsNavItem,
-  MoreProjectsText
+  MoreProjectsText,
+  AdContainer
 } from '../styles/PageStyle'; 
 
 import haggle from '../assets/haggle.jpg';
@@ -38,11 +39,14 @@ import divideconquer from '../assets/divideconquer.png';
 import openDP from '../assets/opendp.png';
 import components from '../assets/components.png';
 import editdistance from '../assets/editdistance.png';
-import python from '../assets/python2.png';
 import information_retrieval from '../assets/information-retrieval.png';
 import memory from '../assets/memory.png';
 import lwp from '../assets/lwp.png';
 import eda from '../assets/eda.png';
+
+import ad1 from '../assets/ad1.png';
+import ad2 from '../assets/ad2.png';
+import ad3 from '../assets/ad3.png';
 
 import thug1 from '../assets/Don1.jpg';
 import thug2 from '../assets/Don2.jpg';
@@ -58,11 +62,36 @@ import thug11 from '../assets/7.png';
 import thug12 from '../assets/8.png';
 import thug13 from '../assets/9.png';
 
+import real_estate_ml from '../assets/real_estate_ml.png';
+import tinyfs from '../assets/tinyfs.png';
+
 
 
 const projects = [
   {
+    id: 0,
+    title: 'Predictive Modeling Tool for Real Estate Prices (In the USA)',
+    dateRange: 'June 2024',
+    location: 'San Luis Obispo, CA',
+    keywords: ['Machine Learning', 'Exploratory Data Analysis', 'Preprocessing', 'Linear Regression', 'Decision Tree Regression', 'Gradient Boosting Regression', 'XGBoost Regression'],
+    description: 'This real estate valuation tool project develops a predictive modeling application to estimate U.S. home prices based on location and property features. Utilizing historical data and regression techniques, the tool refines various predictive models to enhance accuracy in home valuations. Users can input property details through an intuitive interface, which the system processes using advanced algorithms to predict current market values. The project facilitates comparative analysis of different modeling methods, offering insights into the most effective techniques for real estate price prediction.',
+    jupyterNotebookUrl: 'https://colab.research.google.com/drive/1Ds0wuCkqvZBGuMCIfa94rwXpi48RV46R?usp=sharing',
+    predictionToolUrl: 'https://huggingface.co/spaces/malona/Real-Estate-Data-Analysis',
+    googleSlidesUrl: 'https://docs.google.com/presentation/d/19IFDRqBp30ZlvmGFc0_KDfJ_FjbIDsws09gtf77d2GU/edit?usp=sharing',
+    imageUrl: real_estate_ml,
+  },
+  {
     id: 1,
+    title: 'Tiny FS',
+    dateRange: 'June 2024',
+    location: 'San Luis Obispo, CA',
+    keywords: ['TinyFS', 'Linked Lists', 'File System', 'Timestamps', 'File Renaming', 'Directory Listing', 'Data Management'],
+    description: 'This TinyFS implementation uses linked lists to manage data efficiently, leveraging their O(1) insertion time despite the O(n) search complexity, which slows some operations. The additional features we added include timestamps , file renaming, and directory listing, enhancing user interaction and system utility. While TinyFS lacks full-scale file system features and hierarchical directories, impacting some performance aspects, it remains bug-free and reliable, effectively meeting specific operational needs and user requirements within its defined scope.',
+    githubUrl: 'https://github.com/zahaale20/MemorySimulator',
+    imageUrl: tinyfs,
+  },
+  {
+    id: 2,
     title: 'Memory Simulator',
     dateRange: 'May 2024',
     location: 'San Luis Obispo, CA',
@@ -72,7 +101,7 @@ const projects = [
     imageUrl: memory,
   },
   {
-    id: 2,
+    id: 3,
     title: 'Exploratory Data Analysis',
     dateRange: 'May 2024',
     location: 'San Luis Obispo, CA',
@@ -82,7 +111,7 @@ const projects = [
     imageUrl: eda,
   },
   {
-    id: 3,
+    id: 4,
     title: 'Lightweight Processes',
     dateRange: 'April 2024',
     location: 'San Luis Obispo, CA',
@@ -92,7 +121,7 @@ const projects = [
     imageUrl: lwp,
   },
   {
-    id: 4,
+    id: 5,
     title: 'Information Retrieval',
     dateRange: 'April 2024',
     location: 'San Luis Obispo, CA',
@@ -102,7 +131,7 @@ const projects = [
     imageUrl: information_retrieval,
   },
   {
-    id: 5,
+    id: 6,
     title: 'Database Modeling',
     dateRange: 'Feb 2024 - Present',
     location: 'San Luis Obispo, CA',
@@ -113,17 +142,18 @@ const projects = [
     imageUrl: jambajuice,
   },
   {
-    id: 6,
+    id: 7,
     title: 'haggle',
     dateRange: 'Jan 2023 - Present',
     location: 'San Luis Obispo, CA',
     keywords: ['Full Stack', 'React','Javascript', 'HTML/CSS', 'MySQL', 'PostgreSQL', 'Supabase', 'Git'],
     description: 'A digital marketplace, haggle helps Cal Poly students buy, sell, and trade within the San Luis Obispo community. This app not only showcases local listings across a variety of categories, but also facilitates a seamless communication stream between users, allowing them to send and receive offers directly within the platform.  Moreover, users enjoy complete control over their listings, with easy-to-use tools for managing and updating offers. Whether you are decluttering your dorm, searching for textbooks, or finding unique local treasures, Haggle will help you get it done.',
     githubUrl: 'https://github.com/Velevynn/haggle',
+    websiteUrl: 'https://salmon-meadow-05ba8081e.5.azurestaticapps.net/',
     imageUrl: haggle,
   },
   {
-    id: 7,
+    id: 8,
     title: 'GridIron GPT',
     dateRange: 'Sept 2023 - Present',
     location: 'San Luis Obispo, CA',
@@ -133,7 +163,7 @@ const projects = [
     imageUrl: gridirongpt,
   },
   {
-    id: 8,
+    id: 9,
     title: 'Differential Privacy',
     dateRange: 'Jun 2023 - Aug 2023',
     location: 'San Luis Obispo, CA',
@@ -143,7 +173,7 @@ const projects = [
     imageUrl: openDP,
   },
   {
-    id: 9,
+    id: 10,
     title: 'NFL QB Analysis',
     dateRange: 'Jun 2023 - Aug 2023',
     location: 'San Luis Obispo, CA',
@@ -153,7 +183,7 @@ const projects = [
     imageUrl: apachespark,
   },
   {
-    id: 10,
+    id: 11,
     title: 'Edit Distance',
     dateRange: 'Jan 2023',
     location: 'San Luis Obispo, CA',
@@ -163,7 +193,7 @@ const projects = [
     imageUrl: editdistance,
   },
   {
-    id: 11,
+    id: 12,
     title: 'Strongly Connected Components',
     dateRange: 'Jan 2023',
     location: 'San Luis Obispo, CA',
@@ -173,7 +203,7 @@ const projects = [
     imageUrl: components,
   },
   {
-    id: 12,
+    id: 13,
     title: 'Divide and Conquer',
     dateRange: 'Jan 2023',
     location: 'San Luis Obispo, CA',
@@ -183,7 +213,7 @@ const projects = [
     imageUrl: divideconquer,
   },
   {
-    id: 13,
+    id: 14,
     title: 'Secret Society of Pixel Thugs',
     dateRange: 'Apr 2021 - Aug 2021',
     location: 'San Luis Obispo, CA',
@@ -194,7 +224,7 @@ const projects = [
     imageUrls: [thug1, thug2, thug3, thug4, thug5, thug6, thug7, thug8, thug9, thug10, thug11, thug12, thug13]
   },
   {
-    id: 14,
+    id: 15,
     title: 'HODLRocket',
     dateRange: 'Apr 2020 - Aug 2020',
     location: 'San Luis Obispo, CA',
@@ -213,6 +243,9 @@ const renderLinkButtons = (project) => {
     { key: 'githubUrl', text: 'GitHub Repo' },
     { key: 'socialmediaURL', text: 'Social Media' },
     { key: 'jupyterNotebookUrl', text: 'Jupyter Notebook' },
+    { key: 'predictionToolUrl', text: 'Prediction Tool' },
+    { key: 'googleSlidesUrl', text: 'Google Slides' },
+    { key: 'websiteUrl', text: 'Website' },
   ];
 
   // Filter out the link types that are not available for this project
@@ -229,6 +262,8 @@ const renderLinkButtons = (project) => {
 function ProjectsPage() {
   const [selectedProjectId, setSelectedProjectId] = useState(projects[0].id);
   const projectRefs = useRef(new Array());
+  const [adIndex, setAdIndex] = useState(0);
+  const adImages = [ad1, ad2, ad3];
 
   const handleGitHubClick = () => {
     window.open('https://github.com/zahaale20', '_blank');
@@ -242,6 +277,14 @@ function ProjectsPage() {
       projectRefs.current[selectedProjectIndex].scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }, [selectedProjectId]);
+
+  useEffect(() => {
+    // Change ad image every 3 seconds
+    const intervalId = setInterval(() => {
+      setAdIndex((prevAdIndex) => (prevAdIndex + 1) % adImages.length);
+    }, 8000);
+    return () => clearInterval(intervalId);
+  }, []);
 
   return (
     <>
@@ -264,7 +307,7 @@ function ProjectsPage() {
             </VertScroll>
           </VertNavBar>
   
-          <OverviewContainer>
+          <MainContainer>
             {projects.map((project, index) => (
               <div ref={(el) => (projectRefs.current[index] = el)} key={project.id}>
                 <ExperienceContainer>
@@ -305,7 +348,10 @@ function ProjectsPage() {
                 </ExperienceContainer>
               </div>
             ))}
-          </OverviewContainer>
+          </MainContainer>
+          <AdContainer>
+            <img src={adImages[adIndex]} alt="Advertisement" style={{ width: '100%', height: 'auto', borderRadius: '15px' }} />
+          </AdContainer>
         </FrameLayout>
     </>
   );

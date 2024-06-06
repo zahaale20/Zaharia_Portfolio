@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import GlobalStyle from '../styles/GlobalStyle';
 import {
   FrameLayout,
-  OverviewContainer,
+  MainContainer,
   ExperienceContainer,
   DescriptionText,
   DescriptionHeaderText,
@@ -17,7 +17,8 @@ import {
   ExperienceSubtitle,
   ExperienceDescription,
   ExperienceDescriptionContainer,
-  ListItem
+  ListItem,
+  AdContainer
 } from '../styles/PageStyle'; 
 
 import calpoly from '../assets/calpoly.png';
@@ -39,6 +40,10 @@ import education from '../assets/education.png';
 import work from '../assets/work.png';
 import volunteering from '../assets/volunteering.png';
 import achievements from '../assets/achievements.png';
+
+import ad1 from '../assets/ad1.png';
+import ad2 from '../assets/ad2.png';
+import ad3 from '../assets/ad3.png';
 
 const education_experiences = [
   {
@@ -240,6 +245,17 @@ function ExperiencesPage() {
     ))
   );
 
+  const [adIndex, setAdIndex] = useState(0);
+  const adImages = [ad1, ad2, ad3];
+
+  useEffect(() => {
+    // Change ad image every 3 seconds
+    const intervalId = setInterval(() => {
+      setAdIndex((prevAdIndex) => (prevAdIndex + 1) % adImages.length);
+    }, 8000);
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <>
       <GlobalStyle />
@@ -266,9 +282,12 @@ function ExperiencesPage() {
               <img src={achievements} alt="Achievements" style={{width: '35px', height: '35px'}} />
             </ExperienceNavItem>
           </VertNavBar>
-          <OverviewContainer>
+          <MainContainer>
             {renderExperiences()}
-          </OverviewContainer>
+          </MainContainer>
+          <AdContainer>
+            <img src={adImages[adIndex]} alt="Advertisement" style={{ width: '100%', height: 'auto', borderRadius: '15px' }} />
+          </AdContainer>
         </FrameLayout>
     </>
   );
