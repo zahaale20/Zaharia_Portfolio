@@ -50,7 +50,7 @@ const education_experiences = [
     id: 1,
     title: 'California Polytechnic State University',
     subtitle: 'BS in Computer Science',
-    dateRange: 'Sep 2020 - Dec 2024',
+    dateRange: 'Sep 2020 - June 2024',
     location: 'San Luis Obispo, CA',
     imageUrl: calpoly,
   },

@@ -78,10 +78,10 @@ export const MainContainer = styled.div`
 `;
 
 export const AdContainer = styled.div`
-    display: none; /* Set default display to none */
+    display: none;
 
     @media (min-width: 1024px) {
-        display: flex; /* Only display on screens wider than 1024px */
+        display: flex;
         flex-direction: column;
         flex: 1;
         background-color: rgba(255, 255, 255, 0.05);
@@ -97,11 +97,11 @@ export const MainButton = styled.button`
     background: transparent;
     border: 1px solid ${theme.colors.nearlyWhite};
     border-radius: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 8px;
     font-family: 'Futura', sans-serif;
     cursor: pointer;
     margin-right: 1vw;
@@ -571,7 +571,7 @@ export const KeyWordsContent = styled.div`
     margin-bottom: 10px;
 
     @media (min-width: 768px) {
-        gap: 0px 10px;
+        gap: 0px 5px;
     }
 `;
 
