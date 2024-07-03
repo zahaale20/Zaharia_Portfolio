@@ -98,7 +98,7 @@ const work_experiences = [
     title: 'Founder / Barber',
     subtitle: 'SLO Dorm Cuts',
     keywords: ['Haircutting', 'Business Development', 'Marketing', 'Social Media', 'Adobe Illustrator', 'Adobe Photoshop'],
-    description: '● Launched a convenient haircutting service at Cal Poly, utilizing innovative marketing strategies to quickly become a recognized name among students\n● Set up an an efficient appointment booking tool to enhance client experience and operational efficiency\n● Fostered a strong campus network through exceptional service and community engagement, significantly contributing to the business\'s growth and reputation\n● Created a brand identity by designing logos, banners, business cards, and instagram posts using Adobe Illustrator and Photoshop',
+    description: '● Launched a convenient haircutting service at Cal Poly, utilizing innovative marketing strategies to quickly become a recognized name among students\n● Set up an efficient appointment booking tool to enhance client experience and operational efficiency\n● Fostered a strong campus network through exceptional service and community engagement, significantly contributing to the business\'s growth and reputation\n● Created a brand identity by designing logos, banners, business cards, and instagram posts using Adobe Illustrator and Photoshop',
     dateRange: 'Jan 2021 - Aug 2022',
     location: 'San Luis Obispo, CA',
     imageUrl: dormcuts,
