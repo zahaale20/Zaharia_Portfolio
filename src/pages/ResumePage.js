@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import resumeURL from "../assets/Alex_Zaharia_Complete_Resume.pdf";
+import resumeURL from "../assets/Alex_Zaharia_Resume_SWE.pdf";
 import GlobalStyle from '../styles/GlobalStyle';
 import { FrameLayout } from '../styles/PageStyle'; 
 

@@ -78,7 +78,7 @@ const work_experiences = [
     title: 'Computer Science Tutor',
     subtitle: 'Grade Potential',
     keywords: ['Leadership', 'Adaptability', 'Java', 'Python', 'SQL', 'Educational Material Design', 'Teaching'],
-    description: '● Demonstrating leadership, adaptability, and interpersonal skills by mentoring students to reach their academic computer science goals\n● Designing lesson plans, study materials, and hands-on projects tailored to individual students\' needs and learning styles, focusing on Java and Python, data analysis in SQL, Pandas, and R, and hardware',
+    description: '● Empowered 30+ students to reach their academic computer science goals by personalizing 4 crash courses, 24 lessons, 24 assignments, and 12 mastery projects for Java, Python, SQL and Web Development',
     dateRange: 'June 2023 - Present',
     location: 'San Luis Obispo, CA',
     imageUrl: gradepotential,
@@ -88,7 +88,7 @@ const work_experiences = [
     title: 'Software Engineering Intern',
     subtitle: '206 Realty',
     keywords: ['Python','Data Structures', 'Algorithms', 'Excel', 'CSV',  'Customer Service'],
-    description: '● Developed a Python tool with the Pandas library for effective aggregation, cleaning, and merging of client data from various sources into DataFrames, facilitating analysis ● Engineered a client lead prioritization algorithm assigning weighted values to key attributes/calculations such as frequency of property inquiries, social media engagement, and past interactions with the company, to rank leads by their conversion potential● Strategically utilized the algorithm\'s output to identify and prioritize top leads for cold calling, significantly enhancing the team\'s efficiency and focus ● Managed communications with potential clients, ensuring prompt, active, and efficient correspondence',
+    description: '● Cut down manual data retrieval efforts by 83.3%, saving 4 hours of labor per week, by developing a pipeline using Python (Pandas) to pre-process 242,962 leads and create a MySQL database for efficient querying \n● Boosted lead conversions by 26% by coding a Lead Prioritization Tool that used correlation analysis to identify 2,388 high-priority leads for targeted outreach with Python (Pandas, Matplotlib, Seaborn)',
     dateRange: 'June 2022 - Aug 2022',
     location: 'Bellevue, WA',
     imageUrl: realty206,
@@ -98,7 +98,7 @@ const work_experiences = [
     title: 'Founder / Barber',
     subtitle: 'SLO Dorm Cuts',
     keywords: ['Haircutting', 'Business Development', 'Marketing', 'Social Media', 'Adobe Illustrator', 'Adobe Photoshop'],
-    description: '● Launched a convenient haircutting service at Cal Poly, utilizing innovative marketing strategies to quickly become a recognized name among students\n● Set up an efficient appointment booking tool to enhance client experience and operational efficiency\n● Fostered a strong campus network through exceptional service and community engagement, significantly contributing to the business\'s growth and reputation\n● Created a brand identity by designing logos, banners, business cards, and instagram posts using Adobe Illustrator and Photoshop',
+    description: '● Launched a haircutting service at Cal Poly by creating a brand identity using Adobe Illustrator and servicing 10 students per day, building a community of 500 followers on Instagram \n● Expanded client base by an average of 4 clients per post through strategic social media marketing, utilizing wireless equipment to provide haircuts and create content in over 10+ scenic locations (mountains, rivers, lakes, etc...)',
     dateRange: 'Jan 2021 - Aug 2022',
     location: 'San Luis Obispo, CA',
     imageUrl: dormcuts,
@@ -109,37 +109,27 @@ const work_experiences = [
     subtitle: 'Bombaii Cutters',
     keywords: ['Management', 'Organizational Skills', 'Customer Service', 'Social Media'],
     dateRange: 'Jun 2021 - Aug 2021',
-    description: '● Greeting clients and managing the salon\'s front desk, including answering phones, scheduling appointments, and confirming appointments\n● Maintaining accurate client records and ensuring all necessary information is collected and up to date\n● Assisting with various administrative tasks, such as billing, ordering supplies, and updating the salon\'s social media presence\n● Building relationships with clients to foster loyalty and repeat business\n● Ensuring the salon is clean, organized, and well-stocked at all times\n● Providing support to stylists and other salon staff as needed',
+    description: '● Managed daily operations of a hair salon, including inventory and appointment scheduling, while resolving all client and staff conflicts, during which the owner, my boss, underwent and recovered from multiple surgeries \n● Eliminated 100% of error interpreting handwriting from scheduling book by switching to an online scheduling software for coordinating appointments between clients and stylists',
     location: 'Kirkland, WA',
     imageUrl: bombaiicutters,
   },
   {
     id: 5,
-    title: 'Ski Instructor',
-    subtitle: 'The Summit at Snoqualmie',
-    keywords: ['Instruction', 'Teamwork', 'Communication', 'Risk Analysis', 'Record Keeping'],
-    dateRange: 'Dec 2020 - Jan 2021',
-    description: '● Provided quality ski instruction to students of all ages and skill level● Demonstrated skiing techniques and safety procedures to ensure that students learn the proper skills and safety protocols● Communicated effectively with students, parents, and other instructors to ensure a positive and safe learning environment● Maintained accurate records of student progress and attendance, including tracking their skill level and the number of lessons completed● Ensured student safety by monitoring the slopes and taking action to prevent accidents or injuries● Collaborating with other ski instructors and resort staff to ensure the smooth and efficient operation of the ski school.',
-    location: 'Snoqualmie, WA',
-    imageUrl: summit,
-  },
-  {
-    id: 6,
     title: 'Associate',
     subtitle: 'Panera',
     keywords: ['Customer Service', 'Teamwork', 'Problem-Solving', 'Cash Handling', 'Food Prep'],
     dateRange: 'Apr 2019 - Jun 2020',
-    description: '● Greeted customers, took orders and processed payments● Prepared food and beverages, including baking pastries and brewing coffee● Maintained a clean and organized workspace, including restocking supplies and cleaning equipment● Adhered to food safety and sanitation guidelines● Built and maintained positive relationships with customers and team members●Assisting with various tasks as assigned by management',
+    description: '● Delivered exceptional customer service, ensuring order accuracy and promptness which enhanced customer satisfaction and loyalty \n● Supported daily operations, including food preparation and maintaining cleanliness standards, contributing to a seamless and efficient dining experience',
     location: 'Issaquah, WA',
     imageUrl: panera,
   },
   {
-    id: 5,
+    id: 6,
     title: 'Basketball Referee',
     subtitle: 'Issaquah Parks and Recreation',
     keywords: ['Officiating', 'Rule Enforcement', 'Conflict Resolution', 'Event Coordination', 'Scorekeeping'],
     dateRange: 'Jan 2016 - Apr 2019',
-    description: '● Officiated youth basketball games, including making calls on fouls, violations, and out-of-bounds situations● Communicated effectively with players, coaches, and parents to ensure a positive and respectful playing environment● Maintained and updated records, including keeping track of score, fouls, and timeouts● Ensured player safety by making decisions quickly and accurately, and taking appropriate action when necessary● Collaborated with other referees and league officials to ensure the smooth and efficient operation of the basketball program● Provided constructive feedback and recommendations to players and coaches to encourage growth and improvement',
+    description: '● Officiated youth and adult basketball games, ensuring fair play and adherence to game rules, fostering a positive and engaging experience for players and spectators alike \n ● Managed game situations effectively, resolving conflicts and making critical decisions under pressure to maintain the integrity and flow of matches',
     location: 'Issaquah, WA',
     imageUrl: issaquah,
   },
@@ -162,7 +152,7 @@ const volunteering_experiences = [
     title: 'Forgotten Faces Foundation',
     subtitle: 'Founder / Volunteer',
     keywords: ['Leadership', 'Adaptability', 'Collaboration', 'Organizational Skills', 'Management'],
-    description: '● Started and managed a volunteering/fundraising organization to help local and international (Romanian) children in need \n● Helped raise over $25,000 and contribute a cumulative 500 volunteering hours\n● Awarded Platinum National Heritage Award by Romanian Embassy in Washington D.C. Organized and lead meetings, events, activities',
+    description: '● Helped raise over $25,000 and contribute a cumulative 500 volunteering hours by founding a volunteering and fundraising organization to help local and international (Romanian) children in need \n● Awarded Platinum National Heritage Award by Romanian Embassy in Washington D.C.',
     link: 'https://www.facebook.com/ForgottenFacesFoundation',
     dateRange: 'Sep 2016 - Jun 2020',
     location: 'Sammamish, WA',
@@ -233,11 +223,11 @@ function ExperiencesPage() {
             </KeyWordsContent>
             <DescriptionHeaderText>Responsibilities</DescriptionHeaderText>
             <DescriptionText>
-            <ul>
-              {experience.description.split('●').slice(1).map((item, index) => (
-                <ListItem key={index}>{item.trim()}</ListItem>
-              ))}
-            </ul>
+              <ul>
+                {experience.description.split('●').slice(1).map((item, index) => (
+                  <ListItem key={index}>{item.trim()}</ListItem>
+                ))}
+              </ul>
             </DescriptionText>
           </ExperienceDescriptionContainer>
         )}
@@ -286,7 +276,7 @@ function ExperiencesPage() {
             {renderExperiences()}
           </MainContainer>
           <AdContainer>
-            <img src={adImages[adIndex]} alt="Advertisement" style={{ width: '100%', height: 'auto', borderRadius: '15px' }} />
+            <img src={adImages[adIndex]} alt="Advertisement" style={{ width: 'auto', height: '1080px', borderRadius: '15px' }} />
           </AdContainer>
         </FrameLayout>
     </>

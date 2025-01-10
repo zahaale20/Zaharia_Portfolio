@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.1266adca.js",
+    "main.js": "/static/js/main.3c3576da.js",
     "static/js/453.2577e14c.chunk.js": "/static/js/453.2577e14c.chunk.js",
     "static/media/Profile-pic.png": "/static/media/Profile-pic.256546d09eb8d1001b01.png",
     "static/media/Don1.jpg": "/static/media/Don1.b2283ef543f10de1e5bd.jpg",
@@ -48,23 +48,23 @@
     "static/media/memory.png": "/static/media/memory.851e498787dc2a4f311a.png",
     "static/media/panera.png": "/static/media/panera.905e04a12ae38679501c.png",
     "static/media/tinyfs.png": "/static/media/tinyfs.108e28ca9464ba4daf22.png",
+    "static/media/Alex_Zaharia_Resume_SWE.pdf": "/static/media/Alex_Zaharia_Resume_SWE.64c2ab26617c64c8bb80.pdf",
     "static/media/work.png": "/static/media/work.69add970469f6278de86.png",
     "static/media/uc3m.png": "/static/media/uc3m.e37a3d915b7411478df0.png",
     "static/media/gradepotential.png": "/static/media/gradepotential.b3fc856a257d02f324bf.png",
     "static/media/zaharia_logo.png": "/static/media/zaharia_logo.bd732d33aed8155185f0.png",
     "static/media/divideconquer.png": "/static/media/divideconquer.ac5396033623c318d69b.png",
-    "static/media/Alex_Zaharia_Complete_Resume.pdf": "/static/media/Alex_Zaharia_Complete_Resume.7945eb37498e405fc044.pdf",
     "static/media/forgottenfaces.jpeg": "/static/media/forgottenfaces.854309503e7ad9e4a597.jpeg",
     "static/media/summit.jpeg": "/static/media/summit.cdbda28b8d196fe0bd18.jpeg",
     "static/media/dormcuts.jpg": "/static/media/dormcuts.a82731fbaa36bbd8e626.jpg",
     "static/media/spotify.png": "/static/media/spotify.6361b2edf05c7cdadfa0.png",
     "index.html": "/index.html",
     "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.1266adca.js.map": "/static/js/main.1266adca.js.map",
+    "main.3c3576da.js.map": "/static/js/main.3c3576da.js.map",
     "453.2577e14c.chunk.js.map": "/static/js/453.2577e14c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.1266adca.js"
+    "static/js/main.3c3576da.js"
   ]
 }

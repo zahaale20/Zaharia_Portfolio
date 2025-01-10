@@ -56,12 +56,6 @@ function HomePage() {
                                     <SocialMediaIcon href="https://linkedin.com/in/alexczaharia" target="_blank">
                                         <img src={linkedinIcon} alt="LinkedIn" />
                                     </SocialMediaIcon>
-                                    <SocialMediaIcon href="https://instagram.com/alex.z4777" target="_blank">
-                                        <img src={instagramIcon} alt="Instagram" />
-                                    </SocialMediaIcon>
-                                    <SocialMediaIcon href="https://open.spotify.com/user/12186288217?si=a7221db5abc54913" target="_blank">
-                                        <img src={spotifyIcon} alt="Spotify" />
-                                    </SocialMediaIcon>
                                 </SocialMediaContainer>
                             </HomeTextContainer>
                         </HomeProfileDisplayContainer>

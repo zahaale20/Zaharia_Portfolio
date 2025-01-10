@@ -18,6 +18,7 @@ const Nav = styled.nav`
   position: fixed;
   top: 16px;
   left: 50%;
+  max-width: 1800px;
   transform: translateX(-50%);
   z-index: 1000;
 
@@ -40,27 +41,6 @@ const SectionsContainer = styled.div`
     justify-content: flex-start;
     width: auto;
   }
-`;
-
-const ContactMeButton = styled.button`
-    background-color: transparent;
-    color: ${theme.colors.nearlyWhite};
-    border: 1px solid ${theme.colors.nearlyWhite};
-    border-radius: 0.5vw;
-    width: 115px;
-    padding: 0.5vw 1vw;
-    font-size: 11px;
-    font-family: 'Futura', sans-serif;
-    cursor: pointer;
-    margin: 0 1vw;
-    margin-left: 2vw;
-    transition: transform 0.3s ease-in-out;
-    
-    &:hover {
-        transform: scale(1.025);
-        background-color: ${theme.colors.nearlyWhite};
-        color: ${theme.colors.deepSpace};
-    }
 `;
 
 const Separator = styled.span`

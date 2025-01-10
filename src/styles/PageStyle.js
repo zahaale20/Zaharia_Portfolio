@@ -15,20 +15,20 @@ export const FrameLayout = styled.div`
     left: 50%;
     transform: translate(-50%, 0);
     width: 85vw;
-    height: 565px;
+    height: 75vh;
     box-shadow: 0 8px 10px -2px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 15px;
     gap: 20px;
+    max-width: 1800px;
+    max-height: 1080px;
 
     @media (min-width: 768px) {
         top: 110px;
-        height: 615px;
     }
 
     @media (min-width: 1024px) {
         top: 110px;
-        height: 615px;
     }
 `;
 
@@ -46,17 +46,7 @@ export const VertNavBar = styled.div`
     padding-right: 10px;
     border-radius: 10px;
     width: 50px;
-    height: 565px;
-
-    @media (min-width: 768px) {
-        width: 50px;
-        height: 615px;
-    }
-
-    @media (min-width: 1024px) {
-        width: 50px;
-        height: 615px;
-    }
+    height: 75vh;
 `;
 
 export const MainContainer = styled.div`
@@ -65,16 +55,8 @@ export const MainContainer = styled.div`
     position: relative;
     flex: 3;  // Allocate more space to main content
     overflow: auto;
-    height: 565px;
+    height: 75vh;
     gap: 20px;
-
-    @media (min-width: 768px) {
-        height: 615px;
-    }
-
-    @media (min-width: 1024px) {
-        height: 615px;
-    }
 `;
 
 export const AdContainer = styled.div`
@@ -83,12 +65,25 @@ export const AdContainer = styled.div`
     @media (min-width: 1024px) {
         display: flex;
         flex-direction: column;
-        flex: 1;
         background-color: rgba(255, 255, 255, 0.05);
         border-radius: 15px;
         padding: 20px;
         overflow-y: auto;
-        height: 575px;
+        width: 300px;
+        max-height: 600px;
+        height: 70vh;
+    }
+
+    @media (min-width: 1920px) {
+        width: 250px;
+        max-height: 800px;
+        height: 70vh;
+    }
+
+    @media (min-width: 2160px) {
+        width: 250px;
+        max-height: 1080px;
+        height: 70vh;
     }
 `;
 
@@ -97,11 +92,11 @@ export const MainButton = styled.button`
     background: transparent;
     border: 1px solid ${theme.colors.nearlyWhite};
     border-radius: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 12px;
     font-family: 'Futura', sans-serif;
     cursor: pointer;
     margin-right: 1vw;
@@ -139,7 +134,7 @@ export const HomeProfileDisplayContainer = styled.div`
     background-color: rgba(255, 255, 255, 0.05);
     max-width: 800px;
     margin: auto;
-    height: 530px;
+    height: 90%;
     border-radius: 15px;
     padding: 15px;
     transition: all 0.3s ease;
@@ -244,7 +239,7 @@ export const HomeDescriptionText = styled.p`
 export const HomeButtonXStack = styled.div`
     display: flex;
     flex-direction: row;
-    margin-top: 10px;
+    margin-top: 5px;
     gap: 1vw;
 `;
 
@@ -252,7 +247,7 @@ export const SocialMediaContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 5px;
     gap: 20px;
 
     @media (min-width: 768px) {
@@ -303,15 +298,17 @@ export const SocialMediaIcon = styled.a`
 export const ExperienceImage = styled.img`
     width: 15vw;
     height: auto;
-    border-radius: 2vw;
+    border-radius: 12px;
     margin-right: 2vw;
 
     @media (min-width: 768px) {
         width: 125px;
+        border-radius: 16px;
     }
 
     @media (min-width: 1024px) {
         width: 150px;
+        border-radius: 20px;
     }
 `;
 
@@ -520,7 +517,7 @@ export const ExperienceContainer = styled.div`
     flex-direction: column;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 2vw;
+    border-radius: 20px;
 `;
 
 export const ExperienceHeaderContainer = styled.div`
