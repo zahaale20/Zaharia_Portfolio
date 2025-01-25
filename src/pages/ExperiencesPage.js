@@ -30,7 +30,9 @@ import bombaiicutters from '../assets/bombaiicutters.png'
 import dormcuts from '../assets/dormcuts.jpg';
 import athletesforkids from '../assets/athletesforkids.png';
 import forgottenfaces from '../assets/forgottenfaces.jpeg';
-import summit from '../assets/summit.jpeg';
+import logiclab from '../assets/logiclab.png';
+import cac from '../assets/cac.png';
+import seattleu from '../assets/seattleu.jpg';
 import panera from '../assets/panera.png';
 import issaquah from '../assets/issaquah.png';
 import ib from '../assets/ib.png';
@@ -48,6 +50,14 @@ import ad3 from '../assets/ad3.png';
 const education_experiences = [
   {
     id: 1,
+    title: 'Seattle University',
+    subtitle: 'MS in Computer Science, Data Science ',
+    dateRange: 'Sep 2020 - June 2024',
+    location: 'Seattle, WA',
+    imageUrl: seattleu,
+  },
+  {
+    id: 2,
     title: 'California Polytechnic State University',
     subtitle: 'BS in Computer Science',
     dateRange: 'Sep 2020 - June 2024',
@@ -55,7 +65,7 @@ const education_experiences = [
     imageUrl: calpoly,
   },
   {
-    id: 2,
+    id: 3,
     title: 'Universidad Carlos III de Madrid',
     subtitle: 'Study Abroad',
     dateRange: 'Sep 2022 - Dec 2022',
@@ -63,7 +73,7 @@ const education_experiences = [
     imageUrl: uc3m,
   },
   {
-    id: 3,
+    id: 4,
     title: 'Skyline High School',
     subtitle: 'International Baccalaureate Diploma',
     dateRange: 'Sep 2016 - Jun 2020',
@@ -75,61 +85,81 @@ const education_experiences = [
 const work_experiences = [
   {
     id: 1,
+    title: 'Founder/Computer Science Tutor',
+    subtitle: 'Logic Lab',
+    keywords: ['Business Development', 'React', 'Social Media Management', 'System Design', 'Tutoring'],
+    description: '● Empowered 50+ students to reach their academic computer science goals through personalized lessons and mastery projects for Java, Python, SQL and Web Development \n● Analyzed business models and developed a scalable plan for expanding tutoring services \n● Created a payment model to attract and retain both clients and tutors, resulting in consistent revenue growth \n●  Developing a full-stack website using React to streamline client/tutor matching, scheduling, payments, feedback',
+    dateRange: 'January 2025 - Present',
+    location: 'Sammamish, WA',
+    imageUrl: logiclab,
+  },
+  {
+    id: 2,
+    title: 'Front Desk',
+    subtitle: 'Columbia Athletic Club - Pine Lake',
+    keywords: ['Organization', 'Time-Managment', 'Habit Development', 'Relationship Development'],
+    description: '● Maintaining a clean and organized facility by performing building upkeep, including folding and restocking 100s of towels \n● Fostering positive relationships with 100s of members and staff, supporting habit development and building genuine connections',
+    dateRange: 'December 2025 - Present',
+    location: 'Sammamish, WA',
+    imageUrl: cac,
+  },
+  {
+    id: 3,
     title: 'Computer Science Tutor',
     subtitle: 'Grade Potential',
-    keywords: ['Leadership', 'Adaptability', 'Java', 'Python', 'SQL', 'Educational Material Design', 'Teaching'],
+    keywords: ['Leadership', 'Adaptability', 'Tutoring', 'Computer Science'],
     description: '● Empowered 30+ students to reach their academic computer science goals by personalizing 4 crash courses, 24 lessons, 24 assignments, and 12 mastery projects for Java, Python, SQL and Web Development',
-    dateRange: 'June 2023 - Present',
+    dateRange: 'June 2023 - January 2025',
     location: 'San Luis Obispo, CA',
     imageUrl: gradepotential,
   },
   {
-    id: 2,
+    id: 4,
     title: 'Software Engineering Intern',
     subtitle: '206 Realty',
-    keywords: ['Python','Data Structures', 'Algorithms', 'Excel', 'CSV',  'Customer Service'],
-    description: '● Cut down manual data retrieval efforts by 83.3%, saving 4 hours of labor per week, by developing a pipeline using Python (Pandas) to pre-process 242,962 leads and create a MySQL database for efficient querying \n● Boosted lead conversions by 26% by coding a Lead Prioritization Tool that used correlation analysis to identify 2,388 high-priority leads for targeted outreach with Python (Pandas, Matplotlib, Seaborn)',
+    keywords: ['Python', 'Databases', 'Data Collection', 'Client Acquisition', 'Real Estate'],
+    description: '● Collaborated with my manager to fully redesign the internal database schema and data collection processes \n●  Analyzed historical conversion trends to identify key factors for successful client acquisition \n● Developed a lead prioritization tool in Python, boosting lead conversion rate by 28% \n● Executed 2,000+ cold calls, strategically identifying and setting up high-priority leads for further engagement',
     dateRange: 'June 2022 - Aug 2022',
     location: 'Bellevue, WA',
     imageUrl: realty206,
   },
   {
-    id: 3,
+    id: 5,
     title: 'Founder / Barber',
     subtitle: 'SLO Dorm Cuts',
-    keywords: ['Haircutting', 'Business Development', 'Marketing', 'Social Media', 'Adobe Illustrator', 'Adobe Photoshop'],
-    description: '● Launched a haircutting service at Cal Poly by creating a brand identity using Adobe Illustrator and servicing 10 students per day, building a community of 500 followers on Instagram \n● Expanded client base by an average of 4 clients per post through strategic social media marketing, utilizing wireless equipment to provide haircuts and create content in over 10+ scenic locations (mountains, rivers, lakes, etc...)',
+    keywords: ['Haircutting', 'Business Development', 'Networking', 'Social Media', 'Graphic ', 'Adobe Photoshop'],
+    description: '● Bought trimmers, scissors, and a mirror to learn how to cut my own hair. \n● Gave free haircuts to the 12 people living on my dorm floor  \n● Made an Instagram, posting every haircut  \n● Grew my business exponentially networking through the greek life system until I was doing 10-12 haircuts per day ',
     dateRange: 'Jan 2021 - Aug 2022',
     location: 'San Luis Obispo, CA',
     imageUrl: dormcuts,
   },
   {
-    id: 4,
+    id: 6,
     title: 'Salon Coordinator',
     subtitle: 'Bombaii Cutters',
-    keywords: ['Management', 'Organizational Skills', 'Customer Service', 'Social Media'],
+    keywords: ['Management', 'Organizational Skills', 'Customer Service'],
     dateRange: 'Jun 2021 - Aug 2021',
-    description: '● Managed daily operations of a hair salon, including inventory and appointment scheduling, while resolving all client and staff conflicts, during which the owner, my boss, underwent and recovered from multiple surgeries \n● Eliminated 100% of error interpreting handwriting from scheduling book by switching to an online scheduling software for coordinating appointments between clients and stylists',
+    description: '● Managed daily operations of a hair salon, including inventory and appointment scheduling \n● Resolved all client and staff conflicts  \n● Grew my haircutting skills\n',
     location: 'Kirkland, WA',
     imageUrl: bombaiicutters,
   },
   {
-    id: 5,
+    id: 7,
     title: 'Associate',
     subtitle: 'Panera',
     keywords: ['Customer Service', 'Teamwork', 'Problem-Solving', 'Cash Handling', 'Food Prep'],
     dateRange: 'Apr 2019 - Jun 2020',
-    description: '● Delivered exceptional customer service, ensuring order accuracy and promptness which enhanced customer satisfaction and loyalty \n● Supported daily operations, including food preparation and maintaining cleanliness standards, contributing to a seamless and efficient dining experience',
+    description: '● Supported daily operations, including food preparation and maintaining cleanliness standards \n● Delivered exceptional customer service',
     location: 'Issaquah, WA',
     imageUrl: panera,
   },
   {
-    id: 6,
+    id: 8,
     title: 'Basketball Referee',
     subtitle: 'Issaquah Parks and Recreation',
     keywords: ['Officiating', 'Rule Enforcement', 'Conflict Resolution', 'Event Coordination', 'Scorekeeping'],
     dateRange: 'Jan 2016 - Apr 2019',
-    description: '● Officiated youth and adult basketball games, ensuring fair play and adherence to game rules, fostering a positive and engaging experience for players and spectators alike \n ● Managed game situations effectively, resolving conflicts and making critical decisions under pressure to maintain the integrity and flow of matches',
+    description: '● Officiated youth basketball games \n ● Ensured fair play and adherence to game rules  \n ● Fostered a positive and engaging experience for players and parents \n ● Learned to make critical, time-sensitive decisions under pressure',
     location: 'Issaquah, WA',
     imageUrl: issaquah,
   },
@@ -159,7 +189,7 @@ const volunteering_experiences = [
     imageUrl: forgottenfaces,
   },
   {
-    id: 2,
+    id: 3,
     title: 'Skyline High School Holiday Bazaar',
     subtitle: 'Volunteer',
     keywords: ['Adobe Illustrator', 'Collaboration', 'Marketing'],
