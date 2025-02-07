@@ -52,7 +52,7 @@ const education_experiences = [
     id: 1,
     title: 'Seattle University',
     subtitle: 'MS in Computer Science, Data Science ',
-    dateRange: 'Sep 2020 - June 2024',
+    dateRange: 'March 2025 - March 2027',
     location: 'Seattle, WA',
     imageUrl: seattleu,
   },
