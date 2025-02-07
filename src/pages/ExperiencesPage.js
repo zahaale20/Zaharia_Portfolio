@@ -85,7 +85,7 @@ const education_experiences = [
 const work_experiences = [
   {
     id: 1,
-    title: 'Founder/Computer Science Tutor',
+    title: 'AI Developer',
     subtitle: 'Logic Lab',
     keywords: ['Business Development', 'React', 'Social Media Management', 'System Design', 'Tutoring'],
     description: 
