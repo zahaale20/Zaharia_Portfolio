@@ -62,28 +62,14 @@ export const MainContainer = styled.div`
 export const AdContainer = styled.div`
     display: none;
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1200px) {
         display: flex;
         flex-direction: column;
         background-color: rgba(255, 255, 255, 0.05);
         border-radius: 15px;
         padding: 20px;
         overflow-y: auto;
-        width: 300px;
-        max-height: 600px;
-        height: 70vh;
-    }
-
-    @media (min-width: 1920px) {
-        width: 250px;
-        max-height: 800px;
-        height: 70vh;
-    }
-
-    @media (min-width: 2160px) {
-        width: 250px;
-        max-height: 1080px;
-        height: 70vh;
+        max-height: 730px;
     }
 `;
 
