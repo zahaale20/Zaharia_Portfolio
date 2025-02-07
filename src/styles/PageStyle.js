@@ -69,6 +69,7 @@ export const AdContainer = styled.div`
         border-radius: 15px;
         padding: 20px;
         overflow-y: auto;
+        max-width: 350px;
         max-height: 730px;
     }
 `;
