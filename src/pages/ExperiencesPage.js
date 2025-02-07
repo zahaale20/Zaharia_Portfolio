@@ -88,7 +88,11 @@ const work_experiences = [
     title: 'Founder/Computer Science Tutor',
     subtitle: 'Logic Lab',
     keywords: ['Business Development', 'React', 'Social Media Management', 'System Design', 'Tutoring'],
-    description: '● Empowered 50+ students to reach their academic computer science goals through personalized lessons and mastery projects for Java, Python, SQL and Web Development \n● Analyzed business models and developed a scalable plan for expanding tutoring services \n● Created a payment model to attract and retain both clients and tutors, resulting in consistent revenue growth \n●  Developing a full-stack website using React to streamline client/tutor matching, scheduling, payments, feedback',
+    description: 
+      '● Compiling a suite of APIs and automated pipelines that leverage LLMs and prompt engineering to streamline full-stack development workflows\n' +
+      '● Leveraging FAISS and OpenAI to embed, index, and retrieve coding contexts\n' +
+      '● Testing accuracy, runtime metrics, and resource usage across models from OpenAI, Deepseek, and Claude\n' +
+      '● Researching LLM memory systems, abstraction techniques, continual learning, and deep research',
     dateRange: 'January 2025 - Present',
     location: 'Sammamish, WA',
     imageUrl: logiclab,
