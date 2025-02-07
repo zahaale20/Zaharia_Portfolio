@@ -75,7 +75,7 @@ const projects = [
     location: 'San Luis Obispo, CA',
     keywords: ['Full Stack', 'React', 'Python', 'OpenAI', 'SQL', 'Supabase', 'Google Cloud', 'Adobe Illustrator'],
     description: 'Gridiron GPT is a hub for NFL and Fantasy Football insights built with React. The web app assists users by providing tools to generate drafting strategies, analyze trades, and optimize weekly lineups. It provides weekly player and team rankings as well as team and positional matchup analysis, empowering users to make informed decisions throughout the fantasy football season. The finalized toolkit is not in this repository.',
-    githubUrl: 'https://github.com/zahaale20/GridIronGPT_React',
+    googleSlidesUrl: 'https://docs.google.com/presentation/d/1f5Uvvdn9klbS11--1ogjVXEUgqaR2SuVQJXZdaBYJM4/edit?usp=sharing',
     imageUrl: gridirongpt,
   },
   {
@@ -85,7 +85,7 @@ const projects = [
     location: 'San Luis Obispo, CA',
     keywords: ['Full Stack', 'React','Javascript', 'HTML/CSS', 'MySQL', 'PostgreSQL', 'Supabase', 'Google Cloud', 'AWS', 'Git'],
     description: 'A digital marketplace, haggle helps Cal Poly students buy, sell, and trade within the San Luis Obispo community. This app not only showcases local listings across a variety of categories, but also facilitates a seamless communication stream between users, allowing them to send and receive offers directly within the platform.  Moreover, users enjoy complete control over their listings, with easy-to-use tools for managing and updating offers. Whether you are decluttering your dorm, searching for textbooks, or finding unique local treasures, Haggle will help you get it done.',
-    githubUrl: 'https://github.com/Velevynn/haggle',
+    googleSlidesUrl: 'https://docs.google.com/presentation/d/1f19od5-GycpifNpAa9nfdFo-ALLFyV4xxcYMqno31zM/edit?usp=sharing',
     imageUrl: haggle,
   },
   {
