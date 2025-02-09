@@ -15,7 +15,7 @@ export const FrameLayout = styled.div`
     left: 50%;
     transform: translate(-50%, 0);
     width: 85vw;
-    height: 75vh;
+    height: 85vh;
     box-shadow: 0 8px 10px -2px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 15px;
@@ -46,7 +46,7 @@ export const VertNavBar = styled.div`
     padding-right: 10px;
     border-radius: 10px;
     width: 50px;
-    height: 75vh;
+    height: 85vh;
 `;
 
 export const MainContainer = styled.div`
@@ -55,8 +55,8 @@ export const MainContainer = styled.div`
     position: relative;
     flex: 3;  // Allocate more space to main content
     overflow-y: auto;
-    overflow-x: hidden;
-    height: 75vh;
+    overflow-x: none;
+    height: 85vh;
     gap: 20px;
 `;
 
@@ -390,6 +390,14 @@ export const ProjectLinksContainer = styled.div`
     justify-content: flex-start;
     margin-bottom: 20px;
     gap: 0px;
+
+    @media (min-width: 768px) {
+        font-size: 30px;
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 40px;
+    }
 `;
 
 export const ProjectImage = styled.img`
