@@ -96,7 +96,6 @@ const projects = [
     keywords: ['Machine Learning', 'Python', 'Data Analysis', 'Feature Engineering', 'Regression Models', 'XGBoost', 'Scikit-Learn', 'Hugging Face'],
     description: 'The real estate valuation tool project develops a predictive modeling application to estimate U.S. home prices based on location and property features. Utilizing historical data and regression techniques, the tool refines various predictive models to enhance accuracy in home valuations. Users can input property details through an intuitive interface, which the system processes using algorithms to predict current market values. The project facilitates comparative analysis of different modeling methods, offering insights into the most effective techniques for real estate price prediction.',
     jupyterNotebookUrl: 'https://colab.research.google.com/drive/1Ds0wuCkqvZBGuMCIfa94rwXpi48RV46R?usp=sharing',
-    predictionToolUrl: 'https://huggingface.co/spaces/malona/Real-Estate-Data-Analysis',
     googleSlidesUrl: 'https://docs.google.com/presentation/d/19IFDRqBp30ZlvmGFc0_KDfJ_FjbIDsws09gtf77d2GU/edit?usp=sharing',
     imageUrl: real_estate_ml,
   },
