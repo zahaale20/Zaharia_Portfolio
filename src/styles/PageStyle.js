@@ -55,7 +55,7 @@ export const MainContainer = styled.div`
     position: relative;
     flex: 3;  // Allocate more space to main content
     overflow-y: auto;
-    overflow-x: none;
+    overflow-x: hidden;
     height: 75vh;
     gap: 20px;
 `;
