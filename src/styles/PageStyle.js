@@ -15,12 +15,13 @@ export const FrameLayout = styled.div`
     left: 50%;
     transform: translate(-50%, 0);
     width: 85vw;
-    height: 85vh;
+    min-height: 85vh;
+    max-height: 85vh;
+    overflow: hidden;
     box-shadow: 0 8px 10px -2px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 15px;
     gap: 20px;
-    min-height: 600px;
 
     @media (min-width: 768px) {
         top: 110px;
