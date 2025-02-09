@@ -85,14 +85,14 @@ const education_experiences = [
 const work_experiences = [
   {
     id: 1,
-    title: 'AI Developer',
+    title: 'AI Researcher',
     subtitle: 'Logic Lab',
-    keywords: ['Business Development', 'React', 'Social Media Management', 'System Design', 'Tutoring'],
+    keywords: ['AI Research', 'LLMs', 'Multi-Agent Networks', 'System Design', 'Prompt Engineering'],
     description: 
-      '● Compiling a suite of APIs and automated pipelines that leverage LLMs and prompt engineering to streamline full-stack development workflows\n' +
+      '● Compiling a suite of APIs and automating pipelines that leverage LLMs and prompt engineering to streamline workflows in full-stack development\n' +
       '● Leveraging FAISS and OpenAI to embed, index, and retrieve coding contexts\n' +
       '● Testing accuracy, runtime metrics, and resource usage across models from OpenAI, Deepseek, and Claude\n' +
-      '● Researching LLM memory systems, abstraction techniques, continual learning, and deep research',
+      '● Researching LLM memory systems, multi-agent networks, abstraction techniques, continual learning, deep research, hallucinations, and scheming',
     dateRange: 'January 2025 - Present',
     location: 'Sammamish, WA',
     imageUrl: logiclab,
@@ -101,8 +101,10 @@ const work_experiences = [
     id: 2,
     title: 'Front Desk',
     subtitle: 'Columbia Athletic Club - Pine Lake',
-    keywords: ['Organization', 'Time-Managment', 'Habit Development', 'Relationship Development'],
-    description: '● Maintaining a clean and organized facility by performing building upkeep, including folding and restocking 100s of towels \n● Fostering positive relationships with 100s of members and staff, supporting habit development and building genuine connections',
+    keywords: ['Organization', 'Time Management', 'Customer Relations', 'Facility Maintenance'],
+    description: 
+      '● Maintained a clean and organized facility by performing building upkeep, including folding and restocking 100s of towels\n' +
+      '● Fostered positive relationships with 100s of members and staff, supporting habit development and building genuine connections',
     dateRange: 'December 2025 - Present',
     location: 'Sammamish, WA',
     imageUrl: cac,
@@ -111,8 +113,10 @@ const work_experiences = [
     id: 3,
     title: 'Computer Science Tutor',
     subtitle: 'Grade Potential',
-    keywords: ['Leadership', 'Adaptability', 'Tutoring', 'Computer Science'],
-    description: '● Empowered 30+ students to reach their academic computer science goals by personalizing 4 crash courses, 24 lessons, 24 assignments, and 12 mastery projects for Java, Python, SQL and Web Development',
+    keywords: ['Tutoring', 'Computer Science', 'Student Development', 'Educational Content'],
+    description: 
+      '● Empowered 30+ students to reach their academic computer science goals\n' +
+      '● Designed and personalized 4 crash courses, 24 lessons, 24 assignments, and 12 mastery projects for Java, Python, SQL, and Web Development',
     dateRange: 'June 2023 - January 2025',
     location: 'San Luis Obispo, CA',
     imageUrl: gradepotential,
@@ -121,8 +125,12 @@ const work_experiences = [
     id: 4,
     title: 'Software Engineering Intern',
     subtitle: '206 Realty',
-    keywords: ['Python', 'Databases', 'Data Collection', 'Client Acquisition', 'Real Estate'],
-    description: '● Collaborated with my manager to fully redesign the internal database schema and data collection processes \n●  Analyzed historical conversion trends to identify key factors for successful client acquisition \n● Developed a lead prioritization tool in Python, boosting lead conversion rate by 28% \n● Executed 2,000+ cold calls, strategically identifying and setting up high-priority leads for further engagement',
+    keywords: ['Python', 'Databases', 'Data Analytics', 'Lead Conversion', 'Real Estate'],
+    description: 
+      '● Collaborated with my manager to fully redesign the internal database schema and data collection processes\n' +
+      '● Analyzed historical conversion trends to identify key factors for successful client acquisition\n' +
+      '● Developed a lead prioritization tool in Python, boosting lead conversion rate by 28%\n' +
+      '● Executed 2,000+ cold calls, strategically identifying and setting up high-priority leads for further engagement',
     dateRange: 'June 2022 - Aug 2022',
     location: 'Bellevue, WA',
     imageUrl: realty206,
@@ -131,8 +139,12 @@ const work_experiences = [
     id: 5,
     title: 'Founder / Barber',
     subtitle: 'SLO Dorm Cuts',
-    keywords: ['Haircutting', 'Business Development', 'Networking', 'Social Media', 'Graphic ', 'Adobe Photoshop'],
-    description: '● Bought trimmers, scissors, and a mirror to learn how to cut my own hair. \n● Gave free haircuts to the 12 people living on my dorm floor  \n● Made an Instagram, posting every haircut  \n● Grew my business exponentially networking through the greek life system until I was doing 10-12 haircuts per day ',
+    keywords: ['Entrepreneurship', 'Marketing', 'Customer Retention', 'Networking'],
+    description: 
+      '● Learned and mastered haircutting skills by practicing on myself and dorm residents\n' +
+      '● Provided free haircuts to the 12 people on my dorm floor to build a portfolio\n' +
+      '● Launched an Instagram page showcasing haircuts, leading to rapid word-of-mouth marketing\n' +
+      '● Expanded business through Greek life networking, performing 10-12 haircuts per day',
     dateRange: 'Jan 2021 - Aug 2022',
     location: 'San Luis Obispo, CA',
     imageUrl: dormcuts,
@@ -141,9 +153,12 @@ const work_experiences = [
     id: 6,
     title: 'Salon Coordinator',
     subtitle: 'Bombaii Cutters',
-    keywords: ['Management', 'Organizational Skills', 'Customer Service'],
+    keywords: ['Salon Management', 'Customer Service', 'Scheduling', 'Inventory Control'],
+    description: 
+      '● Managed daily operations of a hair salon, including inventory and appointment scheduling\n' +
+      '● Resolved all client and staff conflicts, ensuring smooth operations\n' +
+      '● Expanded personal haircutting skills through hands-on salon experience',
     dateRange: 'Jun 2021 - Aug 2021',
-    description: '● Managed daily operations of a hair salon, including inventory and appointment scheduling \n● Resolved all client and staff conflicts  \n● Grew my haircutting skills\n',
     location: 'Kirkland, WA',
     imageUrl: bombaiicutters,
   },
@@ -151,9 +166,11 @@ const work_experiences = [
     id: 7,
     title: 'Associate',
     subtitle: 'Panera',
-    keywords: ['Customer Service', 'Teamwork', 'Problem-Solving', 'Cash Handling', 'Food Prep'],
+    keywords: ['Customer Service', 'Food Handling', 'Cash Register', 'Teamwork'],
+    description: 
+      '● Assisted with food preparation and maintained cleanliness standards\n' +
+      '● Provided excellent customer service to ensure a positive dining experience',
     dateRange: 'Apr 2019 - Jun 2020',
-    description: '● Supported daily operations, including food preparation and maintaining cleanliness standards \n● Delivered exceptional customer service',
     location: 'Issaquah, WA',
     imageUrl: panera,
   },
@@ -161,21 +178,28 @@ const work_experiences = [
     id: 8,
     title: 'Basketball Referee',
     subtitle: 'Issaquah Parks and Recreation',
-    keywords: ['Officiating', 'Rule Enforcement', 'Conflict Resolution', 'Event Coordination', 'Scorekeeping'],
+    keywords: ['Sports Officiating', 'Decision-Making', 'Conflict Resolution', 'Youth Engagement'],
+    description: 
+      '● Officiated youth basketball games, ensuring fair play and adherence to game rules\n' +
+      '● Fostered a positive and engaging experience for players and parents\n' +
+      '● Developed the ability to make quick, confident, and fair decisions under pressure',
     dateRange: 'Jan 2016 - Apr 2019',
-    description: '● Officiated youth basketball games \n ● Ensured fair play and adherence to game rules  \n ● Fostered a positive and engaging experience for players and parents \n ● Learned to make critical, time-sensitive decisions under pressure',
     location: 'Issaquah, WA',
     imageUrl: issaquah,
   },
 ];
+
 
 const volunteering_experiences = [
   {
     id: 1,
     title: 'Athletes For Kids',
     subtitle: 'Mentor',
-    keywords: ['Leadership', 'Mentoring', 'Problem-Solving', 'Organizational Skills'],
-    description: '● In the AFK program, I became a mentor for a buddy with social and learning disabilities. I found ways to help my buddy overcome challenges that were prevalent in his day to day life, which in the end created a tight knit bond between us that allowed us both to grow in our separate ways',
+    keywords: ['Leadership', 'Mentoring', 'Problem-Solving', 'Youth Development'],
+    description: 
+      '● Mentored a buddy with social and learning disabilities, providing guidance and support.\n' +
+      '● Developed strategies to help my buddy overcome daily challenges and build confidence.\n' +
+      '● Formed a strong, supportive bond, allowing both of us to grow in our unique ways.',
     link: 'https://athletesforkids.org/',
     dateRange: 'Sep 2018 - Jun 2020',
     location: 'Sammamish, WA',
@@ -185,8 +209,11 @@ const volunteering_experiences = [
     id: 2,
     title: 'Forgotten Faces Foundation',
     subtitle: 'Founder / Volunteer',
-    keywords: ['Leadership', 'Adaptability', 'Collaboration', 'Organizational Skills', 'Management'],
-    description: '● Helped raise over $25,000 and contribute a cumulative 500 volunteering hours by founding a volunteering and fundraising organization to help local and international (Romanian) children in need \n● Awarded Platinum National Heritage Award by Romanian Embassy in Washington D.C.',
+    keywords: ['Leadership', 'Fundraising', 'Nonprofit Management', 'Community Engagement'],
+    description: 
+      '● Founded and managed a volunteer organization dedicated to supporting underprivileged children locally and in Romania.\n' +
+      '● Raised over $25,000 and contributed 500+ volunteer hours towards fundraising and community service efforts.\n' +
+      '● Awarded the Platinum National Heritage Award by the Romanian Embassy in Washington D.C. for outstanding contributions.',
     link: 'https://www.facebook.com/ForgottenFacesFoundation',
     dateRange: 'Sep 2016 - Jun 2020',
     location: 'Sammamish, WA',
@@ -196,14 +223,18 @@ const volunteering_experiences = [
     id: 3,
     title: 'Skyline High School Holiday Bazaar',
     subtitle: 'Volunteer',
-    keywords: ['Adobe Illustrator', 'Collaboration', 'Marketing'],
-    description: '● Designed posters that were prominently displayed throughout Sammamish, driving community attendance to our holiday bazaar● Contributed over 30 hours towards setting up, managing, and cleaning up the event, ensuring its smooth execution from start to finish',
+    keywords: ['Graphic Design', 'Community Outreach', 'Event Coordination'],
+    description: 
+      '● Designed and distributed promotional posters throughout Sammamish, increasing event attendance.\n' +
+      '● Contributed 30+ hours to setting up, managing, and cleaning up the event, ensuring smooth execution.\n' +
+      '● Collaborated with vendors and community members to create an engaging and successful holiday bazaar.',
     link: 'https://www.facebook.com/ForgottenFacesFoundation',
-    dateRange: 'September 2016 - Jun 2020',
+    dateRange: 'Sep 2016 - Jun 2020',
     location: 'Sammamish, WA',
     imageUrl: skyline,
   },
 ];
+
 
 const achievements_experiences = [
   {

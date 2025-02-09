@@ -20,8 +20,7 @@ export const FrameLayout = styled.div`
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 15px;
     gap: 20px;
-    max-width: 1800px;
-    max-height: 1080px;
+    min-height: 600px;
 
     @media (min-width: 768px) {
         top: 110px;
@@ -34,6 +33,7 @@ export const FrameLayout = styled.div`
 
 export const VertScroll = styled.div`
     overflow-y: auto;
+    overflox-x: none;
 `;
 
 export const VertNavBar = styled.div`
@@ -54,7 +54,8 @@ export const MainContainer = styled.div`
     flex-direction: column;
     position: relative;
     flex: 3;  // Allocate more space to main content
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: none;
     height: 75vh;
     gap: 20px;
 `;
