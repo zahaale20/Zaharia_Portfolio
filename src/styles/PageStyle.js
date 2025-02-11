@@ -62,14 +62,26 @@ export const AdContainer = styled.div`
     @media (min-width: 1200px) {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: rgba(255, 255, 255, 0.05);
         border-radius: 15px;
         padding: 20px;
-        overflow-y: none;
-        max-width: 300px;
-        max-height: 600px;
+        overflow: hidden; /* Ensure no overflow */
+        max-width: 20%;
+        height: auto; /* Allow dynamic height */
+        max-height: 80vh; /* Set max height relative to viewport */
     }
 `;
+
+export const AdImage = styled.img`
+    height: 75%; /* Image takes 75% of the container height */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Prevent overflow */
+    object-fit: contain; /* Ensures no cropping */
+    border-radius: 15px;
+`;
+
 
 export const MainButton = styled.button`
     color: ${theme.colors.nearlyWhite};

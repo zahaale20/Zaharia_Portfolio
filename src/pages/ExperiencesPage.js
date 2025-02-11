@@ -18,7 +18,8 @@ import {
   ExperienceDescription,
   ExperienceDescriptionContainer,
   ListItem,
-  AdContainer
+  AdContainer,
+  AdImage
 } from '../styles/PageStyle'; 
 
 import calpoly from '../assets/calpoly.png';
@@ -341,7 +342,7 @@ function ExperiencesPage() {
             {renderExperiences()}
           </MainContainer>
           <AdContainer>
-            <img src={adImages[adIndex]} alt="Advertisement" style={{ width: 'auto', height: '1080px', borderRadius: '15px' }} />
+            <AdImage src={adImages[adIndex]} alt="Advertisement" />
           </AdContainer>
         </FrameLayout>
     </>
