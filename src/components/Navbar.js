@@ -14,7 +14,7 @@ const Nav = styled.nav`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 16px;
+  padding: 20px;
   position: fixed;
   top: 16px;
   left: 50%;
@@ -25,7 +25,7 @@ const Nav = styled.nav`
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 15px;
+    padding: 0 20px;
     height: 75px;
   }
 `;
