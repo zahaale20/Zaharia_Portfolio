@@ -11,23 +11,18 @@ export const FrameLayout = styled.div`
     align-items: flex-start;
     position: fixed;
     top: 140px;
-    padding: 15px;
     left: 50%;
     transform: translate(-50%, 0);
     width: 85vw;
-    min-height: 85vh;
-    max-height: 85vh;
+    height: 80vh;
     overflow: hidden;
     box-shadow: 0 8px 10px -2px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 15px;
     gap: 20px;
+    padding: 20px;
 
     @media (min-width: 768px) {
-        top: 110px;
-    }
-
-    @media (min-width: 1024px) {
         top: 110px;
     }
 `;
@@ -41,23 +36,23 @@ export const VertNavBar = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
     background-color: rgba(255, 255, 255, 0.05);
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 10px;
     width: 50px;
-    height: 85vh;
+    height: 100%;
 `;
 
 export const MainContainer = styled.div`
     display: flex;
     flex-direction: column;
     position: relative;
-    flex: 3;  // Allocate more space to main content
+    flex: 3;
     overflow-y: auto;
     overflow-x: none;
-    height: 85vh;
+    width: auto;
+    height: 80vh;
     gap: 20px;
 `;
 
@@ -70,9 +65,9 @@ export const AdContainer = styled.div`
         background-color: rgba(255, 255, 255, 0.05);
         border-radius: 15px;
         padding: 20px;
-        overflow-y: auto;
-        max-width: 350px;
-        max-height: 730px;
+        overflow-y: none;
+        max-width: 300px;
+        max-height: 600px;
     }
 `;
 
@@ -264,20 +259,20 @@ export const SocialMediaIcon = styled.a`
     }
 
     img {
-        width: 30px;
+        width: 40px;
         height: auto;
     }
 
     @media (min-width: 768px) {
         img {
-        width: 30px;
+        width: 40px;
         height: auto;
         }
     }
 
     @media (min-width: 1024px) {
         img {
-        width: 30px;
+        width: 40px;
         height: auto;
         }
     }
@@ -512,26 +507,19 @@ export const ExperienceNavItem = styled.div`
 export const ExperienceContainer = styled.div`
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: auto;
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 20px;
+    padding: 20px;
+    gap: 20px;
 `;
+
 
 export const ExperienceHeaderContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    padding: 20px;
-    padding-bottom: 10px;
-    margin-left: -10px;
-    margin-top: -10px;
-
-    @media (min-width: 768px) {
-        margin-left: 0px;
-        margin-top: 0px;
-        padding: 20px;
-    }
 `;
 
 export const ExperienceInfo = styled.div`
@@ -561,12 +549,7 @@ export const KeyWordsContent = styled.div`
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 0px 5px;
     margin-bottom: 10px;
-
-    @media (min-width: 768px) {
-        gap: 0px 5px;
-    }
 `;
 
 export const KeyWordsText = styled(DescriptionText)`
@@ -578,6 +561,7 @@ export const KeyWordsText = styled(DescriptionText)`
     padding: 3px;
     padding-left: 5px;
     padding-right: 5px;
+    margin: 5px;
 
     @media (min-width: 768px) {
         font-size: 12px;
@@ -597,7 +581,6 @@ export const ExperienceDescriptionContainer = styled.div`
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    margin: 0vh 2vw;
     overflow-y: visible;
 `;
 

@@ -50,11 +50,11 @@ function HomePage() {
                                     </MainButton>
                                 </HomeButtonXStack>
                                 <SocialMediaContainer>
-                                    <SocialMediaIcon href="https://github.com/zahaale20" target="_blank">
-                                        <img src={githubIcon} alt="GitHub" />
-                                    </SocialMediaIcon>
                                     <SocialMediaIcon href="https://linkedin.com/in/alexczaharia" target="_blank">
                                         <img src={linkedinIcon} alt="LinkedIn" />
+                                    </SocialMediaIcon>
+                                    <SocialMediaIcon href="https://github.com/zahaale20" target="_blank">
+                                        <img src={githubIcon} alt="GitHub" />
                                     </SocialMediaIcon>
                                 </SocialMediaContainer>
                             </HomeTextContainer>
