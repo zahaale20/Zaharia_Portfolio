@@ -14,8 +14,10 @@ export const FrameLayout = styled.div`
     left: 50%;
     transform: translate(-50%, 0);
     width: 85vw;
-    height: 80vh;
-    overflow: hidden;
+    max-width: 1800px;
+    min-height: 70vh;
+    max-height: 75vh;
+    overflow: none;
     box-shadow: 0 8px 10px -2px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 15px;
@@ -24,24 +26,29 @@ export const FrameLayout = styled.div`
 
     @media (min-width: 768px) {
         top: 110px;
+        min-height: 80vh;
+        max-height: 85vh;
     }
-`;
-
-export const VertScroll = styled.div`
-    overflow-y: auto;
-    overflox-x: none;
 `;
 
 export const VertNavBar = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.05);
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 10px;
-    width: 50px;
-    height: 100%;
+    position: relative;
+    flex: 1;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    gap: 5px;
+    
+    max-width: 60px;
+    min-height: 70vh;
+    max-height: 75vh;
+    @media (min-width: 768px) {
+        min-height: 80vh;
+        max-height: 85vh;
+    }
 `;
 
 export const MainContainer = styled.div`
@@ -49,11 +56,19 @@ export const MainContainer = styled.div`
     flex-direction: column;
     position: relative;
     flex: 3;
+
     overflow-y: auto;
-    overflow-x: none;
-    width: auto;
-    height: 80vh;
+    overflow-x: hidden;
+
     gap: 20px;
+
+    width: auto;
+    min-height: 70vh;
+    max-height: 75vh;
+    @media (min-width: 768px) {
+        min-height: 80vh;
+        max-height: 85vh;
+    }
 `;
 
 export const AdContainer = styled.div`
@@ -67,10 +82,10 @@ export const AdContainer = styled.div`
         background-color: rgba(255, 255, 255, 0.05);
         border-radius: 15px;
         padding: 20px;
-        overflow: hidden; /* Ensure no overflow */
+        overflow: hidden;
         max-width: 20%;
-        height: auto; /* Allow dynamic height */
-        max-height: 80vh; /* Set max height relative to viewport */
+        height: auto;
+        max-height: 80vh;
     }
 `;
 
@@ -449,11 +464,11 @@ export const ProjectNavItem = styled.div`
     justify-content: center;
     background-color: transparent;
     border-radius: 8px;
-    margin-top: 1px;
+    width: 50px;
+    margin: 0;
     transition: transform 0.2s;
     cursor: pointer;
     position: relative;
-    transform: scale(0.8);
 
     &:hover {
         transform: scale(1.01);
@@ -470,7 +485,6 @@ export const ProjectNavItem = styled.div`
 
     @media (min-width: 768px) {
         transform: scale(1);
-        margin-top: 10px;
     }
 `;
 
@@ -478,8 +492,7 @@ export const MoreProjectsNavItem = styled(ProjectNavItem)`
     display: flex;
     justify-content: center;
     width: 50px;
-    height: 45px;
-    margin-bottom: 10px;
+    height: 50px;
     align-items: center;
     background-color: rgba(255,255,255, 0.05);
     border-radius: 10px;
@@ -496,18 +509,29 @@ export const MoreProjectsText = styled.span`
 export const ExperienceNavItem = styled.div`
     color: ${props => props.active ? theme.colors.nearlyWhite : theme.colors.lightGunGray};
     background-color: ${props => props.active ? 'rgba(0, 0, 0, 0.6)' : 'rgba(0, 0, 0, 0.4)'};
-    padding: 1vh;
-    cursor: pointer;
-    border-radius: 10px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    transition: transform 0.3s ease-in-out;
+    justify-content: center;
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
     margin-top: 1px;
-    transform: scale(0.8);
-    
+    transition: transform 0.2s;
+    cursor: pointer;
+    position: relative;
+
     &:hover {
-        background-color: rgba(0, 0, 0, 0.6);
+        transform: scale(1.01);
+    }
+
+    &::after {
+        content: ${({ isSelected }) => (isSelected ? "''" : 'none')};
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
 
     @media (min-width: 768px) {

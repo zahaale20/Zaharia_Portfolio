@@ -290,7 +290,6 @@ function ProjectsPage() {
       <GlobalStyle />
         <FrameLayout>
           <VertNavBar>
-            <VertScroll>
               {projects.map((project, index) => (
                 <ProjectNavItem
                   key={project.id}
@@ -303,7 +302,6 @@ function ProjectsPage() {
               <MoreProjectsNavItem onClick={handleGitHubClick} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <MoreProjectsText style={{ fontSize: '24px', color: 'rgba(255, 255, 255, 0.6)' }}>...</MoreProjectsText>
               </MoreProjectsNavItem>
-            </VertScroll>
           </VertNavBar>
   
           <MainContainer>
