@@ -16,7 +16,7 @@ import {
   ProjectDescImage,
   DescriptionText,
   KeyWordsText,
-  KeyWordsContent,
+  KeyWordsContainer,
   ExperienceDescriptionContainer,
   ProjectDescription,
   ProjectTitle,
@@ -320,11 +320,11 @@ function ProjectsPage() {
                   </ExperienceHeaderContainer>
   
                   <ExperienceDescriptionContainer>
-                    <KeyWordsContent>
+                    <KeyWordsContainer>
                       {project.keywords?.map((tech, index) => (
                         <KeyWordsText key={index}>{tech}</KeyWordsText>
                       ))}
-                    </KeyWordsContent>
+                    </KeyWordsContainer>
   
                     <DescriptionHeaderText>Description</DescriptionHeaderText>
                     <DescriptionText>{project.description}</DescriptionText>

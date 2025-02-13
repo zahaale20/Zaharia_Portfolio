@@ -31,3 +31,9 @@ code {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.4);
 }
+
+ul {
+  margin: 0;         /* Reset default margin */
+  margin-left: 20px;
+  padding: 0;        /* Reset default padding */
+}

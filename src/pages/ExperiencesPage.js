@@ -9,7 +9,7 @@ import {
   VertNavContainer,
   VertNavBar,
   ExperienceNavItem,
-  KeyWordsContent,
+  KeyWordsContainer,
   KeyWordsText,
   ExperienceHeaderContainer,
   ExperienceImage,
@@ -283,11 +283,11 @@ function ExperiencesPage() {
 
         {['work', 'volunteering'].includes(activeCategory) && (
           <ExperienceDescriptionContainer>
-            <KeyWordsContent>
+            <KeyWordsContainer>
               {experience.keywords?.map((tech, index) => (
                 <KeyWordsText key={index}>{tech}</KeyWordsText>
               ))}
-            </KeyWordsContent>
+            </KeyWordsContainer>
             <DescriptionHeaderText>Responsibilities</DescriptionHeaderText>
             <DescriptionText>
               <ul>

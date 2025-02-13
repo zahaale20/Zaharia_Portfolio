@@ -48,6 +48,7 @@ export const VertNavContainer = styled.div`
 
     max-width: 50px;
     min-height: 550px;
+    height: 70vh;
     max-height: 70vh;
     @media (min-width: 768px) {
         min-height: 85vh;
@@ -571,7 +572,7 @@ export const ExperienceContainer = styled.div`
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 20px;
     padding: 20px;
-    gap: 20px;
+    gap: 10px;
 `;
 
 
@@ -603,25 +604,25 @@ export const DescriptionText = styled.p`
 `;
 
 
-export const KeyWordsContent = styled.div`
+export const KeyWordsContainer = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: flex-start;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 `;
 
 export const KeyWordsText = styled(DescriptionText)`
     font-weight: bold;
-    font-size: 7px;
+    font-size: 8px;
     color: ${theme.colors.deepSpace};
     background: rgba(255, 255, 255, 0.6);
     border-radius: 8px;
     padding: 3px;
     padding-left: 5px;
     padding-right: 5px;
-    margin: 5px;
+    margin: 2px;
 
     @media (min-width: 768px) {
         font-size: 12px;
