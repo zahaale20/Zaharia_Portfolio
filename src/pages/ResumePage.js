@@ -8,9 +8,9 @@ const PDFContainer = styled.iframe`
     min-width: 100%;
     border: none;
     min-height: 70vh;
-    max-height: 75vh;
+    max-height: 70vh;
     @media (min-width: 768px) {
-        min-height: 80vh;
+        min-height: 85vh;
         max-height: 85vh;
         padding-top: 0px;
     }
