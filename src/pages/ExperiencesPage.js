@@ -6,6 +6,7 @@ import {
   ExperienceContainer,
   DescriptionText,
   DescriptionHeaderText,
+  VertNavContainer,
   VertNavBar,
   ExperienceNavItem,
   KeyWordsContent,
@@ -316,28 +317,30 @@ function ExperiencesPage() {
     <>
       <GlobalStyle />
         <FrameLayout>
-          <VertNavBar>
-            <ExperienceNavItem
-              onClick={() => setActiveCategory('education')}
-              active={activeCategory === 'education'}>
-              <img src={education} alt="Education" style={{width: '35px', height: '35px'}} />
-            </ExperienceNavItem>
-            <ExperienceNavItem
-              onClick={() => setActiveCategory('work')}
-              active={activeCategory === 'work'}>
-              <img src={work} alt="Work" style={{width: '35px', height: '35px'}} />
-            </ExperienceNavItem>
-            <ExperienceNavItem
-              onClick={() => setActiveCategory('volunteering')}
-              active={activeCategory === 'volunteering'}>
-              <img src={volunteering} alt="Volunteering" style={{width: '35px', height: '35px'}} />
-            </ExperienceNavItem>
-            <ExperienceNavItem
-              onClick={() => setActiveCategory('achievements')}
-              active={activeCategory === 'achievements'}>
-              <img src={achievements} alt="Achievements" style={{width: '35px', height: '35px'}} />
-            </ExperienceNavItem>
-          </VertNavBar>
+          <VertNavContainer>
+            <VertNavBar>
+              <ExperienceNavItem
+                onClick={() => setActiveCategory('education')}
+                active={activeCategory === 'education'}>
+                <img src={education} alt="Education" style={{width: '35px', height: '35px'}} />
+              </ExperienceNavItem>
+              <ExperienceNavItem
+                onClick={() => setActiveCategory('work')}
+                active={activeCategory === 'work'}>
+                <img src={work} alt="Work" style={{width: '35px', height: '35px'}} />
+              </ExperienceNavItem>
+              <ExperienceNavItem
+                onClick={() => setActiveCategory('volunteering')}
+                active={activeCategory === 'volunteering'}>
+                <img src={volunteering} alt="Volunteering" style={{width: '35px', height: '35px'}} />
+              </ExperienceNavItem>
+              <ExperienceNavItem
+                onClick={() => setActiveCategory('achievements')}
+                active={activeCategory === 'achievements'}>
+                <img src={achievements} alt="Achievements" style={{width: '35px', height: '35px'}} />
+              </ExperienceNavItem>
+            </VertNavBar>
+          </VertNavContainer>
           <MainContainer>
             {renderExperiences()}
           </MainContainer>

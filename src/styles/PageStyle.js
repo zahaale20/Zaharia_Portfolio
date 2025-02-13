@@ -31,7 +31,7 @@ export const FrameLayout = styled.div`
     }
 `;
 
-export const VertNavBar = styled.div`
+export const VertNavContainer = styled.div`
     display: flex;
     flex-direction: column;
     position: relative;
@@ -40,9 +40,34 @@ export const VertNavBar = styled.div`
     overflow-y: auto;
     overflow-x: hidden;
 
+    background-color: rgba(255, 255, 255, 0.05);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+
+    max-width: 50px;
+    min-height: 75vh;
+    max-height: 75vh;
+    @media (min-width: 768px) {
+        min-height: 85vh;
+        max-height: 85vh;
+    }
+`;
+
+export const VertNavBar = styled.div`
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
     gap: 5px;
     
-    max-width: 60px;
+    width: 60px;
     min-height: 70vh;
     max-height: 75vh;
     @media (min-width: 768px) {
@@ -509,14 +534,16 @@ export const MoreProjectsText = styled.span`
 export const ExperienceNavItem = styled.div`
     color: ${props => props.active ? theme.colors.nearlyWhite : theme.colors.lightGunGray};
     background-color: ${props => props.active ? 'rgba(0, 0, 0, 0.6)' : 'rgba(0, 0, 0, 0.4)'};
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     border-radius: 8px;
     width: 50px;
     height: 50px;
-    margin-top: 1px;
+
     transition: transform 0.2s;
     cursor: pointer;
     position: relative;
@@ -536,7 +563,6 @@ export const ExperienceNavItem = styled.div`
 
     @media (min-width: 768px) {
         transform: scale(1);
-        margin-top: 10px;
     }
 `;
 

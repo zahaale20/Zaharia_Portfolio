@@ -4,8 +4,8 @@ import GlobalStyle from '../styles/GlobalStyle';
 import {
   MainButton,
   FrameLayout,
+  VertNavContainer,
   VertNavBar,
-  VertScroll,
   ProjectNavItem,
   MainContainer,
   ExperienceContainer,
@@ -289,20 +289,22 @@ function ProjectsPage() {
     <>
       <GlobalStyle />
         <FrameLayout>
-          <VertNavBar>
-              {projects.map((project, index) => (
-                <ProjectNavItem
-                  key={project.id}
-                  onClick={() => setSelectedProjectId(project.id)}
-                  isSelected={selectedProjectId === project.id}
-                >
-                  <ProjectImage src={project.imageUrl} alt={project.title} style={{ width: '50px', height: '50px', objectFit: 'cover' }} />
-                </ProjectNavItem>
-              ))}
-              <MoreProjectsNavItem onClick={handleGitHubClick} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <MoreProjectsText style={{ fontSize: '24px', color: 'rgba(255, 255, 255, 0.6)' }}>...</MoreProjectsText>
-              </MoreProjectsNavItem>
-          </VertNavBar>
+          <VertNavContainer>
+            <VertNavBar>
+                {projects.map((project, index) => (
+                  <ProjectNavItem
+                    key={project.id}
+                    onClick={() => setSelectedProjectId(project.id)}
+                    isSelected={selectedProjectId === project.id}
+                  >
+                    <ProjectImage src={project.imageUrl} alt={project.title} style={{ width: '50px', height: '50px', objectFit: 'cover' }} />
+                  </ProjectNavItem>
+                ))}
+                <MoreProjectsNavItem onClick={handleGitHubClick} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <MoreProjectsText style={{ fontSize: '24px', color: 'rgba(255, 255, 255, 0.6)' }}>...</MoreProjectsText>
+                </MoreProjectsNavItem>
+            </VertNavBar>
+          </VertNavContainer>
   
           <MainContainer>
             {projects.map((project, index) => (
