@@ -494,9 +494,10 @@ export const ProjectNavItem = styled.div`
     transition: transform 0.2s;
     cursor: pointer;
     position: relative;
+    transform: scale(0.95);
 
     &:hover {
-        transform: scale(1.01);
+        transform: scale(0.99);
     }
 
     &::after {
@@ -506,10 +507,6 @@ export const ProjectNavItem = styled.div`
         left: 0;
         right: 0;
         bottom: 0;
-    }
-
-    @media (min-width: 768px) {
-        transform: scale(1);
     }
 `;
 
@@ -548,8 +545,10 @@ export const ExperienceNavItem = styled.div`
     cursor: pointer;
     position: relative;
 
+    transform: scale(0.95);
+
     &:hover {
-        transform: scale(1.01);
+        transform: scale(0.99);
     }
 
     &::after {
@@ -559,10 +558,6 @@ export const ExperienceNavItem = styled.div`
         left: 0;
         right: 0;
         bottom: 0;
-    }
-
-    @media (min-width: 768px) {
-        transform: scale(1);
     }
 `;
 
