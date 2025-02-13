@@ -14,10 +14,11 @@ export const FrameLayout = styled.div`
     left: 50%;
     transform: translate(-50%, 0);
     width: 85vw;
+    min-width: 300px;
     max-width: 1800px;
-    min-height: 70vh;
-    max-height: 75vh;
-    overflow: none;
+    min-height: 550px;
+    max-height: 70vh;
+    overflow: hidden;
     box-shadow: 0 8px 10px -2px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 15px;
@@ -26,7 +27,7 @@ export const FrameLayout = styled.div`
 
     @media (min-width: 768px) {
         top: 110px;
-        min-height: 80vh;
+        min-height: 85vh;
         max-height: 85vh;
     }
 `;
@@ -46,8 +47,8 @@ export const VertNavContainer = styled.div`
     border-radius: 15px;
 
     max-width: 50px;
-    min-height: 75vh;
-    max-height: 75vh;
+    min-height: 550px;
+    max-height: 70vh;
     @media (min-width: 768px) {
         min-height: 85vh;
         max-height: 85vh;
@@ -68,10 +69,10 @@ export const VertNavBar = styled.div`
     gap: 5px;
     
     width: 60px;
-    min-height: 70vh;
-    max-height: 75vh;
+    min-height: 550px;
+    max-height: 70vh;
     @media (min-width: 768px) {
-        min-height: 80vh;
+        min-height: 85vh;
         max-height: 85vh;
     }
 `;
@@ -88,10 +89,10 @@ export const MainContainer = styled.div`
     gap: 20px;
 
     width: auto;
-    min-height: 70vh;
-    max-height: 75vh;
+    min-height: 550px;
+    max-height: 70vh;
     @media (min-width: 768px) {
-        min-height: 80vh;
+        min-height: 85vh;
         max-height: 85vh;
     }
 `;
@@ -172,7 +173,7 @@ export const HomeProfileDisplayContainer = styled.div`
     margin: auto;
     height: 90%;
     border-radius: 15px;
-    padding: 15px;
+    padding: 20px;
     transition: all 0.3s ease;
 
     @media (min-width: 768px) { 
@@ -180,12 +181,14 @@ export const HomeProfileDisplayContainer = styled.div`
         flex-direction: row;
         justify-content: center;
         height: 280px;
+        padding: 20px;
     }
 
     @media (min-width: 1024px) { 
         width: 80%;
         gap: 20px;
         height: 330px;
+        padding: 20px;
     }
 `;
 
@@ -194,15 +197,15 @@ export const HomeProfileImage = styled.img`
     height: auto;
     border-radius: 15px;
     object-fit: cover;
-    margin: 20px;
+    margin-bottom: 10px;
 
     @media (min-width: 768px) { 
-        width: 250px;
-        margin: 20px;
+        max-width: 250px;
+        margin-right: 20px;
     }
 
     @media (min-width: 1200px) { 
-        width: 300px;
+        max-width: 300px;
         margin: 20px;
     }
 `;
@@ -332,7 +335,7 @@ export const SocialMediaIcon = styled.a`
 
 //ExperiencesPage Components
 export const ExperienceImage = styled.img`
-    width: 15vw;
+    width: 80px;
     height: auto;
     border-radius: 12px;
     margin-right: 2vw;
