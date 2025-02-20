@@ -418,14 +418,6 @@ export const ProjectDescImage = styled(ExperienceImage)`
     margin: 0px;
 `;
 
-export const ProjectImagesContainer = styled.div`
-    display: flex;
-    overflow-x: auto;
-    align-self: stretch;
-    margin: 0px;
-    margin-bottom: 20px;
-`;
-
 export const ProjectImagesHeaderText = styled(DescriptionHeaderText)`
     font-weight: bold;
     margin-top: 10px;
@@ -440,7 +432,6 @@ export const ProjectLinksContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-bottom: 20px;
     gap: 0px;
 
     @media (min-width: 768px) {

@@ -20,7 +20,9 @@ import {
   ExperienceDescriptionContainer,
   ListItem,
   AdContainer,
-  AdImage
+  AdImage,
+  MainButton,
+  ProjectLinksContainer
 } from '../styles/PageStyle'; 
 
 import seattleu from '../assets/seattleu.jpg';
@@ -34,6 +36,8 @@ import gridirongpt from '../assets/gridirongpt.png';
 import gradepotential from '../assets/gradepotential.png';
 import realty206 from '../assets/realty206.png';
 import bombaiicutters from '../assets/bombaiicutters.png'
+import pixelthugz from '../assets/pixelthugz.png';
+import hodlrocket from '../assets/hodlrocket.png';
 import dormcuts from '../assets/dormcuts.jpg';
 import athletesforkids from '../assets/athletesforkids.png';
 import forgottenfaces from '../assets/forgottenfaces.jpeg';
@@ -127,6 +131,9 @@ const work_experiences = [
     dateRange: 'April 2024 - August 2024',
     location: 'Remote',
     imageUrl: gridirongpt,
+    googleSlidesUrl:
+      'https://docs.google.com/presentation/d/1f5Uvvdn9klbS11--1ogjVXEUgqaR2SuVQJXZdaBYJM4/edit?usp=sharing&usp=embed_facebook',
+
   },
   {
     id: 4,
@@ -166,6 +173,9 @@ const work_experiences = [
     dateRange: 'Jan 2021 - Aug 2022',
     location: 'San Luis Obispo, CA',
     imageUrl: dormcuts,
+    socialmediaURL:
+      'https://www.instagram.com/haircuts.alex/',
+
   },
   {
     id: 6,
@@ -182,6 +192,36 @@ const work_experiences = [
   },
   {
     id: 7,
+    title: 'Graphic Designer/Developer',
+    subtitle: 'Secret Society of Pixel Thugz NFT',
+    keywords: ['Graphic Design', 'NFT', 'Adobe Illustrator', 'JavaScript', 'Branding'],
+    description:
+      '● Designed 302 unique traits for the Pixel Thug NFT collection using Adobe Illustrator\n' +
+      '● Randomized layers, embedded metadata, and generated 5,000 NFTs using JavaScript\n' +
+      '● Sold the Pixel Thug NFT collection for $3,000, showcasing successful branding and execution',
+    dateRange: 'Apr 2021 - Aug 2021 · 5 mos',
+    location: 'On-site',
+    imageUrl: pixelthugz,
+    googleSlidesUrl: 'https://docs.google.com/presentation/d/1gFCEblNixQbspmDqczvLn9asbL-J0fPMgzeBW5jwcwA/edit?usp=sharing&usp=embed_facebook'
+  },
+  {
+    id: 8,
+    title: 'Blockchain Developer',
+    subtitle: 'HODLRocket BEP-20',
+    keywords: ['Blockchain Development', 'BEP-20', 'Team Collaboration', 'Web3', 'Smart Contracts'],
+    description:
+      '● Collaborated in a team of 3 to launch a BEP-20 token, achieving a $30,000+ market cap\n' +
+      '● Accumulated $100,000+ in Web 3.0 assets with strategic planning and investing\n' +
+      '● Designed website using GoDaddy and branding with Adobe Illustrator\n' +
+      '● Drove engagement in a digital social network of over 1,000+ members',
+    dateRange: 'Apr 2020 - Aug 2020 · 5 mos',
+    location: 'San Luis Obispo, CA, United States · On-site',
+    imageUrl: hodlrocket,
+    poocoinUrl: 'https://poocoin.app/tokens/0x7cac1f986a9573c83dabc72602aeec69afd3b336'
+  },
+  
+  {
+    id: 9,
     title: 'Associate',
     subtitle: 'Panera',
     keywords: ['Customer Service', 'Food Handling', 'Cash Register', 'Teamwork'],
@@ -193,7 +233,7 @@ const work_experiences = [
     imageUrl: panera,
   },
   {
-    id: 8,
+    id: 10,
     title: 'Basketball Referee',
     subtitle: 'Issaquah Parks and Recreation',
     keywords: ['Sports Officiating', 'Decision-Making', 'Conflict Resolution', 'Youth Engagement'],
@@ -273,6 +313,30 @@ const achievements_experiences = [
   },
 ];
 
+const renderLinkButtons = (project) => {
+  const linkTypes = [
+    { key: 'DesignUrl', text: 'Files' },
+    { key: 'ImplementationUrl', text: 'Implementation' },
+    { key: 'githubUrl', text: 'GitHub Repo' },
+    { key: 'socialmediaURL', text: 'Social Media' },
+    { key: 'jupyterNotebookUrl', text: 'Jupyter Notebook' },
+    { key: 'predictionToolUrl', text: 'Prediction Tool' },
+    { key: 'googleSlidesUrl', text: 'Google Slides' },
+    { key: 'poocoinUrl', text: 'Poo Coin BSC Charts' },
+    { key: 'websiteUrl', text: 'Website' },
+  ];
+
+  // Filter out the link types that are not available for this project
+  const availableLinks = linkTypes.filter(linkType => project[linkType.key]);
+
+  return availableLinks.map(linkType => (
+    <a key={linkType.key} href={project[linkType.key]} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', margin: '0px' }}>
+      <MainButton>{linkType.text}</MainButton>
+    </a>
+  ));
+};
+
+
 
 function ExperiencesPage() {
   const [activeCategory, setActiveCategory] = useState('education');
@@ -312,6 +376,9 @@ function ExperiencesPage() {
                 ))}
               </ul>
             </DescriptionText>
+            <ProjectLinksContainer>
+              {renderLinkButtons(experience)}
+            </ProjectLinksContainer>
           </ExperienceDescriptionContainer>
         )}
       </ExperienceContainer>

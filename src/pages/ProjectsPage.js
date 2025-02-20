@@ -21,8 +21,6 @@ import {
   ProjectDescription,
   ProjectTitle,
   DescriptionHeaderText,
-  ProjectImagesHeaderText,
-  ProjectImagesContainer,
   ProjectLinksContainer,
   MoreProjectsNavItem,
   MoreProjectsText,
@@ -34,8 +32,6 @@ import soltix from "../assets/soltix.png";
 import blog_post_generator from "../assets/blog_post_generator.png";
 import directory_context_generator from '../assets/directory_context_generator.png';
 import haggle from '../assets/haggle.jpg';
-import pixelthugz from '../assets/pixelthugz.jpg';
-import hodlrocket from '../assets/hodlrocket.png';
 import jambajuice from '../assets/jambajuice.png';
 import nfl from '../assets/nfl.png';
 import divideconquer from '../assets/divideconquer.png';
@@ -354,43 +350,6 @@ const projects = [
       'Designed and implemented a divide-and-conquer algorithm in Python to efficiently identify the unique singleton element in a sorted sequence of integers where all other elements are duplicated. The algorithm divides the problem space into smaller sub-problems, determines the singleton by analyzing the middle element and its neighbors, and adjusts the search space based on whether the middle element and its position (odd or even) align with duplication patterns. This approach minimizes comparisons and ensures high efficiency. The program reads integers from a file, processes the sequence line by line, and outputs the singleton element to stdout.',
     githubUrl: 'https://github.com/zahaale20/Divide-and-Conquer',
     imageUrl: divideconquer
-  },
-  {
-    id: 17,
-    title: 'Secret Society of Pixel Thugs',
-    dateRange: 'Apr 2021 - Aug 2021',
-    location: 'San Luis Obispo, CA',
-    keywords: [
-      'NFT Development',
-      'Blockchain',
-      'Cardano',
-      'JavaScript',
-      'Adobe Illustrator',
-      'Metadata Integration'
-    ],
-    description:
-      'Designed 302 unique traits for the Pixel Thug NFT collection using Adobe Illustrator, randomized layers, embedded metadata, and generated 5,000 NFTs through custom JavaScript scripts, successfully selling the collection for $3,000 and demonstrating effective branding and execution.',
-    googleSlidesUrl:
-      'https://docs.google.com/presentation/d/1gFCEblNixQbspmDqczvLn9asbL-J0fPMgzeBW5jwcwA/edit?usp=sharing&usp=embed_facebook',
-    imageUrl: pixelthugz
-  },
-  {
-    id: 18,
-    title: 'HODLRocket',
-    dateRange: 'Apr 2020 - Aug 2020',
-    location: 'San Luis Obispo, CA',
-    keywords: [
-      'Cryptocurrency',
-      'BEP-20 Token',
-      'Binance Smart Chain',
-      'Solidity',
-      'Smart Contracts',
-      'Web3 Development'
-    ],
-    description:
-      'Led a team of eight to successfully launch a BEP-20 token, achieving a market cap of over $30,000, while accumulating $100,000+ in Web 3.0 assets through strategic planning and investing. Developed a comprehensive website using GoDaddy to host all community resources, created consistent branding and social media content with Adobe Illustrator, and drove engagement in a community of over 1,000 members across Instagram, Twitter, and Discord.',
-    socialmediaURL: 'https://www.instagram.com/hodlrocketofficial/',
-    imageUrl: hodlrocket
   }
 ];
 
@@ -488,17 +447,6 @@ function ProjectsPage() {
   
                     <DescriptionHeaderText>Description</DescriptionHeaderText>
                     <DescriptionText>{project.description}</DescriptionText>
-  
-                    {project.imageUrls && project.imageUrls.length > 0 && (
-                      <>
-                        <ProjectImagesHeaderText>Images</ProjectImagesHeaderText>
-                        <ProjectImagesContainer>
-                          {project.imageUrls.map((url, index) => (
-                            <ProjectDescImage key={index} src={url} alt={`Project Image ${index + 1}`} />
-                          ))}
-                        </ProjectImagesContainer>
-                      </>
-                    )}
   
                     <ProjectLinksContainer>
                       {renderLinkButtons(project)}
