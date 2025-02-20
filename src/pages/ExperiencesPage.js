@@ -23,20 +23,23 @@ import {
   AdImage
 } from '../styles/PageStyle'; 
 
+import seattleu from '../assets/seattleu.jpg';
 import calpoly from '../assets/calpoly.png';
 import uc3m from '../assets/uc3m.png';
 import skyline from '../assets/skyline.png';
+
+import logiclab from '../assets/logiclab.png';
+import cac from '../assets/cac.png';
+import gridirongpt from '../assets/gridirongpt.png';
 import gradepotential from '../assets/gradepotential.png';
 import realty206 from '../assets/realty206.png';
 import bombaiicutters from '../assets/bombaiicutters.png'
 import dormcuts from '../assets/dormcuts.jpg';
 import athletesforkids from '../assets/athletesforkids.png';
 import forgottenfaces from '../assets/forgottenfaces.jpeg';
-import logiclab from '../assets/logiclab.png';
-import cac from '../assets/cac.png';
-import seattleu from '../assets/seattleu.jpg';
 import panera from '../assets/panera.png';
 import issaquah from '../assets/issaquah.png';
+
 import ib from '../assets/ib.png';
 import arcs from '../assets/arcs.png'
 
@@ -87,41 +90,43 @@ const education_experiences = [
 const work_experiences = [
   {
     id: 1,
-    title: 'AI Researcher',
-    subtitle: 'Logic Lab',
-    keywords: ['AI Research', 'LLMs', 'Multi-Agent Networks', 'System Design', 'Prompt Engineering'],
-    description: 
-      '● Compiling a suite of APIs and automating pipelines that leverage LLMs and prompt engineering to streamline workflows in full-stack development\n' +
-      '● Leveraging FAISS and OpenAI to embed, index, and retrieve coding contexts\n' +
-      '● Testing accuracy, runtime metrics, and resource usage across models from OpenAI, Deepseek, and Claude\n' +
-      '● Researching LLM memory systems, multi-agent networks, abstraction techniques, continual learning, deep research, hallucinations, and scheming',
-    dateRange: 'January 2025 - Present',
-    location: 'Sammamish, WA',
-    imageUrl: logiclab,
-  },
-  {
-    id: 2,
     title: 'Front Desk',
     subtitle: 'Columbia Athletic Club - Pine Lake',
     keywords: ['Organization', 'Time Management', 'Customer Relations', 'Facility Maintenance'],
     description: 
-      '● Maintained a clean and organized facility by performing building upkeep, including folding and restocking 100s of towels\n' +
-      '● Fostered positive relationships with 100s of members and staff, supporting habit development and building genuine connections',
+      '● Supporting habit development and building positive relationships with 100s of members and staff \n' +
+      '● Performing building upkeep, maintaining a clean and organized facility',
     dateRange: 'December 2025 - Present',
     location: 'Sammamish, WA',
     imageUrl: cac,
   },
   {
-    id: 3,
+    id: 2,
     title: 'Computer Science Tutor',
-    subtitle: 'Grade Potential',
+    subtitle: 'Logic Lab',
     keywords: ['Tutoring', 'Computer Science', 'Student Development', 'Educational Content'],
     description: 
-      '● Empowered 30+ students to reach their academic computer science goals\n' +
-      '● Designed and personalized 4 crash courses, 24 lessons, 24 assignments, and 12 mastery projects for Java, Python, SQL, and Web Development',
-    dateRange: 'June 2023 - January 2025',
-    location: 'San Luis Obispo, CA',
-    imageUrl: gradepotential,
+      '● Empowered 30+ students to reach their academic computer science goals through personalized tutoring',
+    dateRange: 'August 2023 - Present',
+    location: 'Sammamish, WA - Hybrid',
+    imageUrl: logiclab,
+  },
+  {
+    id: 3,
+    title: 'Software Engineer',
+    subtitle: 'Gridiron GPT',
+    keywords: ['Tutoring', 'Computer Science', 'Student Development', 'Educational Content'],
+    description: 
+      '● Built a fantasy football platform on React, earning $1,000 from winning 2 out of 3 leagues in 2024 \n' +
+      '● Automated a data pipeline to scrape, clean, and aggregate 10+ NFL-related sources on a daily basis \n' +
+      '● Architected UML diagrams and Supabase database to manage over 300,000 entries of user and NFL data \n' +
+      '● Leveraged the OpenAI API to build a search tool, transforming user queries into PostgreSQL queries \n' +
+      '● Built a drafting tool, trade analyzer, and rankings tables to optimize lineups and trades \n' +
+      '● Optimizing ML models using sci-kitlearn to generate projections and analyze matchups \n' +
+      '● Integrated with ESPN and Sleeper to allow for personalized fantasy football recommendations',
+    dateRange: 'April 2024 - August 2024',
+    location: 'Remote',
+    imageUrl: gridirongpt,
   },
   {
     id: 4,
@@ -136,6 +141,17 @@ const work_experiences = [
     dateRange: 'June 2022 - Aug 2022',
     location: 'Bellevue, WA',
     imageUrl: realty206,
+  },
+  {
+    id: 3,
+    title: 'Computer Science Tutor',
+    subtitle: 'Grade Potential',
+    keywords: ['Tutoring', 'Computer Science', 'Student Development', 'Educational Content'],
+    description: 
+      '● Empowered 5 students to reach their academic computer science goals through personalized tutoring',
+    dateRange: 'August 2023 - Present',
+    location: 'Sammamish, WA - Hybrid',
+    imageUrl: gradepotential,
   },
   {
     id: 5,
