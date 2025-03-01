@@ -110,7 +110,7 @@ const work_experiences = [
     subtitle: 'Logic Lab',
     keywords: ['Tutoring', 'Computer Science', 'Student Development', 'Educational Content'],
     description: 
-    '● Created a fast-paced startup environment with mentorship advising to research artificial intelligence and to build AI toolkits',  
+    '● Created a fast-paced startup environment with mentorship advising to research artificial intelligence and to build AI toolkits \n' +
     '● Empowered 30+ students to reach their academic computer science goals through personalized tutoring',
     dateRange: 'August 2023 - Present',
     location: 'Sammamish, WA - Hybrid',
