@@ -1,10 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.458372f1.css",
-    "main.js": "/static/js/main.f684acfc.js",
+    "main.js": "/static/js/main.2986205c.js",
     "static/js/453.2577e14c.chunk.js": "/static/js/453.2577e14c.chunk.js",
     "static/media/Profile-pic.png": "/static/media/Profile-pic.256546d09eb8d1001b01.png",
-    "static/media/instagram.png": "/static/media/instagram.40cd457c9c6b784e0b25.png",
     "static/media/haggle.jpg": "/static/media/haggle.a128314f8dbe5233a272.jpg",
     "static/media/pixelthugz.png": "/static/media/pixelthugz.6e2f96ee2157376ba124.png",
     "static/media/calpoly.png": "/static/media/calpoly.547a1363b8b0a1b24249.png",
@@ -35,9 +34,9 @@
     "static/media/memory.png": "/static/media/memory.851e498787dc2a4f311a.png",
     "static/media/panera.png": "/static/media/panera.905e04a12ae38679501c.png",
     "static/media/tinyfs.png": "/static/media/tinyfs.108e28ca9464ba4daf22.png",
+    "static/media/Alex_Zaharia_Resume.pdf": "/static/media/Alex_Zaharia_Resume.2849c4ab7e54450ddaef.pdf",
     "static/media/work.png": "/static/media/work.69add970469f6278de86.png",
     "static/media/uc3m.png": "/static/media/uc3m.e37a3d915b7411478df0.png",
-    "static/media/Alex_Zaharia_Resume.pdf": "/static/media/Alex_Zaharia_Resume.3745a543ad7dba3cc08a.pdf",
     "static/media/gradepotential.png": "/static/media/gradepotential.b3fc856a257d02f324bf.png",
     "static/media/zaharia_logo.png": "/static/media/zaharia_logo.bd732d33aed8155185f0.png",
     "static/media/logiclab.png": "/static/media/logiclab.bbd012bf73d29da7777d.png",
@@ -49,14 +48,13 @@
     "static/media/soltix.png": "/static/media/soltix.c0aa8ffd0ae0f7532dd8.png",
     "static/media/directory_context_generator.png": "/static/media/directory_context_generator.8f30d7783ebee9707167.png",
     "static/media/dormcuts.jpg": "/static/media/dormcuts.a82731fbaa36bbd8e626.jpg",
-    "static/media/spotify.png": "/static/media/spotify.6361b2edf05c7cdadfa0.png",
     "index.html": "/index.html",
     "main.458372f1.css.map": "/static/css/main.458372f1.css.map",
-    "main.f684acfc.js.map": "/static/js/main.f684acfc.js.map",
+    "main.2986205c.js.map": "/static/js/main.2986205c.js.map",
     "453.2577e14c.chunk.js.map": "/static/js/453.2577e14c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.458372f1.css",
-    "static/js/main.f684acfc.js"
+    "static/js/main.2986205c.js"
   ]
 }
