@@ -17,8 +17,6 @@ import {
 
 import linkedinIcon from '../assets/linkedin.png';
 import githubIcon from '../assets/github.png';
-import instagramIcon from '../assets/instagram.png';
-import spotifyIcon from '../assets/spotify.png';
 
 function HomePage() {
     const navigate = useNavigate();
