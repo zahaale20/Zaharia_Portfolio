@@ -32,11 +32,10 @@ import skyline from '../assets/skyline.png';
 
 import logiclab from '../assets/logiclab.png';
 import cac from '../assets/cac.png';
+import revere from '../assets/revere.png';
 import gradepotential from '../assets/gradepotential.png';
 import realty206 from '../assets/realty206.png';
 import bombaiicutters from '../assets/bombaiicutters.png'
-import pixelthugz from '../assets/pixelthugz.png';
-import hodlrocket from '../assets/hodlrocket.png';
 import dormcuts from '../assets/dormcuts.jpg';
 import athletesforkids from '../assets/athletesforkids.png';
 import forgottenfaces from '../assets/forgottenfaces.jpeg';
@@ -116,19 +115,31 @@ const work_experiences = [
   },
   {
     id: 3,
+    title: 'Hackathon Participant',
+    subtitle: 'RevereXR',
+    keywords: ['VR','OpenAI', 'Python', 'React'],
+    description: 
+    '● Storyboarded a VR game on Google Slides to bring Lewis Rudd’s story of Ezelle’s Famous Chicken’s to life\n' +
+    '● Prototyped an AI MVP to break down narratives into social media captions and images using GPT-4 and DALL-E',
+    dateRange: 'August 2023 - Present',
+    location: 'Sammamish, WA - Hybrid',
+    imageUrl: logiclab,
+  },
+  {
+    id: 4,
     title: 'Real Estate Intern',
     subtitle: '206 Realty',
     keywords: ['Python', 'Databases', 'Data Analytics', 'Lead Conversion', 'Real Estate'],
     description: 
       '● Optimized database schemas and data pipelines, improving reporting efficiency\n' +
       '● Analyzed client data and built a Python lead prioritization tool, increasing conversion rates by 28%\n' +
-      '● Executed 2,000+ cold calls\n',
+      '● Executed 2,000+ cold calls',
     dateRange: 'June 2022 - Aug 2022',
     location: 'Bellevue, WA',
     imageUrl: realty206,
   },
   {
-    id: 4,
+    id: 5,
     title: 'Computer Science Tutor',
     subtitle: 'Grade Potential',
     keywords: ['Tutoring', 'Computer Science', 'Student Development', 'Educational Content'],
@@ -139,7 +150,7 @@ const work_experiences = [
     imageUrl: gradepotential,
   },
   {
-    id: 5,
+    id: 6,
     title: 'Founder / Barber',
     subtitle: 'SLO Dorm Cuts',
     keywords: ['Entrepreneurship', 'Marketing', 'Customer Retention', 'Networking'],
@@ -156,7 +167,7 @@ const work_experiences = [
 
   },
   {
-    id: 6,
+    id: 7,
     title: 'Salon Coordinator',
     subtitle: 'Bombaii Cutters',
     keywords: ['Salon Management', 'Customer Service', 'Scheduling', 'Inventory Control'],
@@ -169,7 +180,7 @@ const work_experiences = [
     imageUrl: bombaiicutters,
   },
   {
-    id: 9,
+    id: 8,
     title: 'Associate',
     subtitle: 'Panera',
     keywords: ['Customer Service', 'Food Handling', 'Cash Register', 'Teamwork'],
@@ -181,7 +192,7 @@ const work_experiences = [
     imageUrl: panera,
   },
   {
-    id: 10,
+    id: 9,
     title: 'Basketball Referee',
     subtitle: 'Issaquah Parks and Recreation',
     keywords: ['Sports Officiating', 'Decision-Making', 'Conflict Resolution', 'Youth Engagement'],
