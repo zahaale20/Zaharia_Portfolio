@@ -110,7 +110,7 @@ const work_experiences = [
     description: 
     '● Empowered 30+ students to reach their academic computer science goals through personalized tutoring',
     dateRange: 'August 2023 - Present',
-    location: 'Sammamish, WA - Hybrid',
+    location: 'Greater Seattle Area',
     imageUrl: logiclab,
   },
   {
