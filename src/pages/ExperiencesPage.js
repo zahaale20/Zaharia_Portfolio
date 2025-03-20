@@ -110,7 +110,6 @@ const work_experiences = [
     subtitle: 'Logic Lab',
     keywords: ['Tutoring', 'Computer Science', 'Student Development', 'Educational Content'],
     description: 
-    '● Created a fast-paced startup environment with mentorship advising to research artificial intelligence and to build AI toolkits \n' +
     '● Empowered 30+ students to reach their academic computer science goals through personalized tutoring',
     dateRange: 'August 2023 - Present',
     location: 'Sammamish, WA - Hybrid',
@@ -118,26 +117,6 @@ const work_experiences = [
   },
   {
     id: 3,
-    title: 'Software Engineer',
-    subtitle: 'Gridiron GPT',
-    keywords: ['Tutoring', 'Computer Science', 'Student Development', 'Educational Content'],
-    description: 
-      '● Built a fantasy football platform on React, earning $1,000 from winning 2 out of 3 leagues in 2024 \n' +
-      '● Automated a data pipeline to scrape, clean, and aggregate 10+ NFL-related sources on a daily basis \n' +
-      '● Architected UML diagrams and Supabase database to manage over 300,000 entries of user and NFL data \n' +
-      '● Leveraged the OpenAI API to build a search tool, transforming user queries into PostgreSQL queries \n' +
-      '● Built a drafting tool, trade analyzer, and rankings tables to optimize lineups and trades \n' +
-      '● Optimizing ML models using sci-kitlearn to generate projections and analyze matchups \n' +
-      '● Integrated with ESPN and Sleeper to allow for personalized fantasy football recommendations',
-    dateRange: 'April 2024 - August 2024',
-    location: 'Remote',
-    imageUrl: gridirongpt,
-    googleSlidesUrl:
-      'https://docs.google.com/presentation/d/1f5Uvvdn9klbS11--1ogjVXEUgqaR2SuVQJXZdaBYJM4/edit?usp=sharing&usp=embed_facebook',
-
-  },
-  {
-    id: 4,
     title: 'Software Engineering Intern',
     subtitle: '206 Realty',
     keywords: ['Python', 'Databases', 'Data Analytics', 'Lead Conversion', 'Real Estate'],
@@ -151,7 +130,7 @@ const work_experiences = [
     imageUrl: realty206,
   },
   {
-    id: 3,
+    id: 4,
     title: 'Computer Science Tutor',
     subtitle: 'Grade Potential',
     keywords: ['Tutoring', 'Computer Science', 'Student Development', 'Educational Content'],
