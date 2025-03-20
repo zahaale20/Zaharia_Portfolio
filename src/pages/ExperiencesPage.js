@@ -120,10 +120,9 @@ const work_experiences = [
     subtitle: '206 Realty',
     keywords: ['Python', 'Databases', 'Data Analytics', 'Lead Conversion', 'Real Estate'],
     description: 
-      '● Collaborated with my manager to fully redesign the internal database schema and data collection processes\n' +
-      '● Analyzed historical conversion trends to identify key factors for successful client acquisition\n' +
-      '● Developed a lead prioritization tool in Python, boosting lead conversion rate by 28%\n' +
-      '● Executed 2,000+ cold calls, strategically identifying and setting up high-priority leads for further engagement',
+      '● Optimized database schemas and data pipelines, improving reporting efficiency\n' +
+      '● Analyzed client data and built a Python lead prioritization tool, increasing conversion rates by 28%\n' +
+      '● Executed 2,000+ cold calls\n',
     dateRange: 'June 2022 - Aug 2022',
     location: 'Bellevue, WA',
     imageUrl: realty206,

@@ -13,7 +13,6 @@ import {
   ExperienceImage,
   ProjectImage,
   ExperienceInfo,
-  ProjectDescImage,
   DescriptionText,
   KeyWordsText,
   KeyWordsContainer,
@@ -43,6 +42,8 @@ import information_retrieval from '../assets/information-retrieval.png';
 import memory from '../assets/memory.png';
 import lwp from '../assets/lwp.png';
 import eda from '../assets/eda.png';
+import hodlrocket from '../assets/hodlrocket.png';
+import sspt from '../assets/sspt_main.png'
 
 import ad1 from '../assets/ad1.png';
 import ad2 from '../assets/ad2.png';
@@ -93,7 +94,7 @@ const projects = [
   {
     id: 3,
     title: 'Directory Context Generator',
-    dateRange: 'Jan 2025',
+    dateRange: 'January 2025',
     location: 'Remote',
     keywords: [
       'Automation',
@@ -104,7 +105,10 @@ const projects = [
       'Directory Analysis'
     ],
     description:
-      'Automates project documentation by scanning directories and extracting key context. Uses Python (OS, pathlib) to analyze file structures, dependencies, and configurations. Parses files like package.json, requirements.txt, pyproject.toml, Dockerfiles, and .env. Generates structured summaries in Markdown or JSON for easy reference. Integrates OpenAI’s GPT-4o for code and dependency summaries.',
+      'Automates project documentation by scanning directories and extracting key context. ' +
+      'Uses Python (OS, pathlib) to analyze file structures, dependencies, and configurations. ' +
+      'Parses files like package.json, requirements.txt, pyproject.toml, Dockerfiles, and .env. ' +
+      'Generates structured summaries in Markdown or JSON for easy reference. Integrates OpenAI’s GPT-4o for code and dependency summaries.',
     imageUrl: directory_context_generator
   },
   {
@@ -124,7 +128,10 @@ const projects = [
       'Git'
     ],
     description:
-      'Built a fantasy football analytics toolkit that assisted in winning 2/3 fantasy football leagues, earning $1,000. Deployed a Python data pipeline to ETL 300,000+ NFL records daily from 10+ sources into a Supabase database. Engineered a search tool leveraging OpenAI API to convert user input into PostgreSQL for Supabase querying. Developed an XGBoost-based machine learning model to generate player projections and analyze matchups. Designed brand identity using Adobe Illustrator.',
+      'Built a fantasy football analytics toolkit that assisted in winning 2/3 fantasy football leagues, earning $1,000. ' +
+      'Deployed a Python data pipeline to ETL 300,000+ NFL records daily from 10+ sources into a Supabase database. ' +
+      'Engineered a search tool leveraging OpenAI API to convert user input into PostgreSQL for Supabase querying. ' + 
+      'Developed an XGBoost-based machine learning model to generate player projections and analyze matchups. Designed brand identity using Adobe Illustrator.',
     googleSlidesUrl:
       'https://docs.google.com/presentation/d/1f5Uvvdn9klbS11--1ogjVXEUgqaR2SuVQJXZdaBYJM4/edit?usp=sharing&usp=embed_facebook&usp=embed_facebook',
     imageUrl: gridirongpt
@@ -132,7 +139,7 @@ const projects = [
   {
     id: 4,
     title: 'haggle',
-    dateRange: 'Jan 2023 - June 2024',
+    dateRange: 'January 2023 - June 2024',
     location: 'San Luis Obispo, CA',
     keywords: [
       'Full Stack Development',
@@ -269,7 +276,7 @@ const projects = [
   {
     id: 11,
     title: 'Database Modeling',
-    dateRange: 'Feb 2024 - April 2024',
+    dateRange: 'February 2024 - April 2024',
     location: 'San Luis Obispo, CA',
     keywords: [
       'Database Design',
@@ -289,7 +296,7 @@ const projects = [
   {
     id: 12,
     title: 'Differential Privacy',
-    dateRange: 'Jun 2023 - Aug 2023',
+    dateRange: 'June 2023 - August 2023',
     location: 'San Luis Obispo, CA',
     keywords: [
       'Data Privacy',
@@ -308,7 +315,7 @@ const projects = [
   {
     id: 13,
     title: 'NFL QB Analysis',
-    dateRange: 'Jun 2023 - Aug 2023',
+    dateRange: 'June 2023 - August 2023',
     location: 'San Luis Obispo, CA',
     keywords: [
       'Apache Spark',
@@ -327,7 +334,7 @@ const projects = [
   {
     id: 14,
     title: 'Edit Distance',
-    dateRange: 'Jan 2023',
+    dateRange: 'January 2023',
     location: 'San Luis Obispo, CA',
     keywords: [
       'String Matching Algorithms',
@@ -344,7 +351,7 @@ const projects = [
   {
     id: 15,
     title: 'Strongly Connected Components',
-    dateRange: 'Jan 2023',
+    dateRange: 'January 2023',
     location: 'San Luis Obispo, CA',
     keywords: [
       'Graph Algorithms',
@@ -361,7 +368,7 @@ const projects = [
   {
     id: 16,
     title: 'Divide and Conquer',
-    dateRange: 'Jan 2023',
+    dateRange: 'January 2023',
     location: 'San Luis Obispo, CA',
     keywords: [
       'Divide and Conquer Algorithms',
@@ -373,6 +380,45 @@ const projects = [
       'Designed and implemented a divide-and-conquer algorithm in Python to efficiently identify the unique singleton element in a sorted sequence of integers where all other elements are duplicated. The algorithm divides the problem space into smaller sub-problems, determines the singleton by analyzing the middle element and its neighbors, and adjusts the search space based on whether the middle element and its position (odd or even) align with duplication patterns. This approach minimizes comparisons and ensures high efficiency. The program reads integers from a file, processes the sequence line by line, and outputs the singleton element to stdout.',
     githubUrl: 'https://github.com/zahaale20/Divide-and-Conquer',
     imageUrl: divideconquer
+  },
+  {
+    id: 17,
+    title: 'The Secret Society of Pixel Thugs',
+    dateRange: 'April 2021 - August 2021',
+    location: 'San Luis Obispo, CA',
+    keywords: [
+      'Web 3.0',
+      'NFT',
+      'Project Management',
+      'Graphic Design',
+      'Marketing',
+      'Branding'
+    ],
+    description:
+      'Designed 302 unique traits for the Pixel Thug NFT collection in Adobe Illustrator. ' +
+      'Generated 5,000 NFTs with JavaScript, embedding metadata and randomizing layers.',
+    googleSlidesUrl: 'https://docs.google.com/presentation/d/1gFCEblNixQbspmDqczvLn9asbL-J0fPMgzeBW5jwcwA/edit?usp=sharing&usp=embed_facebook&usp=embed_facebook',
+    imageUrl: sspt
+  },
+  {
+    id: 18,
+    title: 'HODLRocket',
+    dateRange: 'April 2020 - August 2020',
+    location: 'San Luis Obispo, CA',
+    keywords: [
+      'Web 3.0',
+      'Cryptocurrency',
+      'Project Management',
+      'Asset Management',
+      'Web Design',
+      'Marketing',
+      'Branding'
+    ],
+    description:
+      'Co-launched a BEP-20 token in a team of 3, reaching a $30K+ market cap, and strategically grew $100K+ in Web 3.0 assets. ' +
+      'Designed website (GoDaddy) and branding (Adobe Illustrator) while driving engagement in a 1,000+ member network.',
+    googleSlidesUrl: 'https://poocoin.app/tokens/0x7cac1f986a9573c83dabc72602aeec69afd3b336',
+    imageUrl: hodlrocket
   }
 ];
 
