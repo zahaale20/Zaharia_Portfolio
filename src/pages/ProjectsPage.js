@@ -52,8 +52,6 @@ import ad3 from '../assets/ad3.png';
 import real_estate_ml from '../assets/real_estate_ml.png';
 import tinyfs from '../assets/tinyfs.png';
 
-
-
 const projects = [
   {
     id: 1,
@@ -63,11 +61,11 @@ const projects = [
     keywords: [
       'Full Stack Development',
       'FastAPI',
-      'WebSocket',
-      'Polymarket',
-      'Sentiment Analysis',
       'Solana',
+      'WebSocket',
+      'Sentiment Analysis',
       'OpenAI API',
+      'Real-Time Updates',
       'Python'
     ],
     description:
@@ -80,12 +78,12 @@ const projects = [
     dateRange: 'January 2025',
     location: 'Remote',
     keywords: [
-      'Automation',
+      'Content Automation',
       'Python',
-      'OpenAI API',
-      'GPT-3.5',
+      'OpenAI GPT-3.5',
       'GPT-4o',
-      'Blog Post Generation'
+      'Blog Generation',
+      'High-Quality Posts'
     ],
     description:
       'Automated the blog post creation process using Python and OpenAI API (GPT-3.5) to transform user ideas into structured outlines. Utilized the GPT-4o model to expand outlines into detailed, high-quality 2,000-3,000 word blog posts. Used GPT-4o for precise paragraph edits, improving accuracy, engagement, and readability. Streamlined workflow efficiency by automating formatting and structuring, reducing manual editing time.',
@@ -97,12 +95,12 @@ const projects = [
     dateRange: 'January 2025',
     location: 'Remote',
     keywords: [
+      'Directory Analysis',
       'Automation',
       'Python',
       'Documentation',
-      'OpenAI API',
       'GPT-4o',
-      'Directory Analysis'
+      'OpenAI API'
     ],
     description:
       'Automates project documentation by scanning directories and extracting key context. ' +
@@ -117,15 +115,12 @@ const projects = [
     dateRange: 'April 2023 - August 2024',
     location: 'San Luis Obispo, CA',
     keywords: [
+      'Fantasy Football Analytics',
       'Full Stack Development',
       'React',
-      'JavaScript',
-      'HTML/CSS',
-      'PostgreSQL',
-      'OpenAI',
+      'OpenAI API',
       'Supabase',
-      'Google Cloud',
-      'Git'
+      'XGBoost'
     ],
     description:
       'Built a fantasy football analytics toolkit that assisted in winning 2/3 fantasy football leagues, earning $1,000. ' +
@@ -142,15 +137,12 @@ const projects = [
     dateRange: 'January 2023 - June 2024',
     location: 'San Luis Obispo, CA',
     keywords: [
-      'Full Stack Development',
+      'Local Marketplace',
+      'Full Stack',
       'React',
-      'JavaScript',
-      'HTML/CSS',
-      'PostgreSQL',
       'Supabase',
-      'Google Cloud',
-      'AWS',
-      'Git'
+      'User Deals',
+      'Cloud Integration'
     ],
     description:
       'A digital marketplace, haggle helps Cal Poly students buy, sell, and trade within the San Luis Obispo community. This app not only showcases local listings across a variety of categories, but also facilitates a seamless communication stream between users, allowing them to send and receive offers directly within the platform. Moreover, users enjoy complete control over their listings, with easy-to-use tools for managing and updating offers. Whether you are decluttering your dorm, searching for textbooks, or finding unique local treasures, Haggle will help you get it done.',
@@ -164,14 +156,12 @@ const projects = [
     dateRange: 'June 2024',
     location: 'San Luis Obispo, CA',
     keywords: [
+      'Real Estate Valuation',
       'Machine Learning',
       'Python',
-      'Data Analysis',
-      'Feature Engineering',
-      'Regression Models',
       'XGBoost',
-      'Scikit-Learn',
-      'Hugging Face'
+      'Regression Analysis',
+      'Predictive Modeling'
     ],
     description:
       'The real estate valuation tool project develops a predictive modeling application to estimate U.S. home prices based on location and property features. Utilizing historical data and regression techniques, the tool refines various predictive models to enhance accuracy in home valuations. Users can input property details through an intuitive interface, which the system processes using algorithms to predict current market values. The project facilitates comparative analysis of different modeling methods, offering insights into the most effective techniques for real estate price prediction.',
@@ -188,12 +178,11 @@ const projects = [
     location: 'San Luis Obispo, CA',
     keywords: [
       'Exploratory Data Analysis',
-      'Python',
       'Pandas',
-      'NumPy',
+      'Python',
       'Matplotlib',
       'Seaborn',
-      'Statistical Analysis'
+      'Statistical Insights'
     ],
     description:
       'The project involves a detailed exploratory data analysis on an insurance company dataset to determine key attributes for policy classification. Using Python and tools like pandas, matplotlib, and seaborn, the analysis includes data preprocessing, visualization of numerical distributions, and relationship assessments between policy types and demographic variables. Statistical methods like correlation matrices and chi-square tests identify age and motor value as significant predictors. Insights derived from these analyses inform targeted marketing strategies, demonstrating the importance of tailored data analysis in policyholder segmentation.',
@@ -210,9 +199,8 @@ const projects = [
       'Information Retrieval',
       'TF-IDF',
       'Cosine Similarity',
-      'Text Processing',
       'Python',
-      'Natural Language Processing',
+      'NLP',
       'Document Ranking'
     ],
     description:
@@ -227,11 +215,11 @@ const projects = [
     dateRange: 'June 2024',
     location: 'San Luis Obispo, CA',
     keywords: [
-      'C Programming',
-      'File System Design',
+      'C Language',
+      'File System',
       'Linked Lists',
-      'Memory Management',
       'Directory Structures',
+      'Memory Management',
       'Data Storage'
     ],
     description:
@@ -245,10 +233,10 @@ const projects = [
     dateRange: 'May 2024',
     location: 'San Luis Obispo, CA',
     keywords: [
-      'C Programming',
-      'Memory Management',
-      'Page Replacement Algorithms',
-      'Translation Lookaside Buffer',
+      'Memory Simulation',
+      'C Language',
+      'Page Replacement',
+      'TLB',
       'Operating Systems'
     ],
     description:
@@ -262,8 +250,8 @@ const projects = [
     dateRange: 'April 2024',
     location: 'San Luis Obispo, CA',
     keywords: [
-      'C Programming',
-      'Thread Management',
+      'Thread Library',
+      'C Language',
       'Context Switching',
       'Round-Robin Scheduling',
       'Memory Allocation'
@@ -279,12 +267,12 @@ const projects = [
     dateRange: 'February 2024 - April 2024',
     location: 'San Luis Obispo, CA',
     keywords: [
-      'Database Design',
-      'UML Modeling',
-      'Entity-Relationship Diagrams',
-      'SQL',
+      'Relational Modeling',
+      'SQL Schema',
+      'UML E/R',
       'Java Persistence API',
-      'JSON Processing'
+      'Data Normalization',
+      'JSON Schema'
     ],
     description:
       "Analyzed Jamba Juice's business rules and information requirements to design a comprehensive Entity/Relationship (E/R) UML model, which was translated into SQL DDL for database schema creation. Optimized schema integrity by refining the design to eliminate anomalies and redundancies, applying lossless decomposition (verified with the chase test) to prevent information loss, and preserving constraints based on functional dependencies. Implemented object-relational mapping using Java Persistence API (JPA) to connect a Java application to a MySQL database and developed SQL queries to address predefined information needs. Designed and populated a document schema using JSON Schema and wrote JSONPath queries to meet the same information requirements as the relational schema. Refinements ensured data consistency, reduced redundancies, and improved query efficiency while aligning schema structures with business objectives.",
@@ -299,13 +287,12 @@ const projects = [
     dateRange: 'June 2023 - August 2023',
     location: 'San Luis Obispo, CA',
     keywords: [
-      'Data Privacy',
       'Differential Privacy',
-      'Python',
       'OpenDP',
       'K-Anonymity',
-      'L-Diversity',
-      'Pandas'
+      'Python',
+      'Data Privacy',
+      'Noise Mechanisms'
     ],
     description:
       "Utilized a Forbes Billionaires dataset from Kaggle to implement and evaluate various privacy preservation methodologies (PPM), including k-Anonymity, l-Diversity, and differential privacy (DP) using OpenDP's Laplace Mechanism, with a focus on balancing the preservation of individual privacy and the utility of sensitive data. Adjusted the Laplace mechanism's scale parameter to analyze, illustrate, and explain the trade-offs between increasing and decreasing noise in the data, demonstrating the delicate equilibrium required to ensure both privacy protection and data usability.",
@@ -320,10 +307,10 @@ const projects = [
     keywords: [
       'Apache Spark',
       'ETL Pipelines',
-      'SQL',
-      'Python',
-      'Fantasy Football Analytics',
-      'Big Data Processing'
+      'Fantasy Football',
+      'PySpark',
+      'Dataframes',
+      'Big Data Analysis'
     ],
     description:
       'Developed ETL processes using Apache Spark (specifically PySpark), Dataframes, and SQL to analyze over 114,000 lines of weekly NFL player data from 1990 to 2022. Implemented data pipelines to evaluate quarterbacks fantasy football production, individual performance considering team dynamics, and to categorize quarterbacks in a tier list in order to gain insights for the 2023 fantasy football season.',
@@ -337,11 +324,11 @@ const projects = [
     dateRange: 'January 2023',
     location: 'San Luis Obispo, CA',
     keywords: [
-      'String Matching Algorithms',
-      'Levenshtein Distance',
+      'Edit Distance',
+      'Levenshtein Algorithm',
       'Dynamic Programming',
       'Python',
-      'Computational Linguistics'
+      'Text Similarity'
     ],
     description:
       'Implemented the Levenshtein distance algorithm, a crucial metric in the field of computational linguistics and computer science for measuring the similarity between two strings. By computing the minimum number of single-character edits required to change one word into another—permitting insertions, deletions, and substitutions—this script demonstrates a fundamental approach to understanding textual data. The core of the project involves constructing a dynamic programming matrix to iteratively calculate distances, offering insights into the optimization of string comparison processes.',
@@ -354,9 +341,9 @@ const projects = [
     dateRange: 'January 2023',
     location: 'San Luis Obispo, CA',
     keywords: [
-      'Graph Algorithms',
-      'Depth-First Search',
-      'Strongly Connected Components',
+      'Graph Analysis',
+      'DFS',
+      'SCC Detection',
       'Python',
       'Algorithm Optimization'
     ],
@@ -371,10 +358,11 @@ const projects = [
     dateRange: 'January 2023',
     location: 'San Luis Obispo, CA',
     keywords: [
-      'Divide and Conquer Algorithms',
-      'Time Complexity Analysis',
+      'Divide and Conquer',
       'Python',
-      'Computational Efficiency'
+      'Algorithm Design',
+      'Computational Efficiency',
+      'Time Complexity'
     ],
     description:
       'Designed and implemented a divide-and-conquer algorithm in Python to efficiently identify the unique singleton element in a sorted sequence of integers where all other elements are duplicated. The algorithm divides the problem space into smaller sub-problems, determines the singleton by analyzing the middle element and its neighbors, and adjusts the search space based on whether the middle element and its position (odd or even) align with duplication patterns. This approach minimizes comparisons and ensures high efficiency. The program reads integers from a file, processes the sequence line by line, and outputs the singleton element to stdout.',
@@ -387,12 +375,12 @@ const projects = [
     dateRange: 'April 2021 - August 2021',
     location: 'San Luis Obispo, CA',
     keywords: [
+      'NFT Collection',
       'Web 3.0',
-      'NFT',
-      'Project Management',
-      'Graphic Design',
-      'Marketing',
-      'Branding'
+      'Pixel Art',
+      'Branding',
+      'JavaScript Generation',
+      'Marketing'
     ],
     description:
       'Designed 302 unique traits for the Pixel Thug NFT collection in Adobe Illustrator. ' +
@@ -406,13 +394,12 @@ const projects = [
     dateRange: 'April 2020 - August 2020',
     location: 'San Luis Obispo, CA',
     keywords: [
-      'Web 3.0',
       'Cryptocurrency',
-      'Project Management',
-      'Asset Management',
-      'Web Design',
-      'Marketing',
-      'Branding'
+      'Web 3.0',
+      'BEP-20 Token',
+      'Branding',
+      'Market Cap Growth',
+      'Digital Assets'
     ],
     description:
       'Co-launched a BEP-20 token in a team of 3, reaching a $30K+ market cap, and strategically grew $100K+ in Web 3.0 assets. ' +
@@ -421,7 +408,6 @@ const projects = [
     imageUrl: hodlrocket
   }
 ];
-
 
 const renderLinkButtons = (project) => {
   const linkTypes = [
@@ -445,7 +431,6 @@ const renderLinkButtons = (project) => {
   ));
 };
 
-
 function ProjectsPage() {
   const [selectedProjectId, setSelectedProjectId] = useState(projects[0].id);
   const projectRefs = useRef(new Array());
@@ -456,7 +441,6 @@ function ProjectsPage() {
     window.open('https://github.com/zahaale20', '_blank');
   };
   
-
   useEffect(() => {
     // Scroll to the selected project
     const selectedProjectIndex = projects.findIndex(project => project.id === selectedProjectId);
@@ -476,59 +460,67 @@ function ProjectsPage() {
   return (
     <>
       <GlobalStyle />
-        <FrameLayout>
-          <VertNavContainer>
-            <VertNavBar>
-                {projects.map((project, index) => (
-                  <ProjectNavItem
-                    key={project.id}
-                    onClick={() => setSelectedProjectId(project.id)}
-                    isSelected={selectedProjectId === project.id}
-                  >
-                    <ProjectImage src={project.imageUrl} alt={project.title} style={{ width: '50px', height: '50px', objectFit: 'cover' }} />
-                  </ProjectNavItem>
-                ))}
-                <MoreProjectsNavItem onClick={handleGitHubClick} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <MoreProjectsText style={{ fontSize: '24px', color: 'rgba(255, 255, 255, 0.6)' }}>...</MoreProjectsText>
-                </MoreProjectsNavItem>
-            </VertNavBar>
-          </VertNavContainer>
-  
-          <MainContainer>
+      <FrameLayout>
+        <VertNavContainer>
+          <VertNavBar>
             {projects.map((project, index) => (
-              <div ref={(el) => (projectRefs.current[index] = el)} key={project.id}>
-                <ExperienceContainer>
-                  <ExperienceHeaderContainer>
-                    <ExperienceImage src={project.imageUrl} alt={project.title} />
-                    <ExperienceInfo>
-                      <ProjectDescription>{project.dateRange}</ProjectDescription>
-                      <ProjectTitle>{project.title}</ProjectTitle>
-                      <ProjectDescription>{project.location}</ProjectDescription>
-                    </ExperienceInfo>
-                  </ExperienceHeaderContainer>
-  
-                  <ExperienceDescriptionContainer>
-                    <KeyWordsContainer>
-                      {project.keywords?.map((tech, index) => (
-                        <KeyWordsText key={index}>{tech}</KeyWordsText>
-                      ))}
-                    </KeyWordsContainer>
-  
-                    <DescriptionHeaderText>Description</DescriptionHeaderText>
-                    <DescriptionText>{project.description}</DescriptionText>
-  
-                    <ProjectLinksContainer>
-                      {renderLinkButtons(project)}
-                    </ProjectLinksContainer>
-                  </ExperienceDescriptionContainer>
-                </ExperienceContainer>
-              </div>
+              <ProjectNavItem
+                key={project.id}
+                onClick={() => setSelectedProjectId(project.id)}
+                isSelected={selectedProjectId === project.id}
+              >
+                <ProjectImage
+                  src={project.imageUrl}
+                  alt={project.title}
+                  style={{ width: '50px', height: '50px', objectFit: 'cover' }}
+                />
+              </ProjectNavItem>
             ))}
-          </MainContainer>
-          <AdContainer>
-            <AdImage src={adImages[adIndex]} alt="Advertisement" />
-          </AdContainer>
-        </FrameLayout>
+            <MoreProjectsNavItem
+              onClick={handleGitHubClick}
+              style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+            >
+              <MoreProjectsText style={{ fontSize: '24px', color: 'rgba(255, 255, 255, 0.6)' }}>...</MoreProjectsText>
+            </MoreProjectsNavItem>
+          </VertNavBar>
+        </VertNavContainer>
+
+        <MainContainer>
+          {projects.map((project, index) => (
+            <div ref={(el) => (projectRefs.current[index] = el)} key={project.id}>
+              <ExperienceContainer>
+                <ExperienceHeaderContainer>
+                  <ExperienceImage src={project.imageUrl} alt={project.title} />
+                  <ExperienceInfo>
+                    <ProjectDescription>{project.dateRange}</ProjectDescription>
+                    <ProjectTitle>{project.title}</ProjectTitle>
+                    <ProjectDescription>{project.location}</ProjectDescription>
+                  </ExperienceInfo>
+                </ExperienceHeaderContainer>
+
+                <ExperienceDescriptionContainer>
+                  <KeyWordsContainer>
+                    {project.keywords?.map((tech, idx) => (
+                      <KeyWordsText key={idx}>{tech}</KeyWordsText>
+                    ))}
+                  </KeyWordsContainer>
+
+                  <DescriptionHeaderText>Description</DescriptionHeaderText>
+                  <DescriptionText>{project.description}</DescriptionText>
+
+                  <ProjectLinksContainer>
+                    {renderLinkButtons(project)}
+                  </ProjectLinksContainer>
+                </ExperienceDescriptionContainer>
+              </ExperienceContainer>
+            </div>
+          ))}
+        </MainContainer>
+
+        <AdContainer>
+          <AdImage src={adImages[adIndex]} alt="Advertisement" />
+        </AdContainer>
+      </FrameLayout>
     </>
   );
 }
