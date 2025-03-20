@@ -149,7 +149,7 @@ const work_experiences = [
       '● Provided free haircuts to the 12 people on my dorm floor to build a portfolio\n' +
       '● Launched an Instagram page showcasing haircuts, leading to rapid word-of-mouth marketing\n' +
       '● Expanded business through Greek life networking, performing 10-12 haircuts per day',
-    dateRange: 'Jan 2021 - Aug 2022',
+    dateRange: 'Dec 2020 - Jun 2023',
     location: 'San Luis Obispo, CA',
     imageUrl: dormcuts,
     socialmediaURL:
