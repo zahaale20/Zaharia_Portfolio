@@ -116,7 +116,7 @@ const work_experiences = [
   },
   {
     id: 3,
-    title: 'Software Engineering Intern',
+    title: 'Real Estate Intern',
     subtitle: '206 Realty',
     keywords: ['Python', 'Databases', 'Data Analytics', 'Lead Conversion', 'Real Estate'],
     description: 
