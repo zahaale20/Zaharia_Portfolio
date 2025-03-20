@@ -169,36 +169,6 @@ const work_experiences = [
     imageUrl: bombaiicutters,
   },
   {
-    id: 7,
-    title: 'Graphic Designer/Developer',
-    subtitle: 'Secret Society of Pixel Thugz NFT',
-    keywords: ['Graphic Design', 'NFT', 'Adobe Illustrator', 'JavaScript', 'Branding'],
-    description:
-      '● Designed 302 unique traits for the Pixel Thug NFT collection using Adobe Illustrator\n' +
-      '● Randomized layers, embedded metadata, and generated 5,000 NFTs using JavaScript\n' +
-      '● Sold the Pixel Thug NFT collection for $3,000, showcasing successful branding and execution',
-    dateRange: 'Apr 2021 - Aug 2021 · 5 mos',
-    location: 'On-site',
-    imageUrl: pixelthugz,
-    googleSlidesUrl: 'https://docs.google.com/presentation/d/1gFCEblNixQbspmDqczvLn9asbL-J0fPMgzeBW5jwcwA/edit?usp=sharing&usp=embed_facebook'
-  },
-  {
-    id: 8,
-    title: 'Blockchain Developer',
-    subtitle: 'HODLRocket BEP-20',
-    keywords: ['Blockchain Development', 'BEP-20', 'Team Collaboration', 'Web3', 'Smart Contracts'],
-    description:
-      '● Collaborated in a team of 3 to launch a BEP-20 token, achieving a $30,000+ market cap\n' +
-      '● Accumulated $100,000+ in Web 3.0 assets with strategic planning and investing\n' +
-      '● Designed website using GoDaddy and branding with Adobe Illustrator\n' +
-      '● Drove engagement in a digital social network of over 1,000+ members',
-    dateRange: 'Apr 2020 - Aug 2020 · 5 mos',
-    location: 'San Luis Obispo, CA, United States · On-site',
-    imageUrl: hodlrocket,
-    poocoinUrl: 'https://poocoin.app/tokens/0x7cac1f986a9573c83dabc72602aeec69afd3b336'
-  },
-  
-  {
     id: 9,
     title: 'Associate',
     subtitle: 'Panera',
