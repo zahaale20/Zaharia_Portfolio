@@ -119,10 +119,10 @@ const work_experiences = [
     subtitle: 'RevereXR',
     keywords: ['VR','OpenAI', 'Python', 'React'],
     description: 
-    '● Storyboarded a VR game on Google Slides to bring Lewis Rudd’s story of Ezelle’s Famous Chicken’s to life\n' +
+    '● Storyboarded a VR game on Google Slides to bring Lewis Rudd\’s story of Ezelle\’s Famous Chicken\’s to life\n' +
     '● Prototyped an AI MVP to break down narratives into social media captions and images using GPT-4 and DALL-E',
-    dateRange: 'August 2023 - Present',
-    location: 'Sammamish, WA - Hybrid',
+    dateRange: 'February 2025',
+    location: 'Seattle, WA',
     imageUrl: revere,
   },
   {
