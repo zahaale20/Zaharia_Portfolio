@@ -123,7 +123,7 @@ const work_experiences = [
     '● Prototyped an AI MVP to break down narratives into social media captions and images using GPT-4 and DALL-E',
     dateRange: 'August 2023 - Present',
     location: 'Sammamish, WA - Hybrid',
-    imageUrl: logiclab,
+    imageUrl: revere,
   },
   {
     id: 4,
