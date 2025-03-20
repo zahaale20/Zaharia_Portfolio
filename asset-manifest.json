@@ -1,11 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.458372f1.css",
-    "main.js": "/static/js/main.38d61fb4.js",
+    "main.js": "/static/js/main.5a68cd01.js",
     "static/js/453.2577e14c.chunk.js": "/static/js/453.2577e14c.chunk.js",
     "static/media/Profile-pic.png": "/static/media/Profile-pic.256546d09eb8d1001b01.png",
     "static/media/haggle.jpg": "/static/media/haggle.a128314f8dbe5233a272.jpg",
-    "static/media/pixelthugz.png": "/static/media/pixelthugz.6e2f96ee2157376ba124.png",
     "static/media/sspt_main.png": "/static/media/sspt_main.6e2f96ee2157376ba124.png",
     "static/media/calpoly.png": "/static/media/calpoly.547a1363b8b0a1b24249.png",
     "static/media/ib.png": "/static/media/ib.a0d8f58b1e862a68d6e8.png",
@@ -41,6 +40,7 @@
     "static/media/gradepotential.png": "/static/media/gradepotential.b3fc856a257d02f324bf.png",
     "static/media/zaharia_logo.png": "/static/media/zaharia_logo.bd732d33aed8155185f0.png",
     "static/media/logiclab.png": "/static/media/logiclab.bbd012bf73d29da7777d.png",
+    "static/media/revere.png": "/static/media/revere.c5f7979c9573f7a307df.png",
     "static/media/divideconquer.png": "/static/media/divideconquer.ac5396033623c318d69b.png",
     "static/media/gridirongpt.png": "/static/media/gridirongpt.86335fcdc1a13c6696bd.png",
     "static/media/seattleu.jpg": "/static/media/seattleu.bb87e923207aa3b0a42f.jpg",
@@ -51,11 +51,11 @@
     "static/media/dormcuts.jpg": "/static/media/dormcuts.a82731fbaa36bbd8e626.jpg",
     "index.html": "/index.html",
     "main.458372f1.css.map": "/static/css/main.458372f1.css.map",
-    "main.38d61fb4.js.map": "/static/js/main.38d61fb4.js.map",
+    "main.5a68cd01.js.map": "/static/js/main.5a68cd01.js.map",
     "453.2577e14c.chunk.js.map": "/static/js/453.2577e14c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.458372f1.css",
-    "static/js/main.38d61fb4.js"
+    "static/js/main.5a68cd01.js"
   ]
 }
