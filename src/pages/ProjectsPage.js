@@ -31,6 +31,7 @@ import {
 import soltix from "../assets/soltix.png";
 import blog_post_generator from "../assets/blog_post_generator.png";
 import directory_context_generator from '../assets/directory_context_generator.png';
+import gridirongpt from '../assets/gridirongpt.png';
 import haggle from '../assets/haggle.jpg';
 import jambajuice from '../assets/jambajuice.png';
 import nfl from '../assets/nfl.png';
@@ -56,7 +57,7 @@ const projects = [
   {
     id: 1,
     title: 'Soltix',
-    dateRange: 'Feb 2025 - Present',
+    dateRange: 'February 2025 - March 2025',
     location: 'Remote',
     keywords: [
       'Full Stack Development',
@@ -75,7 +76,7 @@ const projects = [
   {
     id: 2,
     title: 'Blog Post Generator',
-    dateRange: 'Jan 2025',
+    dateRange: 'January 2025',
     location: 'Remote',
     keywords: [
       'Automation',
@@ -105,6 +106,28 @@ const projects = [
     description:
       'Automates project documentation by scanning directories and extracting key context. Uses Python (OS, pathlib) to analyze file structures, dependencies, and configurations. Parses files like package.json, requirements.txt, pyproject.toml, Dockerfiles, and .env. Generates structured summaries in Markdown or JSON for easy reference. Integrates OpenAI’s GPT-4o for code and dependency summaries.',
     imageUrl: directory_context_generator
+  },
+  {
+    id: 3,
+    title: 'Gridiron GPT',
+    dateRange: 'April 2023 - August 2024',
+    location: 'San Luis Obispo, CA',
+    keywords: [
+      'Full Stack Development',
+      'React',
+      'JavaScript',
+      'HTML/CSS',
+      'PostgreSQL',
+      'OpenAI',
+      'Supabase',
+      'Google Cloud',
+      'Git'
+    ],
+    description:
+      'Built a fantasy football analytics toolkit that assisted in winning 2/3 fantasy football leagues, earning $1,000. Deployed a Python data pipeline to ETL 300,000+ NFL records daily from 10+ sources into a Supabase database. Engineered a search tool leveraging OpenAI API to convert user input into PostgreSQL for Supabase querying. Developed an XGBoost-based machine learning model to generate player projections and analyze matchups. Designed brand identity using Adobe Illustrator.',
+    googleSlidesUrl:
+      'https://docs.google.com/presentation/d/1f5Uvvdn9klbS11--1ogjVXEUgqaR2SuVQJXZdaBYJM4/edit?usp=sharing&usp=embed_facebook&usp=embed_facebook',
+    imageUrl: gridirongpt
   },
   {
     id: 4,

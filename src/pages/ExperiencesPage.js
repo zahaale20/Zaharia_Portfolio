@@ -32,7 +32,6 @@ import skyline from '../assets/skyline.png';
 
 import logiclab from '../assets/logiclab.png';
 import cac from '../assets/cac.png';
-import gridirongpt from '../assets/gridirongpt.png';
 import gradepotential from '../assets/gradepotential.png';
 import realty206 from '../assets/realty206.png';
 import bombaiicutters from '../assets/bombaiicutters.png'
