@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.458372f1.css",
-    "main.js": "/static/js/main.5a2f0e5c.js",
+    "main.js": "/static/js/main.44007af8.js",
     "static/js/453.2577e14c.chunk.js": "/static/js/453.2577e14c.chunk.js",
     "static/media/sora5.mp4": "/static/media/sora5.c6cd28a161f863c7ec4e.mp4",
     "static/media/sora4.mp4": "/static/media/sora4.1f4c56881f7a61247a34.mp4",
@@ -12,8 +12,8 @@
     "static/media/sora1.mp4": "/static/media/sora1.99bcd95ceadfd34ab03c.mp4",
     "static/media/Profile-pic.png": "/static/media/Profile-pic.256546d09eb8d1001b01.png",
     "static/media/sora_experiments.png": "/static/media/sora_experiments.54152134c1d3a06fa91f.png",
+    "static/media/tiktok_sentiment_analysis.png": "/static/media/tiktok_sentiment_analysis.73ea5e1da7098a39b213.png",
     "static/media/eda.png": "/static/media/eda.b504918100b899b828fa.png",
-    "static/media/tiktok_youtube.png": "/static/media/tiktok_youtube.4d13690d8ccd1208a58f.png",
     "static/media/real_estate_ml.png": "/static/media/real_estate_ml.eebc05486ec79fdd8fc8.png",
     "static/media/skygate.png": "/static/media/skygate.55d7a8b4b161e7d674b4.png",
     "static/media/directory_context_generator.png": "/static/media/directory_context_generator.038bc44e80b087b01d7a.png",
@@ -68,11 +68,11 @@
     "static/media/dormcuts.jpg": "/static/media/dormcuts.a82731fbaa36bbd8e626.jpg",
     "index.html": "/index.html",
     "main.458372f1.css.map": "/static/css/main.458372f1.css.map",
-    "main.5a2f0e5c.js.map": "/static/js/main.5a2f0e5c.js.map",
+    "main.44007af8.js.map": "/static/js/main.44007af8.js.map",
     "453.2577e14c.chunk.js.map": "/static/js/453.2577e14c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.458372f1.css",
-    "static/js/main.5a2f0e5c.js"
+    "static/js/main.44007af8.js"
   ]
 }
