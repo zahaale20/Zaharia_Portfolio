@@ -1,11 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.458372f1.css",
-    "main.js": "/static/js/main.040414bf.js",
+    "main.js": "/static/js/main.edc7626c.js",
     "static/js/453.2577e14c.chunk.js": "/static/js/453.2577e14c.chunk.js",
     "static/media/Profile-pic.png": "/static/media/Profile-pic.256546d09eb8d1001b01.png",
+    "static/media/eda.png": "/static/media/eda.b504918100b899b828fa.png",
     "static/media/tiktok_youtube.png": "/static/media/tiktok_youtube.4d13690d8ccd1208a58f.png",
+    "static/media/real_estate_ml.png": "/static/media/real_estate_ml.eebc05486ec79fdd8fc8.png",
     "static/media/skygate.png": "/static/media/skygate.55d7a8b4b161e7d674b4.png",
+    "static/media/directory_context_generator.png": "/static/media/directory_context_generator.038bc44e80b087b01d7a.png",
     "static/media/microsoft_stock.png": "/static/media/microsoft_stock.b43ded57508b70889a05.png",
     "static/media/svhn.png": "/static/media/svhn.07f38be3ab61afb7c1cb.png",
     "static/media/haggle.jpg": "/static/media/haggle.a128314f8dbe5233a272.jpg",
@@ -26,10 +29,8 @@
     "static/media/jambajuice.png": "/static/media/jambajuice.715abef1c5f0573aeb20.png",
     "static/media/cac.png": "/static/media/cac.1a25f8044b6910a58556.png",
     "static/media/hodlrocket.png": "/static/media/hodlrocket.31da7ba3659a7522c632.png",
-    "static/media/real_estate_ml.png": "/static/media/real_estate_ml.2791bc0ace9390ebff4d.png",
     "static/media/bombaiicutters.png": "/static/media/bombaiicutters.69e65b6d1ae9bff4f6e9.png",
     "static/media/lwp.png": "/static/media/lwp.c95bc1287fe403f5e9a6.png",
-    "static/media/eda.png": "/static/media/eda.9127d0bbc6e77000a56c.png",
     "static/media/achievements.png": "/static/media/achievements.e3120a9049760806ba8e.png",
     "static/media/linkedin.png": "/static/media/linkedin.a5b727987c2379bc57c4.png",
     "static/media/opendp.png": "/static/media/opendp.5d43a9c4db2f83cd56e9.png",
@@ -51,15 +52,14 @@
     "static/media/forgottenfaces.jpeg": "/static/media/forgottenfaces.854309503e7ad9e4a597.jpeg",
     "static/media/blog_post_generator.png": "/static/media/blog_post_generator.daee7cfc8268c8f10d17.png",
     "static/media/soltix.png": "/static/media/soltix.c0aa8ffd0ae0f7532dd8.png",
-    "static/media/directory_context_generator.png": "/static/media/directory_context_generator.8f30d7783ebee9707167.png",
     "static/media/dormcuts.jpg": "/static/media/dormcuts.a82731fbaa36bbd8e626.jpg",
     "index.html": "/index.html",
     "main.458372f1.css.map": "/static/css/main.458372f1.css.map",
-    "main.040414bf.js.map": "/static/js/main.040414bf.js.map",
+    "main.edc7626c.js.map": "/static/js/main.edc7626c.js.map",
     "453.2577e14c.chunk.js.map": "/static/js/453.2577e14c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.458372f1.css",
-    "static/js/main.040414bf.js"
+    "static/js/main.edc7626c.js"
   ]
 }
