@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.458372f1.css",
-    "main.js": "/static/js/main.c13002a1.js",
+    "main.css": "/static/css/main.1eacb088.css",
+    "main.js": "/static/js/main.ceee6031.js",
     "static/js/453.2577e14c.chunk.js": "/static/js/453.2577e14c.chunk.js",
     "static/media/sora5.mp4": "/static/media/sora5.c6cd28a161f863c7ec4e.mp4",
     "static/media/sora4.mp4": "/static/media/sora4.1f4c56881f7a61247a34.mp4",
@@ -31,7 +31,7 @@
     "static/media/issaquah.png": "/static/media/issaquah.d33fe7fa4ded40c23ed9.png",
     "static/media/skyline.png": "/static/media/skyline.af1952dcbffec85a6436.png",
     "static/media/nfl.png": "/static/media/nfl.f0d683ad5a9dfeb9d9ff.png",
-    "static/media/github.png": "/static/media/github.7b632148e1651f645ef1.png",
+    "static/media/Alex_Zaharia_Resume.pdf": "/static/media/Alex_Zaharia_Resume.0391dc97b0bdaccff22f.pdf",
     "static/media/information-retrieval.png": "/static/media/information-retrieval.73e9f2288fb93846f404.png",
     "static/media/components.png": "/static/media/components.58f9db5f29301576a83d.png",
     "static/media/realty206.png": "/static/media/realty206.95ba4dcf0f68977a5ff3.png",
@@ -42,13 +42,13 @@
     "static/media/lwp.png": "/static/media/lwp.c95bc1287fe403f5e9a6.png",
     "static/media/snowflake.png": "/static/media/snowflake.f1c79e8a6ed3ada2e86c.png",
     "static/media/achievements.png": "/static/media/achievements.e3120a9049760806ba8e.png",
-    "static/media/linkedin.png": "/static/media/linkedin.a5b727987c2379bc57c4.png",
     "static/media/opendp.png": "/static/media/opendp.5d43a9c4db2f83cd56e9.png",
     "static/media/education.png": "/static/media/education.3ba82f95c981619ce303.png",
     "static/media/volunteering.png": "/static/media/volunteering.0548738f8911b20ecadb.png",
     "static/media/memory.png": "/static/media/memory.851e498787dc2a4f311a.png",
     "static/media/panera.png": "/static/media/panera.905e04a12ae38679501c.png",
     "static/media/tinyfs.png": "/static/media/tinyfs.108e28ca9464ba4daf22.png",
+    "static/media/cavostudio.png": "/static/media/cavostudio.bb17953c6cca12158cf9.png",
     "static/media/work.png": "/static/media/work.69add970469f6278de86.png",
     "static/media/uc3m.png": "/static/media/uc3m.e37a3d915b7411478df0.png",
     "static/media/gradepotential.png": "/static/media/gradepotential.b3fc856a257d02f324bf.png",
@@ -56,7 +56,6 @@
     "static/media/logiclab.png": "/static/media/logiclab.bbd012bf73d29da7777d.png",
     "static/media/revere.png": "/static/media/revere.c5f7979c9573f7a307df.png",
     "static/media/divideconquer.png": "/static/media/divideconquer.ac5396033623c318d69b.png",
-    "static/media/Alex_Zaharia_Resume.pdf": "/static/media/Alex_Zaharia_Resume.2d852ad96b3b8755f63f.pdf",
     "static/media/gridirongpt.png": "/static/media/gridirongpt.86335fcdc1a13c6696bd.png",
     "static/media/cooped_up.jpg": "/static/media/cooped_up.f8f55de6509020382d6f.jpg",
     "static/media/seattleu.jpg": "/static/media/seattleu.bb87e923207aa3b0a42f.jpg",
@@ -67,12 +66,12 @@
     "static/media/soltix.png": "/static/media/soltix.c0aa8ffd0ae0f7532dd8.png",
     "static/media/dormcuts.jpg": "/static/media/dormcuts.a82731fbaa36bbd8e626.jpg",
     "index.html": "/index.html",
-    "main.458372f1.css.map": "/static/css/main.458372f1.css.map",
-    "main.c13002a1.js.map": "/static/js/main.c13002a1.js.map",
+    "main.1eacb088.css.map": "/static/css/main.1eacb088.css.map",
+    "main.ceee6031.js.map": "/static/js/main.ceee6031.js.map",
     "453.2577e14c.chunk.js.map": "/static/js/453.2577e14c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.458372f1.css",
-    "static/js/main.c13002a1.js"
+    "static/css/main.1eacb088.css",
+    "static/js/main.ceee6031.js"
   ]
 }
