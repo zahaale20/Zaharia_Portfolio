@@ -9,13 +9,16 @@ import ExperiencesPage from "./pages/ExperiencesPage";
 import ResumePage from "./pages/ResumePage";
 
 const PageContainer = styled.div`
-  height: 1000vh;
+  position: fixed;   /* fixes it to the viewport */
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 0px;
-  position: relative;
-  overflow: hidden;
+  overflow: hidden;  /* hides any overflowing content */
+  margin: 0;
+  padding: 0;
 `;
 
 const WhiteOverlay = styled.div`

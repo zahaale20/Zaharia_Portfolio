@@ -99,7 +99,7 @@ const work_experiences = [
     id: 1,
     title: 'Software Consultant',
     subtitle: 'Cavo Studio',
-    keywords: ['Computer Vision', 'Vessel Detection', 'Research Design', 'Project Planning', 'Interdisciplinary Collaboration'],
+    keywords: ['Web Development', 'Requirements Gathering', 'Project Management'],
     description:
       '● Gathering requirements and collaborating with key stakeholders to modernize the Puget Sound Plumbing & Heating website.\n' +
       '● Leveraging React, FastAPI, and AWS to build a scalable, high-performance static site focused on improving user engagement. \n' +
