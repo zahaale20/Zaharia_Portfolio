@@ -37,3 +37,9 @@ ul {
   margin-left: 20px;
   padding: 0;        /* Reset default padding */
 }
+
+/* ✅ Invert + Brighten Filter (used in Background.js) */
+.filter-invert-and-brighten {
+  filter: invert(1) brightness(1);
+  transition: filter 1.5s ease-in-out;
+}

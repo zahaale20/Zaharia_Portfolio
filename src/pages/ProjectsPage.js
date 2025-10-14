@@ -43,11 +43,26 @@ import memory from '../assets/memory.png';
 import lwp from '../assets/lwp.png';
 import eda from '../assets/eda.png';
 import hodlrocket from '../assets/hodlrocket.png';
-import sspt from '../assets/sspt_main.png'
+import sspt from '../assets/sspt_main.png';
+import svhn from '../assets/svhn.png';
+import microsoft_stock from '../assets/microsoft_stock.png';
+import tiktok_sentiment_analysis from '../assets/tiktok_sentiment_analysis.png';
+import skygate from '../assets/skygate.png';
+import sora_experiments from '../assets/sora_experiments.png';
+import borg_omega_k8s from '../assets/borg_omega_k8s.png';
+import cooped_up from '../assets/cooped_up.jpg';
 
 import ad1 from '../assets/ad1.png';
 import ad2 from '../assets/ad2.png';
 import ad3 from '../assets/ad3.png';
+
+import sora1 from '../assets/sora1.mp4';
+import sora2 from '../assets/sora2.mp4';
+import sora3 from '../assets/sora3.mp4';
+import sora4 from '../assets/sora4.mp4';
+import sora5 from '../assets/sora5.mp4';
+import sora6 from '../assets/sora6.mp4';
+import sora7 from '../assets/sora7.mp4';
 
 import real_estate_ml from '../assets/real_estate_ml.png';
 import tinyfs from '../assets/tinyfs.png';
@@ -55,9 +70,139 @@ import tinyfs from '../assets/tinyfs.png';
 const projects = [
   {
     id: 1,
+    title: 'Microsoft Stock Forecasting',
+    dateRange: 'June 2025',
+    location: 'Seattle, WA',
+    keywords: [
+      'Time Series Forecasting',
+      'RNN',
+      'GRU',
+      'LSTM',
+      'OHLCV',
+      'TensorFlow',
+      'Matplotlib'
+    ],
+    description:
+      'Developed a time-series forecasting pipeline using a 20-day sliding window to predict 10-day OHLCV sequences. Trained RNN, GRU, and LSTM models; GRU achieved 0.068 MAE on validation set across five features. Benchmarked against a linear regression baseline (MAE: 0.0245) and visualized predictions for each feature.',
+    imageUrl: microsoft_stock,
+    githubUrl: 'https://github.com/zahaale20/Microsoft-Stock-Forecasting'
+  },
+  {
+    id: 2,
+    title: 'Borg, Omega, and Kubernetes Research Presentation',
+    dateRange: 'May 2025',
+    location: 'Seattle, WA',
+    keywords: [
+      'Kubernetes',
+      'Cloud Computing',
+      'Borg',
+      'Omega',
+      'Cluster Management',
+      'Container Orchestration'
+    ],
+    description:
+      'Researched and presented a technical comparison of Google’s container management systems—Borg, Omega, and Kubernetes—as part of a Cloud Computing course. Analyzed architecture, scheduling models, and evolution of control planes across the three systems. Illustrated lessons learned from internal deployments and how they shaped modern open-source orchestration tools. Emphasized scalability, modularity, and developer usability.',
+    imageUrl: borg_omega_k8s,
+    googleSlidesUrl: 'https://docs.google.com/presentation/d/1o6lLePAHHEMfhL84-RlXE2v_1w3TKvekpaWnraF48iw/edit?usp=sharing'
+  },
+  {
+    id: 3,
+    title: 'SVHN Image Classification CNN',
+    dateRange: 'May 2025',
+    location: 'Seattle, WA',
+    keywords: [
+      'Convolutional Neural Networks',
+      'Image Classification',
+      'TensorFlow',
+      'Data Augmentation',
+      'CNN',
+      'SVHN Dataset'
+    ],
+    description:
+      'Built a convolutional neural network to classify 600K+ Google Street View digit images from the SVHN dataset. Trained grayscale models using Conv2D, MaxPooling, Dropout, and BatchNormalization; achieved 97.5% accuracy. Enhanced model generalization with data augmentation; final model reached 96% test accuracy on 26K+ images.',
+    imageUrl: svhn,
+    githubUrl: 'https://github.com/zahaale20/SVHN-Image-Classification-CNN-'
+  },
+  {
+    id: 4,
+    title: 'Sora Video Experiments',
+    dateRange: 'May 2025',
+    location: 'Sammamish, WA',
+    keywords: [
+      'Sora',
+      'AI Video Generation',
+      'Prompt Engineering',
+      'Multimodal AI',
+      'Video Synthesis',
+      'Creative Coding'
+    ],
+    description:
+      'Spent a month experimenting with OpenAI’s Sora to generate cinematic AI videos from text prompts. Explored diverse aesthetics—from futuristic landscapes to abstract action scenes—while iterating on prompt design, movement framing, and visual storytelling. This sandbox project served as a creative exercise in pushing the boundaries of generative video synthesis.',
+    imageUrl: sora_experiments,
+    videos: [
+      { url: sora1 },
+      { url: sora2 },
+      { url: sora3 },
+      { url: sora4 },
+      { url: sora5 },
+      { url: sora6 },
+      { url: sora7 }
+    ],
+    renderVideos: () => (
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', marginTop: '20px' }}>
+        {[sora1, sora2, sora3, sora4, sora5, sora6, sora7].map((videoSrc, idx) => (
+          <video
+            key={idx}
+            controls
+            width="300"
+            style={{ borderRadius: '12px', flex: '0 0 auto' }}
+            src={videoSrc}
+          />
+        ))}
+      </div>
+    )
+  },
+  {
+    id: 6,
+    title: 'Cooped-Up: XR Storytelling Hackathon',
+    dateRange: 'February 2025',
+    location: 'Seattle, WA',
+    keywords: [
+      'AI Storytelling',
+      'OpenAI',
+      'GPT-4o',
+      'DALL·E',
+      'FastAPI',
+      'React.js',
+      'Hackathon'
+    ],
+    description:
+      'Built during an 8-hour hackathon sprint, Cooped-Up is an AI-driven storytelling toolkit that transforms user-provided narratives into structured social media posts with auto-generated imagery. Demonstrated with Ezell’s Famous Chicken founder Lewis Rudd’s story, the tool uses a linear multi-agent architecture powered by GPT-4o and DALL·E to extract key themes, generate platform-specific copy, and visualize symbolic imagery. Built with React.js and FastAPI for rapid prototyping and intuitive user experience.',
+    imageUrl: cooped_up,
+    googleSlidesUrl: 'https://docs.google.com/presentation/d/1atqMrvrqCjS3bUq-ThRZGU6LvUr_tPqDCMoWggQK4PU/edit?usp=sharing'
+  },
+  {
+    id: 7,
+    title: 'TikTok Sentiment Analysis Tool',
+    dateRange: 'February 2025',
+    location: 'Sammamish, WA',
+    keywords: [
+      'Sentiment Analysis',
+      'Speech Recognition',
+      'NLP',
+      'Time Series',
+      'Audio Transcription',
+      'Python'
+    ],
+    description:
+      'Built a pipeline to analyze TikTok content by transcribing audio and applying NLP-based sentiment scoring. Identified major limitations in detecting sarcasm and emotional nuance using transcript-only approaches. Experimented with time-series modeling of vocal tone to improve sentiment accuracy beyond text analysis.',
+    imageUrl: tiktok_sentiment_analysis
+  },
+  {
+    id: 8,
     title: 'Soltix',
     dateRange: 'February 2025 - March 2025',
-    location: 'Remote',
+    location: 'Sammamish, WA',
     keywords: [
       'Full Stack Development',
       'FastAPI',
@@ -69,11 +214,11 @@ const projects = [
       'Python'
     ],
     description:
-      'Developing a full-stack market analysis and forecasting app to improve Solana investment decision-making. Leveraged FastAPI, WebSocket, and Gamma Market API for real-time updates on Polymarket events and markets. Built a sentiment analysis tool to extract insights from social media using OpenAI API, yt dlp, moviepy, and regex. Tracking velocity indicators to identify high-value investment opportunities.',
+      'Developed a full-stack market analysis and forecasting app for a friend to improve Solana investment decision-making. Leveraged FastAPI, WebSocket, and Gamma Market API for real-time updates on Polymarket events and markets. Built a sentiment analysis tool to extract insights from social media using OpenAI API, yt dlp, moviepy, and regex. Tracking velocity indicators to identify high-value investment opportunities.',
     imageUrl: soltix
   },
   {
-    id: 2,
+    id: 9,
     title: 'Blog Post Generator',
     dateRange: 'January 2025',
     location: 'Remote',
@@ -90,7 +235,7 @@ const projects = [
     imageUrl: blog_post_generator
   },
   {
-    id: 3,
+    id: 10,
     title: 'Directory Context Generator',
     dateRange: 'January 2025',
     location: 'Remote',
@@ -110,7 +255,7 @@ const projects = [
     imageUrl: directory_context_generator
   },
   {
-    id: 3,
+    id: 11,
     title: 'Gridiron GPT',
     dateRange: 'April 2023 - August 2024',
     location: 'San Luis Obispo, CA',
@@ -132,7 +277,7 @@ const projects = [
     imageUrl: gridirongpt
   },
   {
-    id: 4,
+    id: 12,
     title: 'haggle',
     dateRange: 'January 2023 - June 2024',
     location: 'San Luis Obispo, CA',
@@ -151,7 +296,7 @@ const projects = [
     imageUrl: haggle
   },
   {
-    id: 5,
+    id: 13,
     title: 'Predictive Modeling Tool for Real Estate Prices (In the USA)',
     dateRange: 'June 2024',
     location: 'San Luis Obispo, CA',
@@ -172,7 +317,7 @@ const projects = [
     imageUrl: real_estate_ml
   },
   {
-    id: 6,
+    id: 14,
     title: 'Exploratory Data Analysis',
     dateRange: 'May 2024',
     location: 'San Luis Obispo, CA',
@@ -191,7 +336,7 @@ const projects = [
     imageUrl: eda
   },
   {
-    id: 7,
+    id: 15,
     title: 'Information Retrieval',
     dateRange: 'April 2024',
     location: 'San Luis Obispo, CA',
@@ -210,7 +355,7 @@ const projects = [
     imageUrl: information_retrieval
   },
   {
-    id: 8,
+    id: 16,
     title: 'Tiny FS',
     dateRange: 'June 2024',
     location: 'San Luis Obispo, CA',
@@ -228,7 +373,7 @@ const projects = [
     imageUrl: tinyfs
   },
   {
-    id: 9,
+    id: 17,
     title: 'Memory Simulator',
     dateRange: 'May 2024',
     location: 'San Luis Obispo, CA',
@@ -245,7 +390,7 @@ const projects = [
     imageUrl: memory
   },
   {
-    id: 10,
+    id: 18,
     title: 'Lightweight Processes',
     dateRange: 'April 2024',
     location: 'San Luis Obispo, CA',
@@ -262,7 +407,7 @@ const projects = [
     imageUrl: lwp
   },
   {
-    id: 11,
+    id: 19,
     title: 'Database Modeling',
     dateRange: 'February 2024 - April 2024',
     location: 'San Luis Obispo, CA',
@@ -282,7 +427,7 @@ const projects = [
     imageUrl: jambajuice
   },
   {
-    id: 12,
+    id: 20,
     title: 'Differential Privacy',
     dateRange: 'June 2023 - August 2023',
     location: 'San Luis Obispo, CA',
@@ -300,7 +445,7 @@ const projects = [
     imageUrl: openDP
   },
   {
-    id: 13,
+    id: 21,
     title: 'NFL QB Analysis',
     dateRange: 'June 2023 - August 2023',
     location: 'San Luis Obispo, CA',
@@ -319,7 +464,7 @@ const projects = [
     imageUrl: nfl
   },
   {
-    id: 14,
+    id: 22,
     title: 'Edit Distance',
     dateRange: 'January 2023',
     location: 'San Luis Obispo, CA',
@@ -336,7 +481,7 @@ const projects = [
     imageUrl: editdistance
   },
   {
-    id: 15,
+    id: 23,
     title: 'Strongly Connected Components',
     dateRange: 'January 2023',
     location: 'San Luis Obispo, CA',
@@ -353,7 +498,7 @@ const projects = [
     imageUrl: components
   },
   {
-    id: 16,
+    id: 24,
     title: 'Divide and Conquer',
     dateRange: 'January 2023',
     location: 'San Luis Obispo, CA',
@@ -370,7 +515,7 @@ const projects = [
     imageUrl: divideconquer
   },
   {
-    id: 17,
+    id: 25,
     title: 'The Secret Society of Pixel Thugs',
     dateRange: 'April 2021 - August 2021',
     location: 'San Luis Obispo, CA',
@@ -389,7 +534,7 @@ const projects = [
     imageUrl: sspt
   },
   {
-    id: 18,
+    id: 26,
     title: 'HODLRocket',
     dateRange: 'April 2020 - August 2020',
     location: 'San Luis Obispo, CA',
@@ -507,7 +652,38 @@ function ProjectsPage() {
 
                   <DescriptionHeaderText>Description</DescriptionHeaderText>
                   <DescriptionText>{project.description}</DescriptionText>
-
+                  {project.videos && (
+                    <div
+                      style={{
+                        width: '100%',
+                        overflowX: 'auto',
+                        marginTop: '20px',
+                        paddingBottom: '12px'
+                      }}
+                    >
+                      <div
+                        style={{
+                          display: 'inline-flex',
+                          gap: '16px',
+                          minWidth: 'fit-content'
+                        }}
+                      >
+                        {project.videos.map((video, idx) => (
+                          <video
+                            key={idx}
+                            controls
+                            width="300"
+                            style={{
+                              borderRadius: '12px',
+                              scrollSnapAlign: 'start',
+                              flexShrink: 0
+                            }}
+                            src={video.url}
+                          />
+                        ))}
+                      </div>
+                    </div>
+                  )}
                   <ProjectLinksContainer>
                     {renderLinkButtons(project)}
                   </ProjectLinksContainer>
@@ -516,6 +692,7 @@ function ProjectsPage() {
             </div>
           ))}
         </MainContainer>
+
 
         <AdContainer>
           <AdImage src={adImages[adIndex]} alt="Advertisement" />

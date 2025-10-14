@@ -30,6 +30,7 @@ import calpoly from '../assets/calpoly.png';
 import uc3m from '../assets/uc3m.png';
 import skyline from '../assets/skyline.png';
 
+import cavostudio from '../assets/cavostudio.png';
 import logiclab from '../assets/logiclab.png';
 import cac from '../assets/cac.png';
 import revere from '../assets/revere.png';
@@ -54,12 +55,16 @@ import ad1 from '../assets/ad1.png';
 import ad2 from '../assets/ad2.png';
 import ad3 from '../assets/ad3.png';
 
+import aws from '../assets/aws.jpg';
+import google from '../assets/google.jpg';
+import snowflake from '../assets/snowflake.png';
+
 const education_experiences = [
   {
     id: 1,
     title: 'Seattle University',
-    subtitle: 'MS in Computer Science, Data Science ',
-    dateRange: 'March 2025 - March 2027',
+    subtitle: 'MS in Computer Science, Software Engineering ',
+    dateRange: 'March 2025 - June 2027',
     location: 'Seattle, WA',
     imageUrl: seattleu,
   },
@@ -90,75 +95,94 @@ const education_experiences = [
 ];
 
 const work_experiences = [
+    {
+    id: 1,
+    title: 'Software Consultant',
+    subtitle: 'Cavo Studio',
+    keywords: ['Computer Vision', 'Vessel Detection', 'Research Design', 'Project Planning', 'Interdisciplinary Collaboration'],
+    description:
+      '● Gathering requirements and collaborating with key stakeholders to modernize the Puget Sound Plumbing & Heating website.\n' +
+      '● Leveraging React, FastAPI, and AWS to build a scalable, high-performance static site focused on improving user engagement. \n' +
+      '● Presenting weekly progress reports using Google Slides to stakeholders, ensuring project alignment and full transparency.',
+    dateRange: 'September 2025 – Present',
+    location: 'Seattle, WA',
+    imageUrl: cavostudio,
+  },  
   {
     id: 1,
-    title: 'Front Desk',
+    title: 'Computer Vision Research Assistant',
+    subtitle: 'Seattle University',
+    keywords: ['Computer Vision', 'Vessel Detection', 'Research Design', 'Project Planning', 'Interdisciplinary Collaboration'],
+    description:
+      '● Led a 3-person research team to design and develop a vision-based pre-collision avoidance system for sailboats and bridges.\n' +
+      '● Defined system requirements, site geometry, and implementation strategies to guide the project\'s technical execution.\n' +
+      '● Compiled a tailored dataset for model training by collecting and labeling 1,500 images (bounding boxes and mast-tip points).\n'  +
+      '● Evaluated three mast-tip detection methods using YOLO object detection, reducing mast-tip localization error by 15%.',
+    dateRange: 'June 2025 – September 2025',
+    location: 'Seattle, WA',
+    imageUrl: seattleu,
+  },  
+  {
+    id: 1,
+    title: 'Membership Representative',
     subtitle: 'Columbia Athletic Club - Pine Lake',
-    keywords: ['Organization', 'Time Management', 'Customer Relations', 'Facility Maintenance'],
+    keywords: ['Lead Generation', 'Customer Consultation', 'Sales Operations', 'Automation Tools', 'Cloud/AI'],
     description: 
-      '● Supporting habit development and building positive relationships with 100s of members and staff \n' +
-      '● Performing building upkeep, maintaining a clean and organized facility',
-    dateRange: 'December 2025 - Present',
+      '● Temporarily filled in for a membership representative on medical leave, handling sales, tours, and account management.\n' +  
+      '● Analyzed 673,000+ sales records to identify top products, uncover trends, and forecast sales using pandas, matplotlib, and RNN.\n' +
+      '● Devised a React QR‑based form system, reducing prospect onboarding time by 50% and eliminating the need for paper storage.\n' +
+      '● Engineered a supervised solution for automating email responses using Jupyter, Python, and cloud APIs (OpenAI, Gmail).',
+    dateRange: 'April 2025 – Present',
     location: 'Sammamish, WA',
     imageUrl: cac,
   },
   {
     id: 2,
+    title: 'Front Desk Attendant',
+    subtitle: 'Columbia Athletic Club - Pine Lake',
+    keywords: ['Early Morning Operations', 'Customer Service', 'Facility Management', 'Team Support'],
+    description: 
+      '● Wake as early as 3:30 AM to prepare the facility for a smooth 5:00 AM opening, ensuring readiness before members arrive.\n' +
+      '● Greet and assist 100+ members daily, fostering a welcoming environment and promoting long-term habit formation.\n' +
+      '● Maintain cleanliness and organization of the gym, performing regular upkeep to exceed member expectations.\n' +
+      '● Support coworkers and management with opening procedures, troubleshooting, and daily operational needs.',
+    dateRange: 'December 2025 – Present',
+    location: 'Sammamish, WA',
+    imageUrl: cac,
+  },
+  {
+    id: 3,
     title: 'Computer Science Tutor',
     subtitle: 'Logic Lab',
     keywords: ['Tutoring', 'Computer Science', 'Student Development', 'Educational Content'],
     description: 
-    '● Empowered 30+ students to reach their academic computer science goals through personalized tutoring',
-    dateRange: 'August 2023 - Present',
+    '● Launched a tutoring service that helped 30+ K–12 and undergraduate students achieve their academic computer science goals.\n' +
+    '● Developed a client management application with React, FastAPI, and Supabase to track lessons, progress, and payments.',
+    dateRange: 'August 2023 - March 2025',
     location: 'Greater Seattle Area',
     imageUrl: logiclab,
   },
   {
-    id: 3,
-    title: 'Hackathon Participant',
-    subtitle: 'RevereXR',
-    keywords: ['VR','OpenAI', 'Python', 'React'],
-    description: 
-    '● Storyboarded a VR game on Google Slides to bring Lewis Rudd\’s story of Ezelle\’s Famous Chicken\’s to life\n' +
-    '● Prototyped an AI MVP to break down narratives into social media captions and images using GPT-4 and DALL-E',
-    dateRange: 'February 2025',
-    location: 'Seattle, WA',
-    imageUrl: revere,
-  },
-  {
-    id: 4,
+    id: 5,
     title: 'Real Estate Intern',
     subtitle: '206 Realty',
     keywords: ['Python', 'Databases', 'Data Analytics', 'Lead Conversion', 'Real Estate'],
     description: 
-      '● Optimized database schemas and data pipelines, improving reporting efficiency\n' +
-      '● Analyzed client data and built a Python lead prioritization tool, increasing conversion rates by 28%\n' +
-      '● Executed 2,000+ cold calls',
+      '● Migrated 10 Excel files into a PostgreSQL database and developed FastAPI endpoints for efficient and accurate querying.\n' +
+      '● Oversaw a lead generation pipeline, executed 2,000+ cold calls and qualified 300+ prospects, resulting in $2,500,000+ in sales.',
     dateRange: 'June 2022 - Aug 2022',
     location: 'Bellevue, WA',
     imageUrl: realty206,
   },
   {
-    id: 5,
-    title: 'Computer Science Tutor',
-    subtitle: 'Grade Potential',
-    keywords: ['Tutoring', 'Computer Science', 'Student Development', 'Educational Content'],
-    description: 
-      '● Empowered 5 students to reach their academic computer science goals through personalized tutoring',
-    dateRange: 'August 2023 - Present',
-    location: 'Sammamish, WA - Hybrid',
-    imageUrl: gradepotential,
-  },
-  {
-    id: 6,
+    id: 7,
     title: 'Founder / Barber',
     subtitle: 'SLO Dorm Cuts',
     keywords: ['Entrepreneurship', 'Marketing', 'Customer Retention', 'Networking'],
     description: 
-      '● Learned and mastered haircutting skills by practicing on myself and dorm residents\n' +
-      '● Provided free haircuts to the 12 people on my dorm floor to build a portfolio\n' +
-      '● Launched an Instagram page showcasing haircuts, leading to rapid word-of-mouth marketing\n' +
-      '● Expanded business through Greek life networking, performing 10-12 haircuts per day',
+      '● Self-taught professional haircutting through YouTube tutorials and hands-on practice with dorm residents and undergrad peers.\n' +
+      '● Built an initial portfolio on Instagram by offering free haircuts to 12 dorm members, establishing credibility and client trust.\n' +
+      '● Gained over 1000 clients by designing business cards, using creative social media marketing, and leveraging Greek Life networks.',
     dateRange: 'Dec 2020 - Jun 2023',
     location: 'San Luis Obispo, CA',
     imageUrl: dormcuts,
@@ -167,42 +191,16 @@ const work_experiences = [
 
   },
   {
-    id: 7,
+    id: 8,
     title: 'Salon Coordinator',
     subtitle: 'Bombaii Cutters',
     keywords: ['Salon Management', 'Customer Service', 'Scheduling', 'Inventory Control'],
     description: 
-      '● Managed daily operations of a hair salon, including inventory and appointment scheduling\n' +
-      '● Resolved all client and staff conflicts, ensuring smooth operations\n' +
-      '● Expanded personal haircutting skills through hands-on salon experience',
+      '● Took over managerial duties during owner’s medical leave, including inventory, scheduling, finances, and conflict resolution.\n' +
+      '● Improved haircutting skills through hands-on experience and mentoring from professionals in a fast-paced salon environment.',
     dateRange: 'Jun 2021 - Aug 2021',
     location: 'Kirkland, WA',
     imageUrl: bombaiicutters,
-  },
-  {
-    id: 8,
-    title: 'Associate',
-    subtitle: 'Panera',
-    keywords: ['Customer Service', 'Food Handling', 'Cash Register', 'Teamwork'],
-    description: 
-      '● Assisted with food preparation and maintained cleanliness standards\n' +
-      '● Provided excellent customer service to ensure a positive dining experience',
-    dateRange: 'Apr 2019 - Jun 2020',
-    location: 'Issaquah, WA',
-    imageUrl: panera,
-  },
-  {
-    id: 9,
-    title: 'Basketball Referee',
-    subtitle: 'Issaquah Parks and Recreation',
-    keywords: ['Sports Officiating', 'Decision-Making', 'Conflict Resolution', 'Youth Engagement'],
-    description: 
-      '● Officiated youth basketball games, ensuring fair play and adherence to game rules\n' +
-      '● Fostered a positive and engaging experience for players and parents\n' +
-      '● Developed the ability to make quick, confident, and fair decisions under pressure',
-    dateRange: 'Jan 2016 - Apr 2019',
-    location: 'Issaquah, WA',
-    imageUrl: issaquah,
   },
 ];
 
@@ -229,7 +227,7 @@ const volunteering_experiences = [
     keywords: ['Leadership', 'Fundraising', 'Nonprofit Management', 'Community Engagement'],
     description: 
       '● Founded and managed a volunteer organization dedicated to supporting underprivileged children locally and in Romania.\n' +
-      '● Raised over $25,000 and contributed 500+ volunteer hours towards fundraising and community service efforts.\n' +
+      '● Raised over $15,000 and contributed 100+ volunteer hours towards fundraising and community service efforts.\n' +
       '● Awarded the Platinum National Heritage Award by the Romanian Embassy in Washington D.C. for outstanding contributions.',
     link: 'https://www.facebook.com/ForgottenFacesFoundation',
     dateRange: 'Sep 2016 - Jun 2020',
@@ -256,6 +254,39 @@ const volunteering_experiences = [
 const achievements_experiences = [
   {
     id: 1,
+    title: 'AWS Academy Cloud Foundations',
+    subtitle: 'Seattle University',
+    dateRange: 'Issued Jun 2024',
+    location: 'Seattle, WA',
+    imageUrl: aws,
+    websiteUrl: 'https://www.credly.com/badges/4e2f4b93-a559-40eb-bcbb-a78c53f6e8b4/linked_in_profile'
+  },
+  {
+    id: 2,
+    title: 'Google Project Management',
+    subtitle: 'Coursera',
+    dateRange: 'Issued May 2024',
+    location: 'Remote',
+    imageUrl: google,
+    websiteUrl: 'https://www.coursera.org/account/accomplishments/professional-cert/certificate/8H882POCEF95'
+  },
+  {
+    id: 3,
+    title: 'Snowflake Hands-On Essentials',
+    subtitle: 'Snowflake University',
+    dateRange: 'Issued May 2024',
+    location: 'Remote',
+    imageUrl: snowflake,
+    certificates: [
+      'https://achieve.snowflake.com/b39b4f0c-77cf-4de2-a4e2-9116f2ed530e#acc.iyfF1Wlu',
+      'https://achieve.snowflake.com/d471b520-35a2-4e8b-99f6-6efc2b9cd317#acc.QvFcKOW0',
+      'https://achieve.snowflake.com/ff522eec-5dee-496c-8fda-d8d74ea9787f#acc.oLGQfYWT',
+      'https://achieve.snowflake.com/e765d7cf-cefc-40b7-936d-c385141ee830#acc.k1Onl30K',
+      'https://achieve.snowflake.com/dbc7d808-bb30-452b-959c-06fee4b32b00#acc.I0J5oDzT'
+    ]
+  },
+  {
+    id: 4,
     title: 'International Baccalaureate Diploma',
     subtitle: 'International Baccalaureate',
     dateRange: 'Issued Jul 2020',
@@ -263,7 +294,7 @@ const achievements_experiences = [
     imageUrl: ib,
   },
   {
-    id: 2,
+    id: 5,
     title: 'Romanian National Heritage Platinum Award',
     subtitle: 'ARCS, Embassy of Romania (D.C.), Alianta',
     dateRange: 'Issued Jun 2019',
@@ -285,16 +316,45 @@ const renderLinkButtons = (project) => {
     { key: 'websiteUrl', text: 'Website' },
   ];
 
-  // Filter out the link types that are not available for this project
   const availableLinks = linkTypes.filter(linkType => project[linkType.key]);
 
-  return availableLinks.map(linkType => (
-    <a key={linkType.key} href={project[linkType.key]} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', margin: '0px' }}>
-      <MainButton>{linkType.text}</MainButton>
-    </a>
-  ));
-};
+  return (
+    <div
+      style={{
+        display: 'flex',
+        overflowX: 'auto',
+        gap: '12px',
+        paddingBottom: '10px',
+        marginTop: '12px',
+        scrollSnapType: 'x mandatory'
+      }}
+    >
+      {availableLinks.map(linkType => (
+        <a
+          key={linkType.key}
+          href={project[linkType.key]}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: 'none', flex: '0 0 auto', scrollSnapAlign: 'start' }}
+        >
+          <MainButton>{linkType.text}</MainButton>
+        </a>
+      ))}
 
+      {project.certificates?.map((url, idx) => (
+        <a
+          key={`cert-${idx}`}
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: 'none', flex: '0 0 auto', scrollSnapAlign: 'start' }}
+        >
+          <MainButton>{`Certificate ${idx + 1}`}</MainButton>
+        </a>
+      ))}
+    </div>
+  );
+};
 
 
 function ExperiencesPage() {

@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100vh;
     height: 100vh;
     max-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
   }
 `;
 
